@@ -1,0 +1,1036 @@
+<?xml version="1.0"?>
+<ldi delimiter="\" system="modelmakertools.com">
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Adler32.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbHiQ.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbShadowCalcThreadN.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniPreviewWindow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniPreviewWindow.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\FTGifAnimate.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniProcess.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\PostProcessForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BatchForm.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\BitStream.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BRInfoWindow.pas" type="form"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\BufStream.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaClass.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread2D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcAmbShadowDE.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\calcBlocky.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcMonteCarlo.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MonteCarloForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcPart.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcAmbShadowDE.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\PostProcessForm.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcAmbShadowDE.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaClass.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread2D.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcVoxelSliceThread.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ColorMapper.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\LinarBitmap.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MathUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\ColorOptionForm.pas" type="form"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ColorPick.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\TrackBarEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ColorSSAO.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CRC32Stream.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaCompiler.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Deflate.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\BitStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\BufStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Huffman.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DelphiStream.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DoubleSize.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FFT.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngimage.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniPreviewWindow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Undo.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaClass.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaCompiler.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaNames.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\FTGifAnimate.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\GifImage.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\GifImage.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Huffman.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\BitStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\IFS.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbShadowCalcThreadN.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcAmbShadowDE.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\IniDirsForm.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MonteCarloForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\VoxelExport.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulaEditGUI.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaCompiler.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\ParamValueEditGUI.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulas.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvAppStorage.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTranslateString.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPropertyStore.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvStrings.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvButton.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCaptionPanel.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExtComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCheckBox.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSourceIntf.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvLinkedControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvClipboardMonitor.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComCtrls.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSourceIntf.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvWin32.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExForms.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCustomItemViewer.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExForms.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSource.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSourceIntf.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSourceIntf.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExButtons.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExExtCtrls.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExForms.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExtComponent.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExExtCtrls.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvFormAnimatedIcon.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\Jvg3DColors.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgTypes.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgCommClasses.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgGroupBox.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgCommClasses.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvGroupBox.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCheckBox.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgTypes.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgUtils.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\Jvg3DColors.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgCommClasses.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvImagesViewer.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCustomItemViewer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvAppStorage.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvLinkedControls.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvNavigationPane.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvButton.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExExtCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPageList.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvOutlookBar.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExButtons.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPageList.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvProgressBar.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPropertyStore.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvAppStorage.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPropertyStoreEditorIntf.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvStrings.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPropertyStoreEditorIntf.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvSlider.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvStrings.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTranslateString.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvWin32.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvxSlider.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\LinarBitmap.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DelphiStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MathUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ListBoxEx.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dpr" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Adler32.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbHiQ.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbShadowCalcThreadN.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniPreviewWindow.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniProcess.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BatchForm.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\BitStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BRInfoWindow.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\BufStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcAmbShadowDE.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\calcBlocky.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcMonteCarlo.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcPart.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread2D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcVoxelSliceThread.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ColorMapper.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\ColorOptionForm.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ColorPick.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ColorSSAO.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CRC32Stream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Deflate.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DelphiStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DoubleSize.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FFT.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaClass.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaCompiler.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaNames.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\FTGifAnimate.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\GifImage.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Huffman.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\IFS.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\IniDirsForm.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulaEditGUI.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvAppStorage.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvButton.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCaptionPanel.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCheckBox.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvClipboardMonitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCustomItemViewer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSource.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSourceIntf.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExButtons.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExExtCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExForms.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExtComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvFormAnimatedIcon.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\Jvg3DColors.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgCommClasses.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgGroupBox.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvGroupBox.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvImagesViewer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvLinkedControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvNavigationPane.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvOutlookBar.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPageList.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvProgressBar.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPropertyStore.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPropertyStoreEditorIntf.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvSlider.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvStrings.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTranslateString.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvWin32.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvxSlider.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\LinarBitmap.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ListBoxEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3DfractalClass.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3Iregister.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MapSequencesGUI.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MathUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MB3DFacade.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemStream.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MonteCarloForm.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MutaGen.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MutaGenGUI.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\NaviCalcThread.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\ParamValueEditGUI.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngimage.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pnglang.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngzlib.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\PostProcessForm.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PreviewRenderer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\RegisterM3Pgraphic.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\SpeedButtonEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\TextBox.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ThreadUtils.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\TrackBarEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\uMapCalcWindow.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Undo.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\VisualThemesGUI.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\VoxelExport.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3DfractalClass.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3Iregister.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbShadowCalcThreadN.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ListBoxEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3Iregister.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\SpeedButtonEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\TrackBarEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbHiQ.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniPreviewWindow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BatchForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\calcBlocky.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread2D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ColorPick.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaCompiler.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaNames.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\IniDirsForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulaEditGUI.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MapSequencesGUI.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MonteCarloForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MutaGenGUI.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\NaviCalcThread.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngimage.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\PostProcessForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\TextBox.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ThreadUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\uMapCalcWindow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Undo.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\VisualThemesGUI.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\VoxelExport.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngimage.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MapSequencesGUI.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MathUtils.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MB3DFacade.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemStream.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MonteCarloForm.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3Iregister.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcMonteCarlo.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\ColorOptionForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\PostProcessForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MutaGen.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaNames.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MB3DFacade.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MutaGenGUI.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCaptionPanel.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvClipboardMonitor.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCustomItemViewer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExExtCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExForms.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExtComponent.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvFormAnimatedIcon.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvGroupBox.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvImagesViewer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvNavigationPane.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvOutlookBar.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvPageList.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvProgressBar.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvSlider.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvxSlider.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MB3DFacade.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MutaGen.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PreviewRenderer.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\TrackBarEx.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\NaviCalcThread.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaClass.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MonteCarloForm.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\ParamValueEditGUI.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulas.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngimage.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pnglang.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngzlib.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pnglang.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngzlib.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\PostProcessForm.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcMonteCarlo.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcPart.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DoubleSize.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PreviewRenderer.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MB3DFacade.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\RegisterM3Pgraphic.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\SpeedButtonEx.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Monitor.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\TextBox.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ThreadUtils.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BRInfoWindow.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\TrackBarEx.pas" type="source"/>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\uMapCalcWindow.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Undo.pas" type="source">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\VisualThemesGUI.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+	</element>
+	<element name="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\VoxelExport.pas" type="form">
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas" kind="public-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcVoxelSliceThread.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas" kind="private-uses"/>
+		<uses provider="C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas" kind="private-uses"/>
+	</element>
+</ldi>

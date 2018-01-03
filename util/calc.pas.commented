@@ -1,0 +1,718 @@
+
+       //   It3Dex.SmoothItD := DEcombRec.bufIt3DSmoothItD;
+{          Prepare3Dgrad(@DEcombRec, It3Dex);
+     //     try //test
+          mAddVecWeight(@It3Dex.C1, @Vgrads[2], mctDEoffset);
+          mMandFunction(@It3Dex.C1);
+          dt := Sqr(DEcombRec.bufIt3DOtrap - It3Dex.Rout);
+          mCopyAddVecWeight(@It3Dex.C1, @DEcombRec.bufVec3D, @Vgrads[1], mctDEoffset);
+          mMandFunction(@It3Dex.C1);
+          wt := Sqr(DEcombRec.bufIt3DOtrap - It3Dex.Rout);
+          mCopyAddVecWeight(@It3Dex.C1, @DEcombRec.bufVec3D, @Vgrads[0], mctDEoffset);
+          mMandFunction(@It3Dex.C1);
+          Rst := Sqr(DEcombRec.bufIt3DOtrap - It3Dex.Rout);
+          Result := DEcombRec.bufIt3DOtrap * Ln(DEcombRec.bufIt3DOtrap) * dDEscale /     //div0  in ln if Rout=0
+                    (Sqrt(Rst + wt + dt) + (mctDEoffset * s006));
+       //   except end;
+          It3Dex.Rout := DEcombRec.bufIt3DOtrap;
+          It3Dex.ItResultI := It3Dex.MaxIt;
+          It3Dex.MaxIt := DEcombRec.bufIt3DItResultI;
+          It3Dex.SmoothItD := DEcombRec.bufIt3DSmoothItD;
+          It3Dex.CalcSIT := DEcombRec.bufMCTCalcSIT;
+          It3Dex.RStop := dRStop;
+          mCopyVec(@It3Dex.C1, @DEcombRec.bufVec3D);   }
+
+ { push dword [esp+4]
+  push dword [esp+4]
+  lea  edx, esi+TMCTparameter.mVgradsFOV-$38
+  lea  eax, ebx+TIteration3Dext.C1       //+$68
+  call mAddVecWeight  }
+ { mov  eax, [ebx+TIteration3Dext.ItResultI]
+  cmp  eax, [esi+TMCTparameter.MaxItsResult-$38]
+  jl   @@5
+  fld  qword [esp]
+  fabs
+  fchs               // dT1 := -Abs(dT1)
+  jmp  @@2
+@@5:     }
+
+
+{      if PInteger(@mPsiLight.NormalX)^ = 0 then
+        mPsiLight.NormalZ := -32767
+      else
+      begin
+        RotateVectorReverse(@N, @Vgrads);  //N=-NAN,-NAN,-NAN if smoothit fails
+        if mVGradsFOV[0] * N[0] + mVGradsFOV[1] * N[1] + mVGradsFOV[2] * N[2] > 0 then   // proof if vec is behind slice, pointing in wrong direction
+          mPsiLight.NormalZ := -mPsiLight.NormalZ;
+      end;}
+      
+      
+{  if DEoption = 20 then    //test for dIFS, do not overstep with high DEstop vals, on high fov you have to diff new destop
+begin
+  dT1 := DEstop * (1 + (ZZ + dTmp) * mctDEstopFactor) * 0.9;
+  dTmp := MinCD(dTmp, (RLastDE - dT1) * sZstepDiv);
+end; }
+
+
+{  mov  eax, [esi+TMCTparameter.iMaxit-$38]
+  mov  [esp+8], eax
+  mov  eax, [esi+TMCTparameter.iMaxitF2-$38]
+  mov  [esp+12], eax
+  mov  eax, [ebx+TIteration3Dext.ItResultI]     //+$a8
+  cmp  dword [ebx+TIteration3Dext.DEoption], 20
+  jne  @@0
+//  cmp  dword [esi+TMCTparameter.FormulaType-$38],0  //+$78
+//  jnz  @@1
+  mov  [esi+TMCTparameter.iMaxit-$38], eax
+  mov  [ebx+TIteration3Dext.maxIt], eax
+@@0:
+  cmp  dword [esi+TMCTparameter.DEoption2-$38], 20
+  jne  @@1
+  mov  [esi+TMCTparameter.iMaxitF2-$38], eax
+@@1:  }
+
+
+{   v := AddVecF(AddVecF(ScaleVector(TPVec3D(@Vgrads[0])^, Rst),
+		       ScaleVector(TPVec3D(@Vgrads[1])^, wt)),
+	       ScaleVector(TPVec3D(@Vgrads[2])^, dt));
+  dd := DotOfVectorsNormalize(@v, @mVGradsFOV);    }
+{  if Rst > wt then
+  begin
+    if Rst > dt then dd := DotOfVectorsNormalize(@Vgrads[0], @mVGradsFOV)
+		else dd := DotOfVectorsNormalize(@Vgrads[2], @mVGradsFOV);
+  end
+  else if wt > dt then
+    dd := DotOfVectorsNormalize(@Vgrads[1], @mVGradsFOV)
+  else dd := DotOfVectorsNormalize(@Vgrads[2], @mVGradsFOV);
+  sZstepDiv2 := sZstepDiv + (1 - sZstepDiv) * (0.5 - Abs(dd) * 0.5);}
+
+{procedure RMdoBinSearch(var dTmp, RLastStepWidth, mZZ: Double; RMrec: TPRaymarchRec);
+var dT1: Double;
+    itmp, itst: Integer;
+begin
+    with RMrec^ do
+    begin
+      itst := PMCTparas.iMaxit;
+      PMCTparas.iMaxit := PIt3Dex.ItResultI;  //for dIFS necessary
+      itmp := PMCTparas.iDEAddSteps;
+      dT1 := RLastStepWidth * -0.5;
+      while (itmp > 0) and (Abs(dTmp - PMCTparas.msDEstop) > 0.001) do
+      begin
+        mZZ := mZZ + dT1;
+        mAddVecWeight(@PIt3Dex.C1, @MarchVec, dT1);
+    //    PMCTparas.msDEstop := StartDEstop * (1 + mZZ * PMCTparas.mctDEstopFactor);
+        PMCTparas.msDEstop := StartDEstop * (1 + Clamp0D(ActZpos + mZZ * ZZposMul) * PMCTparas.mctDEstopFactor);
+        dTmp := CalcDE(PIt3Dex, PMCTparas);
+        if PIt3Dex.ItResultI >= PMCTparas.MaxItsResult then
+          dT1 := Abs(dT1) * -1 else
+        begin
+          if dTmp < PMCTparas.msDEstop then dT1 := Abs(dT1) * -0.55
+                                       else dT1 := Abs(dT1) * 0.55;
+          Dec(itmp);
+        end;
+      end;
+      PMCTparas.iMaxit := itst;
+    end;
+end;   }
+
+
+{var NN: Double;
+    N: TVec3D;
+    itmp: Integer;
+begin
+    with pMCTparas^ do
+    begin
+      if CutPlane > 0 then
+      begin
+        NN := 8388352 - ZcMul * (Sqrt(mZZ * Zcorr + 1) - 1);
+        if NN < 0 then itmp := 0 else itmp := Round(NN);
+        PCardinal(@mPsiLight.RoughZposFine)^ := itmp shl 8;
+        Dec(CutPlane);
+        if Abs(Vgrads[2, CutPlane]) < 1e-40 then NN := -1e40 else NN := -1 / Vgrads[2, CutPlane]; //rel Normals to view
+        N[0] := Vgrads[0, CutPlane] * NN;
+        N[1] := Vgrads[1, CutPlane] * NN;
+        N[2] := -1;
+        MakeWNormalsFromDVec(TPLNormals(mPsiLight), @N);
+      end else begin
+        PCardinal(@mPsiLight.RoughZposFine)^ := $7FFF0000;
+        mPsiLight.NormalX := 0;
+        mPsiLight.NormalY := 0;
+        mPsiLight.NormalZ := -32767;
+      end;
+    end;       }
+    
+    
+
+  {  ftst                     // if NN < 0 then iTmp := 0 else itmp := Round(NN);
+    fnstsw ax
+    shr ah, 1
+    jnc @@2
+    xor eax, eax
+    fstp st
+    jmp @@3
+@@2:
+    fistp dword [esp]
+    mov eax, [esp]
+    shl eax, 8               // PCardinal(@PSL.RoughZposFine)^ := iTmp shl 8;
+@@3:
+    mov [edi+6], eax }
+    
+
+{var i, i2: Integer;   //ebp+8
+begin
+    if StepCount > 16383 then i := 16383 else i := Round(StepCount);
+    i2 := 0;
+    while i > 127 do
+    begin
+      i := i shr 1;
+      Inc(i2);
+    end;
+    Result := i or (i2 shl 7);
+end;  }
+
+
+
+{procedure Prepare3Dgrad(DEcombRec: TPBufDEcomb; It3Dex: TPIteration3Dext);
+begin
+    DEcombRec.bufMCTCalcSIT    := It3Dex.CalcSIT;
+    DEcombRec.bufIt3DItResultI := It3Dex.MaxIt;
+    DEcombRec.bufIt3DOtrap     := It3Dex.Rout;
+    DEcombRec.bufIt3DSmoothItD := It3Dex.SmoothItD;
+    It3Dex.CalcSIT := False;
+    It3Dex.MaxIt   := It3Dex.ItResultI;
+    It3Dex.RStop   := Sqr(It3Dex.RStop) * 64;
+    mCopyVec(@DEcombRec.bufVec3D, @It3Dex.C1);
+end;
+
+procedure Restore3Dgrad(DEcombRec: TPBufDEcomb; It3Dex: TPIteration3Dext);
+begin
+    It3Dex.ItResultI := It3Dex.MaxIt; //new, restore ItResult
+    It3Dex.Rout      := DEcombRec.bufIt3DOtrap;
+    It3Dex.MaxIt     := DEcombRec.bufIt3DItResultI;
+    It3Dex.SmoothItD := DEcombRec.bufIt3DSmoothItD;
+    It3Dex.CalcSIT   := DEcombRec.bufMCTCalcSIT;
+    mCopyVec(@It3Dex.C1, @DEcombRec.bufVec3D);
+end;  }
+ {
+procedure NotVar(var b: LongBool);
+asm
+  cmp dword [eax], 0
+  je @@1
+  mov dword [eax], 0
+  ret
+@@1:
+  mov dword [eax], -1
+end; }
+
+
+
+{function CalcDEanalytic(It3Dex: TPIteration3Dext; mctp: Pointer): Double;
+asm                      //eax                     edx
+    push esi                          //ecx can be changed in functions!
+    push ebx                          //the whale2 testpars were bad
+    lea  esi, eax + 136
+    lea  ebx, edx + 180
+    cmp  dword [esi + TIteration3Dext.DEoption - 136], 20   //TMCTparameter
+    jnz  @1
+    fld  dword [ebx + TMCTparameter.msDEstop - 180]
+    fmul dword [ebx + TMCTparameter.sStepWm103 - 180]
+    fst  qword [esi + TIteration3Dext.Rold - 136]
+    fstp qword [esi + TIteration3Dext.RStopD - 136]
+    mov  eax, [ebx + TMCTparameter.bInsideRendering - 180]
+    mov  [esi + TIteration3Dext.bIsInsideRender - 136], eax
+@1: lea  eax, esi + TIteration3Dext.C1 - 136
+    call dword [ebx + TMCTparameter.mMandFunctionDE - 180]
+    fmul dword [ebx + TMCTparameter.dDEscale - 180]
+    mov  eax, [esi + TIteration3Dext.MaxIt - 136]
+    mov  [ebx + TMCTparameter.MaxItsResult - 180], eax
+    cmp  dword [esi + TIteration3Dext.DEoption - 136], 20
+    jnz  @2
+    inc  dword [ebx + TMCTparameter.MaxItsResult - 180]
+    jmp  @4
+@2: fld  dword [ebx + TMCTparameter.msDEstop - 180]
+    fmul s025       //msDEstop*0.25, Result
+    fcom
+    fwait
+    fnstsw ax
+    shr  ah, 1
+    jc   @3
+    fxch
+@3: fstp st         //result
+@4: mov  eax, [esi + TIteration3Dext.DEoption - 136]
+    mov  [ebx + TMCTparameter.DEoptionResult - 180], eax
+    cmp  dword [ebx + TMCTparameter.bCalcInside - 180], 0
+    jz   @5
+    fld  dword [ebx + TMCTparameter.msDEstop - 180]
+    fadd st, st
+    cmp  eax, 20
+    jnz  @6
+    fsubrp          //result:=msDEstop*2-result
+    jmp  @5
+@6: fadd st, st
+    fxch            //result, msDEstop*4
+    fmul s3
+    fsubp           //result:=msDEstop*4-result*3
+    fcom dword [ebx + TMCTparameter.msDEstop - 180]
+    fstsw ax
+    sahf
+    jb   @5
+    dec  dword [esi + TIteration3Dext.ItResultI - 136]
+@5: pop  ebx
+    pop  esi
+end;  }
+
+{begin
+    with MCTparas do
+    begin
+      CAFX := (FOVXoff - ix) * FOVXmul;
+      if bMCTPlanarOptic = 1 then   //iMCTCamOption: Integer = 0:def 1:rect 2:spherepano
+      begin
+        VgradsFOV[0] := -CAFX;
+        VgradsFOV[1] := CAFY;
+        VgradsFOV[2] := mctPlOpticZ;
+        NormaliseVectorVar(VgradsFOV);
+      end
+      else if bMCTPlanarOptic = 2 then
+        BuildViewVectorDSphereFOV(CAFY, CAFX, @VgradsFOV)
+      else BuildViewVectorDFOV(CAFY, CAFX, @VgradsFOV);
+      RotateVectorReverse(@VgradsFOV, @VGrads);
+    end; }
+    
+
+{var s, s2: Single;
+    dv: TVec3D;
+begin
+    with pMCTparas.pIt3Dext^ do
+    begin
+      case pMCTparas.ColorOption of
+        1:  s := Ln(Rout / (Rold + 1)) * pMCTparas.mctColorMul;
+        2:  s := (ArcTan2(y - C2, x - C1) + Pi) * 5200;
+        3:  s := (ArcTan2(z - C3, x - C1) + Pi) * 5200;
+        4:  s := (ArcTan2(z - C3, y - C2) + Pi) * 5200;
+     5, 6:  begin
+              s := (ArcTan2(x, y) + Pi) * 5215;    //output vec
+              dv := NormaliseVector(@x);
+              s2 := (Pi + ArcSinSafe(dv[2]) * 2) * 5215;
+              MinMaxClip15bit(s2, pMCTparas.mPsiLight.SIgradient);
+            end;
+        else s := OTrap * 4096;
+      end;
+      MinMaxClip15bit(s, pMCTparas.mPsiLight.OTrap);
+    end;   }
+
+{asm           // pMCTparas: PMCTparameter; var dLength: Double; var itmp: Integer; vPos: TPPos3D)
+    push ebx  //   eax                        edx                 ecx
+    push esi
+    push edi
+    xor  esi, esi
+    mov  [edx], esi
+    mov  [edx+4], esi
+    lea  ebx, eax+TMCTparameter.iCutOptions
+    cmp  ebx, 0
+    jle  @@1
+    mov  esi, eax
+    test ebx, 1
+    jle  @@2
+    fld  qword [esi+TMCTparameter.mVgradsFOV]
+    fabs
+    fcomp s1em20
+    fnstsw ax
+    shr  ah, 1
+    jc   @@2
+
+    
+
+@@2:
+
+
+@@1:
+    pop  edi
+    pop  esi
+    pop  ebx   }
+    
+{  it3dext:
+    CalcSIT:    ByteBool;   //+148   Bool + more options
+    RepeatFrom1:Byte;       //+149
+    EndTo:      Word;       //+150
+    ..
+    iRepeatFrom: Word;      //+188
+    iStartFrom: Word;       //+190
+    OTrap:      Double;     //+192    calced by m3d, minimum vector length in dIFS
+    VaryScale:  Double;     //+200    to use in vary by its or in dIFS as absScale
+    bFirstIt:   Integer;    //+208    used also as iteration count, is set to 0 on it-start
+    bTmp:       Integer;    //+212    (used for formula count), dIFS: minDE iteration
+    Dfree1:     Double;     //+216    OTrap coloring in dIFS: formula can store a value 0..8 (*4096=15bit)
+  mct:
+    bRepeatFrom1:     Byte;       //+149
+    wEndTo:           Word;       //+150
+    bDoJulia:         LongBool;   //+152
+    dLNRStop:         Single;     //+156
+    DEoption:         Integer;    //+160    RepeatFrom2, EndTo
+    fHln:             array[0..5] of Single;  //esi+164
+    RepeatFrom:       Word;       //+188
+    StartFrom:        Word;
+    Smatrix4d:        TSmatrix4;
+    pInitialization:  array[0..5] of TFormulaInitialization;
+
+{procedure RegulationUpdate(const ActDE, LastDE, LastStep: Double; var DEmul: Single);
+var dTmp: Double;
+begin
+    if LastDE > ActDE + s1em30 then
+    begin
+      dTmp := LastStep / (LastDE - ActDE);
+      if dTmp < 1 then
+        DEmul := MaxCS(0.5, dTmp)
+      else
+        DEmul := 1;
+    end
+    else DEmul := 1;
+end; }
+
+{                           // eax             edx             ecx
+function GetMapPixelDirectXY(PVec3D: TPVec3D; MapNr: Integer): TVec3D; //Direct pixel coords 0..1 with tiling
+var n: Integer;
+    xf, yf, ipos: Integer;
+    xs, ys, xx, yy: Double;
+    cv: T4Cardinal;
+    sv: T4SVec;
+begin
+    n := 0;
+    repeat
+      if CalcMaps[n].LMnumber = MapNr then Break else
+      if CalcMaps[n].LMnumber = 0 then
+      if LoadLightMapNr(MapNr, @CalcMaps[n]) then Break;
+      Inc(n);
+    until n > 2;
+    if n > 2 then
+    begin
+      ClearDVec(Result);
+      Exit;
+    end;
+    with CalcMaps[n] do
+    if LMWidth > 0 then
+    begin
+      xx := FracA(PVec3D^[0]) * sLMXfactor;
+      yy := FracA(PVec3D^[1]) * sLMYfactor;
+      xf := Trunc(xx);
+      xs := xx - xf;
+      if xf = LMWidth then xf := 0;
+      yf := Trunc(yy);
+      ys := yy - yf;
+      if yf = LMHeight then yf := 0;
+           //cos approx:
+      if xs > 0.5 then xs := 1 - Sqr(1 - xs) * 2 else xs := Sqr(xs) * 2;
+      if ys > 0.5 then ys := (1 - Sqr(1 - ys) * 2) * s1d255
+                  else ys := Sqr(ys) * 2 * s1d255;
+      yy := s1d255 - ys;
+      ipos := iLMstart + iLMYinc * yf + xf * 4;
+      cv[0] := PCardinal(ipos)^;
+      cv[1] := PCardinal(ipos + 4)^;
+      cv[2] := PCardinal(ipos + iLMYinc)^;
+      cv[3] := PCardinal(ipos + iLMYinc + 4)^;
+      sv := ColToSVecFlipRBc4(cv);
+      Result[0] := (sv[0][0] + (sv[1][0] - sv[0][0]) * xs) * yy + (sv[2][0] + (sv[3][0] - sv[2][0]) * xs) * ys;
+      Result[1] := (sv[0][1] + (sv[1][1] - sv[0][1]) * xs) * yy + (sv[2][1] + (sv[3][1] - sv[2][1]) * xs) * ys;
+      Result[2] := (sv[0][2] + (sv[1][2] - sv[0][2]) * xs) * yy + (sv[2][2] + (sv[3][2] - sv[2][2]) * xs) * ys;
+    end
+    else ClearDVec(Result);
+end;   }
+
+{var RSFmul, LastDE: Double;
+    itmp: Integer;
+begin
+    with pMCTparas^ do
+    begin             //Secant
+      itmp := iDEAddSteps shr 1;
+      while Abs(DE - msDEstop) > 0.001 do
+      begin
+        RLastDE := NotZero(RLastDE - DE);
+        RSFmul := RLastStepWidth * (DE - msDEstop) / RLastDE;
+        if DE < msDEstop then
+        begin
+          if (RSFmul >= 0) or (RSFmul < Abs(RLastStepWidth) * -0.94) then
+            RLastStepWidth := Abs(RLastStepWidth) * -0.5
+          else RLastStepWidth := RSFmul;
+        end else begin
+          if (RSFmul <= 0) or (RSFmul > Abs(RLastStepWidth) * 0.94) then
+            RLastStepWidth := Abs(RLastStepWidth) * s05
+          else RLastStepWidth := RSFmul;
+        end;
+        RLastDE := DE;
+        ZZ := ZZ + RLastStepWidth;
+        mAddVecWeight(@Iteration3Dext.C1, @VgradsFOVit, RLastStepWidth);
+        Dec(itmp);
+        if itmp <= 0 then Break;
+        msDEstop := DEstop * (1 + Abs(ZZ) * mctDEstopFactor);
+        if itmp > 0 then DE := CalcDE(@Iteration3Dext, @MCTparas);
+      end;
+    end;
+end;  }
+{var dT1: Double;
+    itmp, itst: Integer;
+begin
+    with pMCTparas^ do
+    begin
+      itst := iMaxit;      //if DEoption = 20 ?
+      if FormulaType = 0 then iMaxIt := pIt3Dext.ItResultI;  //for dIFS  ..in inside rendering wrong result in DEcomb on 2nd alt. formula
+      itmp := iDEAddSteps;
+      dT1 := RLastStepWidth * -0.5;
+      while Abs(dTmp - msDEstop) > 0.001 do
+      begin
+        mZZ := mZZ + dT1;
+        mAddVecWeight(@pIt3Dext.C1, @mVgradsFOV, dT1);
+        msDEstop := DEstop * (1 + mZZ * mctDEstopFactor);
+        Dec(itmp);
+        if itmp <= 0 then Break;
+        dTmp := CalcDE(pIt3Dext, pMCTparas);
+        if pIt3Dext.ItResultI >= MaxItsResult then
+          dT1 := -Abs(dT1) else
+        begin
+          if dTmp < msDEstop then dT1 := Abs(dT1) * -0.55
+                             else dT1 := Abs(dT1) * 0.55;
+        end;
+      end;
+      iMaxIt := itst;
+    end;
+end; }
+
+
+                     //0..1
+{function GetMapPixelSV(x, y: Single; LMap: TPLightMap): TSVec;
+var xf, yf, ipos: Integer;
+    xs, ys, xx, yy: Double;
+    cv: T4Cardinal;
+    sv: T4SVec;
+begin
+    with LMap^ do
+    if LMWidth > 0 then
+    begin
+      xx := MinMaxCS(0, x * sLMXfactor, sLMXfactor);
+      yy := MinMaxCS(0, y * sLMYfactor, sLMYfactor);
+      xf := Min(LMWidth - 1, Trunc(xx));
+      yf := Min(LMHeight - 1, Trunc(yy));
+      xs := xx - xf;    //lin
+      ys := (yy - yf) * s1d255;
+      yy := s1d255 - ys;
+//      xs := xx - xf;      //cos approx:
+  //    if xs > 0.5 then xs := 1 - Sqr(1 - xs) * 2 else xs := Sqr(xs) * 2;
+   //   ys := yy - yf;
+    //  if ys > 0.5 then ys := (1 - Sqr(1 - ys) * 2) * s1d255
+      //            else ys := Sqr(ys) * 2 * s1d255;
+     // yy := s1d255 - ys;  
+      ipos := iLMstart + iLMYinc * yf + xf * 4;
+      cv[0] := PCardinal(ipos)^;
+      cv[1] := PCardinal(ipos + 4)^;
+      cv[2] := PCardinal(ipos + iLMYinc)^;
+      cv[3] := PCardinal(ipos + iLMYinc + 4)^;
+      sv := ColToSVecFlipRBc4(cv);
+      Result[0] := (sv[0][0] + (sv[1][0] - sv[0][0]) * xs) * yy + (sv[2][0] + (sv[3][0] - sv[2][0]) * xs) * ys;
+      Result[1] := (sv[0][1] + (sv[1][1] - sv[0][1]) * xs) * yy + (sv[2][1] + (sv[3][1] - sv[2][1]) * xs) * ys;
+      Result[2] := (sv[0][2] + (sv[1][2] - sv[0][2]) * xs) * yy + (sv[2][2] + (sv[3][2] - sv[2][2]) * xs) * ys;
+    end;
+end;  }
+
+{                           // eax             edx             ecx
+function GetMapPixelSphere(PVec3D: TPVec3D; MapNr: Integer): TVec3D; //linear ipol
+var n: Integer;
+    dv: TVec3D;
+    xf, yf, ipos: Integer;
+    x, y, xs, ys, xx, yy: Double;//Single;
+    cv: T4Cardinal;
+    sv: T4SVec;
+begin
+    n := 0;
+    repeat
+      if CalcMaps[n].LMnumber = MapNr then Break else
+      if CalcMaps[n].LMnumber = 0 then
+      if LoadLightMapNr(MapNr, @CalcMaps[n]) then Break;
+      Inc(n);
+    until n > 2;
+    if n > 2 then
+    begin
+      ClearDVec(Result);
+      Exit;
+    end;
+    dv := NormaliseVector(PVec3D);
+    x := ArcTan2(dv[0], dv[1]) * MPi05d + s05;
+    y := s05 - ArcSin(dv[2]) * Pi1d;
+    with CalcMaps[n] do
+    if LMWidth > 0 then
+    begin
+      xx := MinMaxCS(0, x * sLMXfactor, sLMXfactor);
+      yy := MinMaxCS(0, y * sLMYfactor, sLMYfactor);
+      xf := Trunc(xx);
+      xs := xx - xf;
+      if xf = LMWidth then xf := 0;
+      yf := Trunc(yy);
+      if yf >= LMHeight - 1 then begin yf := LMHeight - 1; ys := 0; end else
+        ys := yy - yf;
+    {  xs := xx - xf;    //lin
+      ys := (yy - yf) * s1d255;
+      yy := s1d255 - ys;
+
+  {    xs := 0.5 - 0.5 * Cos(Pi * (xx - xf));    //test cos interpol:
+      ys := (0.5 - 0.5 * Cos(Pi * (yy - yf))) * s1d255;
+      yy := s1d255 - ys;   }
+
+       //cos approx:
+{      if xs > 0.5 then xs := 1 - Sqr(1 - xs) * 2 else xs := Sqr(xs) * 2;
+      if ys > 0.5 then ys := (1 - Sqr(1 - ys) * 2) * s1d255
+                  else ys := Sqr(ys) * 2 * s1d255;
+      yy := s1d255 - ys;  
+
+      ipos := iLMstart + iLMYinc * yf + xf * 4;
+      cv[0] := PCardinal(ipos)^;
+      cv[1] := PCardinal(ipos + 4)^;
+      cv[2] := PCardinal(ipos + iLMYinc)^;
+      cv[3] := PCardinal(ipos + iLMYinc + 4)^;
+      sv := ColToSVecFlipRBc4(cv);
+      Result[0] := (sv[0][0] + (sv[1][0] - sv[0][0]) * xs) * yy + (sv[2][0] + (sv[3][0] - sv[2][0]) * xs) * ys;
+      Result[1] := (sv[0][1] + (sv[1][1] - sv[0][1]) * xs) * yy + (sv[2][1] + (sv[3][1] - sv[2][1]) * xs) * ys;
+      Result[2] := (sv[0][2] + (sv[1][2] - sv[0][2]) * xs) * yy + (sv[2][2] + (sv[3][2] - sv[2][2]) * xs) * ys;
+    end
+    else ClearDVec(Result);
+end;  }
+
+{                                 // eax             edx             ecx
+function GetMapPixelSphereBicubic(PVec3D: TPVec3D; MapNr: Integer): TVec3D;
+var n: Integer;
+    nx1, nx2, nx3: Integer;
+    dv: TVec3D;
+    xf, yf, ipos: Integer;
+    x, y, xs, ys, xx, yy: Double;
+    x0, x1, x2, x3, y0, y1, y2, y3: Single;
+    cv: T4Cardinal;
+    sv, svy: T4SVec;
+begin
+    n := 0;
+    repeat
+      if CalcMaps[n].LMnumber = MapNr then Break else
+      if CalcMaps[n].LMnumber = 0 then
+      if LoadLightMapNr(MapNr, @CalcMaps[n]) then Break;
+      Inc(n);
+    until n > 2;
+    if n > 2 then
+    begin
+      ClearDVec(Result);
+      Exit;
+    end;
+    dv := NormaliseVector(PVec3D);
+    x := ArcTan2(dv[0], dv[1]) * MPi05d + s05;
+    y := s05 - ArcSin(dv[2]) * Pi1d;
+    with CalcMaps[n] do
+    if LMWidth > 0 then
+    begin
+      xx := MinMaxCS(0, x * sLMXfactor, sLMXfactor);
+      yy := MinMaxCS(0, y * sLMYfactor, sLMYfactor);
+      xf := Trunc(xx);
+      xs := xx - xf;
+      yf := Trunc(yy);
+      ys := yy - yf;
+
+      x0 := ((-0.8 * xs + 3.2) * (xs + 1) - 6.4) * (xs + 1) + 3.2;
+      x1 := (1.2 * xs - 2.2) * Sqr(xs) + 1;
+      x2 := (-1.2 * xs - 1) * Sqr(1 - xs) + 1;
+      x3 := ((0.8 * xs + 2.4) * (2 - xs) - 6.4) * (2 - xs) + 3.2;
+      y0 := ((-0.8 * ys + 3.2) * (ys + 1) - 6.4) * (ys + 1) + 3.2;
+      y1 := (1.2 * ys - 2.2) * Sqr(ys) + 1;
+      y2 := (-1.2 * ys - 1) * Sqr(1 - ys) + 1;
+      y3 := ((0.8 * ys + 2.4) * (2 - ys) - 6.4) * (2 - ys) + 3.2;
+
+      if xf > 0 then nx1 := -4 else nx1 := (LMWidth - 1) * 4;
+      if xf < LMWidth - 1 then nx2 := 8 else nx2 := (2 - LMWidth) * 4;
+      if xf < LMWidth     then nx3 := 4 else nx3 := (1 - LMWidth) * 4;
+      if yf > 0 then Dec(yf) else Inc(yf, LMHeight - 1);
+      xf    := iLMstart + xf * 4;
+      ipos  := xf + iLMYinc * yf;
+
+      cv[0] := PCardinal(ipos + nx1)^;
+      cv[1] := PCardinal(ipos)^;
+      cv[2] := PCardinal(ipos + nx3)^;
+      cv[3] := PCardinal(ipos + nx2)^;
+      sv := ColToSVecFlipRBc4(cv);
+      svy[0][0] := sv[0][0] * x0 + sv[1][0] * x1 + sv[2][0] * x2 + sv[3][0] * x3;
+      svy[0][1] := sv[0][1] * x0 + sv[1][1] * x1 + sv[2][1] * x2 + sv[3][1] * x3;
+      svy[0][2] := sv[0][2] * x0 + sv[1][2] * x1 + sv[2][2] * x2 + sv[3][2] * x3;
+      if yf < LMHeight - 1 then
+      begin
+        Inc(yf);
+        Inc(ipos, iLMYinc);
+      end else begin
+        yf := 0;
+        ipos := xf;
+      end;
+      cv[0] := PCardinal(ipos + nx1)^;
+      cv[1] := PCardinal(ipos)^;
+      cv[2] := PCardinal(ipos + nx3)^;
+      cv[3] := PCardinal(ipos + nx2)^;
+      sv := ColToSVecFlipRBc4(cv);
+      svy[1][0] := sv[0][0] * x0 + sv[1][0] * x1 + sv[2][0] * x2 + sv[3][0] * x3;
+      svy[1][1] := sv[0][1] * x0 + sv[1][1] * x1 + sv[2][1] * x2 + sv[3][1] * x3;
+      svy[1][2] := sv[0][2] * x0 + sv[1][2] * x1 + sv[2][2] * x2 + sv[3][2] * x3;
+      if yf < LMHeight - 1 then
+      begin
+        Inc(yf);
+        Inc(ipos, iLMYinc);
+      end else begin
+        yf := 0;
+        ipos := xf;
+      end;
+      cv[0] := PCardinal(ipos + nx1)^;
+      cv[1] := PCardinal(ipos)^;
+      cv[2] := PCardinal(ipos + nx3)^;
+      cv[3] := PCardinal(ipos + nx2)^;
+      sv := ColToSVecFlipRBc4(cv);
+      svy[2][0] := sv[0][0] * x0 + sv[1][0] * x1 + sv[2][0] * x2 + sv[3][0] * x3;
+      svy[2][1] := sv[0][1] * x0 + sv[1][1] * x1 + sv[2][1] * x2 + sv[3][1] * x3;
+      svy[2][2] := sv[0][2] * x0 + sv[1][2] * x1 + sv[2][2] * x2 + sv[3][2] * x3;
+      if yf < LMHeight - 1 then Inc(ipos, iLMYinc) else ipos := xf;
+      cv[0] := PCardinal(ipos + nx1)^;
+      cv[1] := PCardinal(ipos)^;
+      cv[2] := PCardinal(ipos + nx3)^;
+      cv[3] := PCardinal(ipos + nx2)^;
+      sv := ColToSVecFlipRBc4(cv);
+      svy[3][0] := sv[0][0] * x0 + sv[1][0] * x1 + sv[2][0] * x2 + sv[3][0] * x3;
+      svy[3][1] := sv[0][1] * x0 + sv[1][1] * x1 + sv[2][1] * x2 + sv[3][1] * x3;
+      svy[3][2] := sv[0][2] * x0 + sv[1][2] * x1 + sv[2][2] * x2 + sv[3][2] * x3;
+
+      Result[0] := (svy[0][0] * y0 + svy[1][0] * y1 + svy[2][0] * y2 + svy[3][0] * y3) * s1d255;
+      Result[1] := (svy[0][1] * y0 + svy[1][1] * y1 + svy[2][1] * y2 + svy[3][1] * y3) * s1d255;
+      Result[2] := (svy[0][2] * y0 + svy[1][2] * y1 + svy[2][2] * y2 + svy[3][2] * y3) * s1d255;
+
+    end
+    else ClearDVec(Result);
+end;  }
+//function GetLightMapPixel(const x, y: Single; LM: TPLightMap; bSqr: LongBool; WrapAround: Integer): TSVec;
+
+
+    {var  itmp: Integer;
+    begin
+        with mct^ do
+        begin
+          itmp := Round(8388352 - ZcMul * (Sqrt(ZZ * Zcorr + 1) - 1));
+          if itmp < 0 then itmp := 0 else
+          if itmp > 8388352 then itmp := 8388352;
+          PCardinal(@siLight.RoughZposFine)^ := iTmp shl 8;
+          if iSmNormals > 0 then
+            siLight.RoughZposFine := siLight.RoughZposFine or Round(sRoughness * 255);
+    end; }
+    
+    
+{  TRaymarchRec = record
+    PMCTparas: PMCTparameter;
+    PIt3Dex: TPIteration3Dext;
+    ActPos, MarchVec, VievVec: TVec3D;
+    ActZpos, StartDEstop, ZZposMul, DEmulVary, DEmulConst, MaxRayLength: Double;
+    BinSteps, seed, RMresult: Integer;      //result: 0: no object  1: object on DE 2: object on Itcount  3: Outside again?
+    StepCount, StepForward, Zstepped: Single;         //on start: 0/1/2 = outside/insideConstStep/insideDIFSDE?
+  end;                                        }
+  
+   // for x := 0 to 511 do DEreduce1[x] := 1;
+   // for x := 0 to 511 do DEreduce2[x] := 1;
+      {    for x := 0 to 16383 do begin
+            DEColStat[x] := 0;
+            DEColStatCount[x] := 0;
+          end;
+  //          for x := 0 to 255 do RoughStat[x] := 0;  //histo test  }
+  
+  

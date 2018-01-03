@@ -1,0 +1,551 @@
+Cycles for AmbHiQ (1)
+AmbHiQ,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbHiQ
+
+Cycles for AmbShadowCalcThreadN (2)
+AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN
+AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,ImageProcess,AmbShadowCalcThreadN
+
+Cycles for Animation (6)
+Animation,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation
+Animation,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Calc,CalcThread,MAIN,Animation
+Animation,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Calc,CalcThread,MAIN,AniPreviewWindow,Animation
+Animation,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Calc,CalcThread,MAIN,IniDirsForm,Animation
+Animation,FileHandling,Animation
+Animation,AniProcess,Animation
+
+Cycles for AniPreviewWindow (3)
+AniPreviewWindow,Animation,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Calc,CalcThread,MAIN,AniPreviewWindow
+AniPreviewWindow,Animation,FileHandling,AniPreviewWindow
+AniPreviewWindow,Animation,AniPreviewWindow
+
+Cycles for AniProcess (1)
+AniProcess,Animation,AniProcess
+
+Cycles for BatchForm (1)
+BatchForm,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,BatchForm
+
+Cycles for Calc (19)
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,Maps,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,AniPreviewWindow,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,AniPreviewWindow,CalcHardShadow,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,calcBlocky,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,CalcThread2D,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,IniDirsForm,VoxelExport,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,NaviCalcThread,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas,MAIN,uMapCalcWindow,Calc
+Calc,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,Calc
+
+Cycles for CalcAmbShadowDE (3)
+CalcAmbShadowDE,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE
+CalcAmbShadowDE,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,CalcAmbShadowDE
+CalcAmbShadowDE,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,CalcAmbShadowDE
+
+Cycles for calcBlocky (1)
+calcBlocky,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,calcBlocky
+
+Cycles for CalcHardShadow (4)
+CalcHardShadow,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,CalcHardShadow
+CalcHardShadow,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,CalcHardShadow
+CalcHardShadow,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,CalcHardShadow
+CalcHardShadow,Math3D,DivUtils,FileHandling,Animation,CalcHardShadow
+
+Cycles for CalcMonteCarlo (2)
+CalcMonteCarlo,ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo
+CalcMonteCarlo,ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcMonteCarlo
+
+Cycles for CalcPart (1)
+CalcPart,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart
+
+Cycles for CalcSR (5)
+CalcSR,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR
+CalcSR,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,CalcSR
+CalcSR,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,CalcSR
+CalcSR,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,CalcSR
+CalcSR,Math3D,DivUtils,FileHandling,Animation,CalcSR
+
+Cycles for CalcThread (3)
+CalcThread,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread
+CalcThread,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread2D,formulas,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread
+CalcThread,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread2D,formulas,CustomFormulas,MAIN,CalcThread
+
+Cycles for CalcThread2D (2)
+CalcThread2D,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,CalcThread2D
+CalcThread2D,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread2D
+
+Cycles for CalcVoxelSliceThread (1)
+CalcVoxelSliceThread,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread
+
+Cycles for ColorPick (1)
+ColorPick,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ColorPick
+
+Cycles for CustomFormulas (22)
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,formulas,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,AmbShadowCalcThreadN,ImageProcess,Interpolation,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,PaintThread,MonteCarloForm,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,AniPreviewWindow,CalcHardShadow,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,AniPreviewWindow,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,BatchForm,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,FormulaNames,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,IniDirsForm,VoxelExport,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,JITFormulaEditGUI,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,MutaGenGUI,MB3DFacade,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,MutaGenGUI,PreviewRenderer,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,MutaGenGUI,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,Animation,CustomFormulas
+CustomFormulas,DivUtils,FileHandling,CustomFormulas
+
+Cycles for DivUtils (42)
+DivUtils,FileHandling,TypeDefinitions,Math3D,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,formulas,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,Maps,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Interpolation,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Tiling,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,M3Iregister,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DOF,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DoubleSize,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbHiQ,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,CalcHardShadow,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,Paint,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,calcBlocky,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,CalcThread2D,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ColorPick,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,FormulaNames,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,JITFormulaEditGUI,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,MB3DFacade,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,NaviCalcThread,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,uMapCalcWindow,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,Calc,DivUtils
+DivUtils,FileHandling,Animation,HeaderTrafos,DivUtils
+DivUtils,FileHandling,Animation,AniProcess,DivUtils
+DivUtils,FileHandling,Animation,DivUtils
+DivUtils,FileHandling,DivUtils
+
+Cycles for DOF (6)
+DOF,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DOF
+DOF,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,DOF
+DOF,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,DOF
+DOF,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,DOF
+DOF,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,DOF
+DOF,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,DOF
+
+Cycles for DoubleSize (1)
+DoubleSize,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DoubleSize
+
+Cycles for FileHandling (23)
+FileHandling,TypeDefinitions,Math3D,DivUtils,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Calc,CalcThread,Maps,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Calc,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Tiling,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,M3Iregister,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,PaintThread,MonteCarloForm,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,PaintThread,MonteCarloForm,PostProcessForm,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,AniPreviewWindow,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,BatchForm,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,FormulaNames,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,IniDirsForm,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,IniDirsForm,VoxelExport,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,JITFormulaEditGUI,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,MapSequencesGUI,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,MutaGenGUI,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,TextBox,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,Undo,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,VisualThemesGUI,FileHandling
+FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,FileHandling
+
+Cycles for FormulaClass (3)
+FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass
+FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,FormulaClass
+FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,CustomFormulas,MAIN,NaviCalcThread,FormulaClass
+
+Cycles for FormulaCompiler (3)
+FormulaCompiler,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,FormulaCompiler
+FormulaCompiler,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,FormulaCompiler
+FormulaCompiler,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,JITFormulaEditGUI,FormulaCompiler
+
+Cycles for FormulaNames (2)
+FormulaNames,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,FormulaNames
+FormulaNames,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,MutaGenGUI,MutaGen,FormulaNames
+
+Cycles for formulas (14)
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,AniPreviewWindow,CalcHardShadow,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,CalcThread2D,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,NaviCalcThread,formulas
+formulas,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,formulas
+formulas,CustomFormulas,DivUtils,formulas
+formulas,CustomFormulas,formulas
+
+Cycles for HeaderTrafos (29)
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Calc,FormulaClass,CustomFormulas,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Calc,CalcThread,Maps,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Calc,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Interpolation,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AmbShadowCalcThreadN,ImageProcess,Tiling,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,PaintThread,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,PaintThread,MonteCarloForm,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DoubleSize,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,PaintThread,MonteCarloForm,PostProcessForm,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AniPreviewWindow,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AniPreviewWindow,CalcHardShadow,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,AniPreviewWindow,Paint,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,calcBlocky,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,ColorPick,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,FormulaNames,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,IniDirsForm,VoxelExport,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,MutaGenGUI,MB3DFacade,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,MutaGenGUI,PreviewRenderer,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,Animation,MAIN,uMapCalcWindow,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,FileHandling,HeaderTrafos
+HeaderTrafos,Math3D,DivUtils,HeaderTrafos
+
+Cycles for ImageProcess (19)
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,CalcAmbShadowDE,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DOF,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,Tiling,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbHiQ,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,CalcHardShadow,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,NaviCalcThread,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,ImageProcess
+ImageProcess,AmbShadowCalcThreadN,ImageProcess
+
+Cycles for IniDirsForm (1)
+IniDirsForm,Animation,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Calc,CalcThread,MAIN,IniDirsForm
+
+Cycles for Interpolation (9)
+Interpolation,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ColorPick,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Undo,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Animation,Interpolation
+Interpolation,Math3D,DivUtils,FileHandling,Interpolation
+
+Cycles for JITFormulaEditGUI (1)
+JITFormulaEditGUI,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,JITFormulaEditGUI
+
+Cycles for JvAppStorage (2)
+JvAppStorage,JvTranslateString,JvJVCLUtils,JvAppStorage
+JvAppStorage,JvPropertyStore,JvAppStorage
+
+Cycles for Jvg3DColors (1)
+Jvg3DColors,JvgUtils,Jvg3DColors
+
+Cycles for JvgCommClasses (1)
+JvgCommClasses,JvgUtils,JvgCommClasses
+
+Cycles for JvgUtils (2)
+JvgUtils,Jvg3DColors,JvgUtils
+JvgUtils,JvgCommClasses,JvgUtils
+
+Cycles for JvJVCLUtils (3)
+JvJVCLUtils,JvAppStorage,JvTranslateString,JvJVCLUtils
+JvJVCLUtils,JvAppStorage,JvJVCLUtils
+JvJVCLUtils,JvAppStorage,JvPropertyStore,JvJVCLUtils
+
+Cycles for JvPropertyStore (1)
+JvPropertyStore,JvAppStorage,JvPropertyStore
+
+Cycles for JvTranslateString (1)
+JvTranslateString,JvJVCLUtils,JvAppStorage,JvTranslateString
+
+Cycles for M3Iregister (2)
+M3Iregister,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,M3Iregister
+M3Iregister,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,M3Iregister
+
+Cycles for MAIN (39)
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,Maps,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,Maps,MapSequences,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread2D,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,ImageProcess,CalcAmbShadowDE,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,ImageProcess,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,ImageProcess,Tiling,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,DOF,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread,MonteCarloForm,CalcMonteCarlo,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread,MonteCarloForm,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread,MonteCarloForm,PostProcessForm,DoubleSize,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread,MonteCarloForm,PostProcessForm,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniPreviewWindow,CalcHardShadow,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniPreviewWindow,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniPreviewWindow,Paint,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniProcess,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Undo,MAIN
+MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,MAIN
+MAIN,AmbShadowCalcThreadN,MAIN
+MAIN,AmbHiQ,MAIN
+MAIN,BatchForm,MAIN
+MAIN,calcBlocky,MAIN
+MAIN,ColorPick,MAIN
+MAIN,IniDirsForm,MAIN
+MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread,MAIN
+MAIN,IniDirsForm,VoxelExport,MAIN
+MAIN,MutaGenGUI,MAIN
+MAIN,NaviCalcThread,MAIN
+MAIN,TextBox,MAIN
+MAIN,ThreadUtils,MAIN
+MAIN,uMapCalcWindow,MAIN
+
+Cycles for Maps (12)
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,uMapCalcWindow,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Maps
+Maps,Math3D,DivUtils,FileHandling,Animation,Maps
+Maps,Math3D,DivUtils,FileHandling,Maps
+Maps,Math3D,DivUtils,Maps
+
+Cycles for MapSequences (6)
+MapSequences,MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,Maps,MapSequences
+MapSequences,MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,MapSequences
+MapSequences,MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniPreviewWindow,MapSequences
+MapSequences,MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,MapSequences
+MapSequences,MAIN,MapSequences
+MapSequences,MAIN,MapSequencesGUI,MapSequences
+
+Cycles for MapSequencesGUI (1)
+MapSequencesGUI,MapSequences,MAIN,MapSequencesGUI
+
+Cycles for Math3D (37)
+Math3D,DivUtils,FileHandling,TypeDefinitions,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,FormulaCompiler,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,formulas,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,Maps,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Interpolation,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,M3Iregister,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DOF,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbHiQ,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,CalcHardShadow,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,Paint,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,calcBlocky,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,CalcThread2D,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ColorPick,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,NaviCalcThread,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,uMapCalcWindow,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Undo,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,Math3D
+Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,Math3D
+Math3D,DivUtils,FileHandling,Animation,Math3D
+Math3D,DivUtils,FileHandling,Animation,AniProcess,Math3D
+Math3D,DivUtils,FileHandling,Math3D
+Math3D,DivUtils,Math3D
+
+Cycles for MB3DFacade (3)
+MB3DFacade,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,MB3DFacade
+MB3DFacade,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,MutaGen,MB3DFacade
+MB3DFacade,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,MB3DFacade
+
+Cycles for MonteCarloForm (4)
+MonteCarloForm,M3Iregister,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm
+MonteCarloForm,M3Iregister,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,MonteCarloForm
+MonteCarloForm,M3Iregister,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MonteCarloForm
+MonteCarloForm,M3Iregister,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PostProcessForm,CalcMonteCarlo,MonteCarloForm
+
+Cycles for MutaGen (1)
+MutaGen,FormulaNames,CustomFormulas,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,MAIN,MutaGenGUI,MutaGen
+
+Cycles for MutaGenGUI (1)
+MutaGenGUI,MB3DFacade,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI
+
+Cycles for NaviCalcThread (1)
+NaviCalcThread,FormulaClass,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,CalcThread,CustomFormulas,MAIN,NaviCalcThread
+
+Cycles for Paint (3)
+Paint,MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniPreviewWindow,Paint
+Paint,MAIN,AmbShadowCalcThreadN,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,Paint
+Paint,MAIN,MutaGenGUI,PreviewRenderer,Paint
+
+Cycles for PaintThread (9)
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,CalcSR,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,Paint,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,calcBlocky,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,MonteCarloForm,CalcMonteCarlo,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,MonteCarloForm,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,MonteCarloForm,PostProcessForm,CalcPart,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,PaintThread
+PaintThread,Math3D,DivUtils,FileHandling,Animation,PaintThread
+
+Cycles for PostProcessForm (4)
+PostProcessForm,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm
+PostProcessForm,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PostProcessForm
+PostProcessForm,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniProcess,PostProcessForm
+PostProcessForm,CalcPart,PostProcessForm
+
+Cycles for PreviewRenderer (1)
+PreviewRenderer,MB3DFacade,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer
+
+Cycles for TextBox (1)
+TextBox,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,TextBox
+
+Cycles for ThreadUtils (1)
+ThreadUtils,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ThreadUtils
+
+Cycles for Tiling (8)
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Tiling
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,Tiling
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,Tiling
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,Tiling
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,Tiling
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Tiling
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Tiling
+Tiling,TypeDefinitions,Math3D,DivUtils,FileHandling,Tiling
+
+Cycles for TypeDefinitions (47)
+TypeDefinitions,Math3D,DivUtils,FileHandling,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,FormulaCompiler,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,formulas,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcAmbShadowDE,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,CalcThread,Maps,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Interpolation,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbShadowCalcThreadN,ImageProcess,Tiling,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,M3Iregister,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,CalcMonteCarlo,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcPart,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,CalcSR,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DOF,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,PaintThread,MonteCarloForm,PostProcessForm,DoubleSize,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AmbHiQ,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,CalcHardShadow,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,AniPreviewWindow,Paint,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,BatchForm,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,calcBlocky,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,CalcThread2D,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ColorPick,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport,CalcVoxelSliceThread,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,JITFormulaEditGUI,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,MB3DFacade,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,MutaGen,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,PreviewRenderer,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,MutaGenGUI,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,NaviCalcThread,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,ThreadUtils,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,uMapCalcWindow,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Undo,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,AniProcess,TypeDefinitions
+TypeDefinitions,Math3D,DivUtils,TypeDefinitions
+TypeDefinitions,Math3D,TypeDefinitions
+
+Cycles for uMapCalcWindow (1)
+uMapCalcWindow,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,uMapCalcWindow
+
+Cycles for Undo (2)
+Undo,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,Undo
+Undo,TypeDefinitions,Math3D,DivUtils,FileHandling,Undo
+
+Cycles for VisualThemesGUI (1)
+VisualThemesGUI,FileHandling,TypeDefinitions,Math3D,DivUtils,formulas,CustomFormulas,HeaderTrafos,Animation,MAIN,VisualThemesGUI
+
+Cycles for VoxelExport (2)
+VoxelExport,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,IniDirsForm,VoxelExport
+VoxelExport,TypeDefinitions,Math3D,DivUtils,FileHandling,Animation,HeaderTrafos,Calc,FormulaClass,CustomFormulas,MAIN,VoxelExport
+

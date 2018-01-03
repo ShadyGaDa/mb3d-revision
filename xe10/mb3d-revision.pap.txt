@@ -1,0 +1,4080 @@
+**************************************************************************************************
+*                                        Uses Report for                                         *
+*C:\USERS\CRYSTALSKULL\DOCUMENTS\EMBARCADERO\STUDIO\PROJECTS\MB3D-REVISION\XE10\MB3D-REVISION.DPR*
+*                                      12/03/2017 11:39:11                                       *
+**************************************************************************************************
+
+Usage:
+--------------------------------------------------------------------------------------------------
+
+Module AmbHiQ uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module AmbHiQ uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      Forms source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+
+Module AmbShadowCalcThreadN uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module AmbShadowCalcThreadN uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      Forms source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+
+Module Animation uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ComCtrls source not found
+      ExtCtrls source not found
+      Buttons source not found
+      StdCtrls source not found
+  --> Math3D in implementation (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  --> FileHandling in implementation (has initialization, used by unit with init)
+  --> HeaderTrafos in implementation (used by unit with init)
+  --> MAIN in implementation (has initialization, used by unit with init)
+
+Module Animation uses:
+
+  Units used in implementation:
+
+      Math source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+  ==> PaintThread unnecessary (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      AniPreviewWindow in implementation (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+      DOF in implementation (used by unit with init)
+      CalcHardShadow in implementation (used by unit with init)
+      CalcSR in implementation (used by unit with init)
+      MapSequences in implementation (has initialization, used by unit with init)
+      Paint in implementation (used by unit with init)
+      AniProcess in implementation
+
+Module AniPreviewWindow uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+      ComCtrls source not found
+      Buttons source not found
+  ==> Math3D unnecessary (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  --> FileHandling in implementation (has initialization, used by unit with init)
+  --> HeaderTrafos in implementation (used by unit with init)
+  --> Animation in implementation (used by unit with init)
+  --> FTGifAnimate in implementation (has initialization)
+
+Module AniPreviewWindow uses:
+
+  Units used in implementation:
+
+      Math source not found
+      MMSystem source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+      DOF in implementation (used by unit with init)
+      CalcHardShadow in implementation (used by unit with init)
+      CalcSR in implementation (used by unit with init)
+      MapSequences in implementation (has initialization, used by unit with init)
+      Paint in implementation (used by unit with init)
+
+Module AniProcess uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+      Vcl.ComCtrls source not found
+
+Module AniProcess uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Math3D in implementation (used by unit with init)
+      TypeDefinitions in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Animation in implementation (used by unit with init)
+      PostProcessForm in implementation (used by unit with init)
+
+Module BatchForm uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ComCtrls source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+      ShellApi source not found
+      Menus source not found
+
+Module BatchForm uses:
+
+  Units used in implementation:
+
+      TypeDefinitions in implementation (used by unit with init)
+      FileHandling in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+
+Module BRInfoWindow uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ComCtrls source not found
+      StdCtrls source not found
+
+Module Calc uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+      FormulaClass in interface (used by unit with init)
+
+Module Calc uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      Types source not found
+      Forms source not found
+  ==> FileHandling unnecessary (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      CalcThread in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      CalcThread2D in implementation (used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      MapSequences in implementation (has initialization, used by unit with init)
+
+Module CalcAmbShadowDE uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+  --> Math3D in implementation (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module CalcAmbShadowDE uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Forms source not found
+  ==> DivUtils unnecessary (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+
+Module calcBlocky uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+  --> Math3D in implementation (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module calcBlocky uses:
+
+  Units used in implementation:
+
+      Math source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      PaintThread in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+
+Module CalcHardShadow uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module CalcHardShadow uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Forms source not found
+  ==> DivUtils unnecessary (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+
+Module CalcMonteCarlo uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  --> ImageProcess in implementation (used by unit with init)
+
+Module CalcMonteCarlo uses:
+
+  Units used in implementation:
+
+      Math source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      PaintThread in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      MonteCarloForm in implementation (used by unit with init)
+
+Module CalcPart uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+  --> Math3D in implementation (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module CalcPart uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Forms source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      PaintThread in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+  ==> PostProcessForm unnecessary (used by unit with init)
+      CalcAmbShadowDE in implementation
+
+Module CalcSR uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module CalcSR uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Forms source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      PaintThread in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      CalcAmbShadowDE in implementation
+
+Module CalcThread uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  ==> FormulaClass unnecessary (used by unit with init)
+
+Module CalcThread uses:
+
+  Units used in implementation:
+
+      Math source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+  ==> MAIN unnecessary (has initialization, used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+
+Module CalcThread2D uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module CalcThread2D uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+  ==> MAIN unnecessary (has initialization, used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+
+Module CalcVoxelSliceThread uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module CalcVoxelSliceThread uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Math3D in implementation (used by unit with init)
+  ==> DivUtils unnecessary (has initialization, used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+
+Module ColorOptionForm uses:
+
+  Units used in interface:
+
+      Winapi.Windows source not found
+      Winapi.Messages source not found
+      System.SysUtils source not found
+      System.Variants source not found
+      System.Classes source not found
+      Vcl.Graphics source not found
+      Vcl.Controls source not found
+      Vcl.Forms source not found
+      Vcl.Dialogs source not found
+      Vcl.StdCtrls source not found
+      Vcl.ExtCtrls source not found
+
+Module ColorPick uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ExtCtrls source not found
+      StdCtrls source not found
+      Buttons source not found
+      Vcl.ComCtrls source not found
+      TypeDefinitions in interface (used by unit with init)
+      TrackBarEx in interface (used by unit with init)
+
+Module ColorPick uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> HeaderTrafos unnecessary (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+
+Module ColorSSAO uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module ColorSSAO uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      Forms source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+
+Module CustomFormulas uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      TypeDefinitions in interface (used by unit with init)
+  --> FileHandling in implementation (has initialization, used by unit with init)
+  --> DivUtils in implementation (has initialization, used by unit with init)
+      JITFormulas in interface (used by unit with init)
+
+Module CustomFormulas uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Dialogs source not found
+      Windows source not found
+      Classes source not found
+      Math3D in implementation (used by unit with init)
+      formulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      FormulaCompiler in implementation (has initialization, used by unit with init)
+
+Module DivUtils uses:
+
+  Units used in interface:
+
+      StdCtrls source not found
+      Types source not found
+      Classes source not found
+      Windows source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  --> FileHandling in implementation (has initialization, used by unit with init)
+
+Module DivUtils uses:
+
+  Units used in implementation:
+
+      SysUtils source not found
+      Math source not found
+      Forms source not found
+      Graphics source not found
+      formulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> Maps unnecessary (has initialization, used by unit with init)
+
+Module DOF uses:
+
+  Units used in interface:
+
+      TypeDefinitions in interface (used by unit with init)
+
+Module DOF uses:
+
+  Units used in implementation:
+
+      Forms source not found
+      Controls source not found
+      Math source not found
+      Windows source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+
+Module DoubleSize uses:
+
+  Units used in implementation:
+
+      TypeDefinitions in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+
+Module FileHandling uses:
+
+  Units used in interface:
+
+      Windows source not found
+      SysUtils source not found
+      Graphics source not found
+      jpeg source not found
+      pngimage source not found
+      SyncObjs source not found
+      Classes source not found
+      Controls source not found
+      Dialogs source not found
+      vcl.ExtDlgs source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module FileHandling uses:
+
+  Units used in implementation:
+
+      Clipbrd source not found
+      Math source not found
+      Forms source not found
+      Vcl.Themes source not found
+      StrUtils source not found
+      Types source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      Animation in implementation (used by unit with init)
+  ==> AniPreviewWindow unnecessary (used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+  ==> Tiling unnecessary (used by unit with init)
+      Undo in implementation (used by unit with init)
+
+Module FormulaClass uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module FormulaClass uses:
+
+  Units used in implementation:
+
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      formulas in implementation (used by unit with init)
+
+Module FormulaCompiler uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      PaxRunner source not found
+  ==> TypeDefinitions unnecessary (used by unit with init)
+      JITFormulas in interface (used by unit with init)
+
+Module FormulaCompiler uses:
+
+  Units used in implementation:
+
+      Windows source not found
+      Messages source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      PaxCompiler source not found
+      PaxProgram source not found
+      PaxRegister source not found
+      TypInfo source not found
+      Math source not found
+  ==> Math3D unnecessary (used by unit with init)
+
+Module FormulaNames uses:
+
+  Units used in interface:
+
+      System.SysUtils source not found
+      System.Classes source not found
+
+Module FormulaNames uses:
+
+  Units used in implementation:
+
+      System.Contnrs source not found
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+
+Module formulas uses:
+
+  Units used in interface:
+
+      TypeDefinitions in interface (used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+
+Module formulas uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+
+Module FTGifAnimate uses:
+
+  Units used in interface:
+
+      Winapi.Windows source not found
+      System.SysUtils source not found
+      Vcl.Graphics source not found
+      GIF_Image in interface (has initialization, used by unit with init)
+
+Module GIF_Image uses:
+
+  Units used in interface:
+
+      sysutils source not found
+      Windows source not found
+      Graphics source not found
+      Classes source not found
+
+Module GIF_Image uses:
+
+  Units used in implementation:
+
+      mmsystem source not found
+      messages source not found
+      Consts source not found
+
+Module HeaderTrafos uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module HeaderTrafos uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      Types source not found
+  ==> FileHandling unnecessary (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      formulas in implementation (used by unit with init)
+      PaintThread in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> Animation unnecessary (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+      DOF in implementation (used by unit with init)
+  ==> Tiling unnecessary (used by unit with init)
+
+Module IFS uses:
+
+  Units used in interface:
+
+      Types source not found
+
+Module ImageProcess uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Graphics source not found
+      ExtCtrls source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  --> AmbShadowCalcThreadN in implementation (used by unit with init)
+
+Module ImageProcess uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Forms source not found
+      Controls source not found
+      Types source not found
+      SysUtils source not found
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+  ==> CalcThread unnecessary (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> Calc unnecessary (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+  ==> Tiling unnecessary (used by unit with init)
+      CalcAmbShadowDE in implementation
+
+Module IniDirsForm uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+
+Module IniDirsForm uses:
+
+  Units used in implementation:
+
+      FileHandling in implementation (has initialization, used by unit with init)
+  ==> DivUtils unnecessary (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Animation in implementation (used by unit with init)
+      Tiling in implementation (used by unit with init)
+      VoxelExport in implementation (used by unit with init)
+      MonteCarloForm in implementation (used by unit with init)
+
+Module Interpolation uses:
+
+  Units used in interface:
+
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module Interpolation uses:
+
+  Units used in implementation:
+
+      SysUtils source not found
+      Math source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+
+Module JITFormulaEditGUI uses:
+
+  Units used in interface:
+
+      Winapi.Windows source not found
+      Winapi.Messages source not found
+      System.SysUtils source not found
+      System.Variants source not found
+      System.Classes source not found
+      Vcl.Graphics source not found
+      Vcl.Controls source not found
+      Vcl.Forms source not found
+      Vcl.Dialogs source not found
+      Vcl.StdCtrls source not found
+      Vcl.ComCtrls source not found
+      Vcl.ExtCtrls source not found
+      Vcl.Buttons source not found
+      JITFormulas in interface (used by unit with init)
+
+Module JITFormulaEditGUI uses:
+
+  Units used in implementation:
+
+      TypeDefinitions in implementation (used by unit with init)
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      FormulaCompiler in implementation (has initialization, used by unit with init)
+      ParamValueEditGUI in implementation
+
+Module JITFormulas uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+
+Module JITFormulas uses:
+
+  Units used in implementation:
+
+      Contnrs source not found
+      Variants source not found
+
+Module JvAppStorage uses:
+
+  Units used in interface:
+
+      Windows source not found
+      JclStrings source not found
+      SysUtils source not found
+      Classes source not found
+      TypInfo source not found
+      Variants source not found
+      JclBase source not found
+      IniFiles source not found
+      JvTypes in interface (used by unit with init)
+      JvJCLUtils in interface (used by unit with init)
+      JvComponentBase in interface (used by unit with init)
+      JvTranslateString in interface (used by unit with init)
+
+Module JvAppStorage uses:
+
+  Units used in implementation:
+
+      StrUtils source not found
+      JclFileUtils source not found
+      JclSysInfo source not found
+      JclRTTI source not found
+      JclMime source not found
+      JclSynch source not found
+      JvResources in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+      JvConsts in implementation (used by unit with init)
+  ==> JvPropertyStore unnecessary (used by unit with init)
+      JvStrings in implementation (used by unit with init)
+
+Module JvButton uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Menus source not found
+      Buttons source not found
+      JvTypes in interface (used by unit with init)
+      JvExStdCtrls in interface (used by unit with init)
+      JvConsts in interface (used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+
+Module JvButton uses:
+
+  Units used in implementation:
+
+      SysUtils source not found
+      Forms source not found
+      Types source not found
+      JvThemes in implementation (has initialization, used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module JvCaptionPanel uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      ExtCtrls source not found
+      JvExControls in interface (has initialization, used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+      JvExtComponent in interface (has initialization)
+
+Module JvCaptionPanel uses:
+
+  Units used in implementation:
+
+      JvJCLUtils in implementation (used by unit with init)
+
+Module JvCaret uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+      Controls source not found
+      Graphics source not found
+
+Module JvCaret uses:
+
+  Units used in implementation:
+
+      JvResources in implementation (used by unit with init)
+      JvTypes in implementation (used by unit with init)
+      JvJCLUtils in implementation (used by unit with init)
+
+Module JvCheckBox uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      StdCtrls source not found
+      JvTypes in interface (used by unit with init)
+      JvExStdCtrls in interface (used by unit with init)
+      JvDataSourceIntf in interface
+      JvLinkedControls in interface
+
+Module JvCheckBox uses:
+
+  Units used in implementation:
+
+      SysUtils source not found
+      JvJCLUtils in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module JvClipboardMonitor uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Clipbrd source not found
+      Classes source not found
+      JvComponentBase in interface (used by unit with init)
+
+Module JvClipboardMonitor uses:
+
+  Units used in implementation:
+
+      Forms source not found
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module JvComCtrls uses:
+
+  Units used in interface:
+
+      JclSysInfo source not found
+      Windows source not found
+      Messages source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Classes source not found
+      Menus source not found
+      ComCtrls source not found
+      ImgList source not found
+      Buttons source not found
+      Types source not found
+      CommCtrl source not found
+      JvExControls in interface (has initialization, used by unit with init)
+      JvExComCtrls in interface (used by unit with init)
+      JvComponentBase in interface (used by unit with init)
+      JvJVCLUtils in interface (has initialization, used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+  ==> JvWin32 unnecessary
+      JvDataSourceIntf in interface
+
+Module JvComCtrls uses:
+
+  Units used in implementation:
+
+      SysUtils source not found
+      Math source not found
+      StrUtils source not found
+      JclStrings source not found
+  ==> JvThemes unnecessary (has initialization, used by unit with init)
+      JvJCLUtils in implementation (used by unit with init)
+      JvConsts in implementation (used by unit with init)
+
+Module JvComponent uses:
+
+  Units used in interface:
+
+      Classes source not found
+      Windows source not found
+      Messages source not found
+      Controls source not found
+      Forms source not found
+      JvExControls in interface (has initialization, used by unit with init)
+      JvExStdCtrls in interface (used by unit with init)
+  --> JvConsts in implementation (used by unit with init)
+      JvExForms in interface (used by unit with init)
+
+Module JvComponent uses:
+
+  Units used in implementation:
+
+      RTLConsts source not found
+
+Module JvComponentBase uses:
+
+  Units used in interface:
+
+      Classes source not found
+      JVCLVer in interface (used by unit with init)
+
+Module JvConsts uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Forms source not found
+      Controls source not found
+      Graphics source not found
+      Windows source not found
+      TypInfo source not found
+
+Module JvCustomItemViewer uses:
+
+  Units used in interface:
+
+      Contnrs source not found
+      Windows source not found
+      Messages source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      StdCtrls source not found
+      ComCtrls source not found
+      ExtCtrls source not found
+      JvExControls in interface (has initialization, used by unit with init)
+  --> JvConsts in implementation (used by unit with init)
+      JvExForms in interface (used by unit with init)
+
+Module JvCustomItemViewer uses:
+
+  Units used in implementation:
+
+      SysUtils source not found
+      Math source not found
+  ==> JvThemes unnecessary (has initialization, used by unit with init)
+      JvJCLUtils in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module JvDataSourceIntf uses:
+
+  Units used in interface:
+
+      DB source not found
+      SysUtils source not found
+      Classes source not found
+      Contnrs source not found
+
+Module JvExButtons uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Types source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Buttons source not found
+      StdCtrls source not found
+  ==> JvTypes unnecessary (used by unit with init)
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JVCLVer in interface (used by unit with init)
+      JvExControls in interface (has initialization, used by unit with init)
+
+Module JvExComCtrls uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Types source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      ComCtrls source not found
+  ==> JvTypes unnecessary (used by unit with init)
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JVCLVer in interface (used by unit with init)
+      JvExControls in interface (has initialization, used by unit with init)
+
+Module JvExControls uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Types source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+  ==> JvTypes unnecessary (used by unit with init)
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JVCLVer in interface (used by unit with init)
+
+Module JvExExtCtrls uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Types source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      ExtCtrls source not found
+  ==> JvTypes unnecessary (used by unit with init)
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JVCLVer in interface (used by unit with init)
+      JvExControls in interface (has initialization, used by unit with init)
+
+Module JvExForms uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      ToolWin source not found
+      Types source not found
+      Classes source not found
+      SysUtils source not found
+  ==> JvTypes unnecessary (used by unit with init)
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JVCLVer in interface (used by unit with init)
+      JvExControls in interface (has initialization, used by unit with init)
+
+Module JvExStdCtrls uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Types source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      StdCtrls source not found
+      JvTypes in interface (used by unit with init)
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JVCLVer in interface (used by unit with init)
+      JvExControls in interface (has initialization, used by unit with init)
+
+Module JvExStdCtrls uses:
+
+  Units used in implementation:
+
+      JclSysInfo source not found
+
+Module JvExtComponent uses:
+
+  Units used in interface:
+
+      Types source not found
+      Classes source not found
+      Graphics source not found
+      JvExComCtrls in interface (used by unit with init)
+      JvExExtCtrls in interface (used by unit with init)
+
+Module JvFormAnimatedIcon uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Controls source not found
+      Forms source not found
+      ExtCtrls source not found
+      ImgList source not found
+      Graphics source not found
+      JvComponentBase in interface (used by unit with init)
+
+Module JvFormAnimatedIcon uses:
+
+  Units used in implementation:
+
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module Jvg3DColors uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+
+Module Jvg3DColors uses:
+
+  Units used in implementation:
+
+      Math source not found
+      JvResources in implementation (used by unit with init)
+  ==> JvConsts unnecessary (used by unit with init)
+      JvgTypes in implementation
+  ==> JvgUtils unnecessary
+
+Module JvgCommClasses uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Graphics source not found
+      Controls source not found
+      Classes source not found
+      ExtCtrls source not found
+      JvgTypes in interface
+
+Module JvgCommClasses uses:
+
+  Units used in implementation:
+
+      Math source not found
+      JvgUtils in implementation
+
+Module JvgLabel uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+  --> JvJVCLUtils in implementation (has initialization, used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+      JvgTypes in interface
+      JvgCommClasses in interface
+  --> JvgUtils in implementation
+
+Module JvgLabel uses:
+
+  Units used in implementation:
+
+      Math source not found
+      UITypes source not found
+      JvJCLUtils in implementation (used by unit with init)
+
+Module JvGroupBox uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Windows source not found
+      Messages source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      StdCtrls source not found
+  ==> JvThemes unnecessary (has initialization, used by unit with init)
+      JvExControls in interface (has initialization, used by unit with init)
+      JvExStdCtrls in interface (used by unit with init)
+  --> JvJCLUtils in implementation (used by unit with init)
+      JvCheckBox in interface
+
+Module JvGroupBox uses:
+
+  Units used in implementation:
+
+      Math source not found
+
+Module JvgTypes uses:
+
+  Units used in interface:
+
+      Graphics source not found
+
+Module JvgUtils uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      Graphics source not found
+      ExtCtrls source not found
+      SysUtils source not found
+      Classes source not found
+      Controls source not found
+      Forms source not found
+      MMSystem source not found
+      JvgTypes in interface
+      JvgCommClasses in interface
+  --> Jvg3DColors in implementation
+
+Module JvgUtils uses:
+
+  Units used in implementation:
+
+      ShlObj source not found
+      Math source not found
+      UITypes source not found
+      JvResources in implementation (used by unit with init)
+      JvJCLUtils in implementation (used by unit with init)
+      JvConsts in implementation (used by unit with init)
+
+Module JvImagesViewer uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Windows source not found
+      Messages source not found
+      Controls source not found
+      Graphics source not found
+      StdCtrls source not found
+      ComCtrls source not found
+      JvCustomItemViewer in interface (has initialization)
+
+Module JvImagesViewer uses:
+
+  Units used in implementation:
+
+      JvJCLUtils in implementation (used by unit with init)
+
+Module JvJCLUtils uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      ShlObj source not found
+      ActiveX source not found
+      Types source not found
+      Variants source not found
+      SysUtils source not found
+      Classes source not found
+      Contnrs source not found
+      Graphics source not found
+      Clipbrd source not found
+      Controls source not found
+      StrUtils source not found
+      TypInfo source not found
+      JclBase source not found
+      JvTypes in interface (used by unit with init)
+
+Module JvJCLUtils uses:
+
+  Units used in implementation:
+
+      RTLConsts source not found
+      SysConst source not found
+      ComObj source not found
+      ShellAPI source not found
+      MMSystem source not found
+      Registry source not found
+      Consts source not found
+      JclStrings source not found
+      JclSysInfo source not found
+      JclFileUtils source not found
+      Math source not found
+      JclSysUtils source not found
+
+Module JvJVCLUtils uses:
+
+  Units used in interface:
+
+      Variants source not found
+      Windows source not found
+      Messages source not found
+      ShellAPI source not found
+      Registry source not found
+      Types source not found
+      SysUtils source not found
+      Forms source not found
+      Graphics source not found
+      Controls source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+      Menus source not found
+      Dialogs source not found
+      ComCtrls source not found
+      ImgList source not found
+      Grids source not found
+      MultiMon source not found
+      Classes source not found
+      JclBase source not found
+      JvTypes in interface (used by unit with init)
+  --> JvJCLUtils in implementation (used by unit with init)
+      JvAppStorage in interface (has initialization, used by unit with init)
+
+Module JvJVCLUtils uses:
+
+  Units used in implementation:
+
+      Consts source not found
+      CommCtrl source not found
+      ShlObj source not found
+      ActiveX source not found
+      Math source not found
+      Contnrs source not found
+      jpeg source not found
+      JclFileUtils source not found
+      JvResources in implementation (used by unit with init)
+      JvConsts in implementation (used by unit with init)
+
+Module JvLinkedControls uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Controls source not found
+      Classes source not found
+
+Module JvLinkedControls uses:
+
+  Units used in implementation:
+
+      JvResources in implementation (used by unit with init)
+
+Module JvMemo uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      StdCtrls source not found
+      JvTypes in interface (used by unit with init)
+      JvExStdCtrls in interface (used by unit with init)
+      JvCaret in interface
+
+Module JvMemo uses:
+
+  Units used in implementation:
+
+      JclStrings source not found
+
+Module JvNavigationPane uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Windows source not found
+      Messages source not found
+      Controls source not found
+      Graphics source not found
+      Menus source not found
+      ExtCtrls source not found
+      ImgList source not found
+      Math source not found
+      JvTypes in interface (used by unit with init)
+      JvComponentBase in interface (used by unit with init)
+      JvConsts in interface (used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+      JvExExtCtrls in interface (used by unit with init)
+      JvPageList in interface
+      JvButton in interface (has initialization)
+
+Module JvNavigationPane uses:
+
+  Units used in implementation:
+
+      Types source not found
+      Forms source not found
+      ActnList source not found
+      JvResources in implementation (used by unit with init)
+      JvJCLUtils in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module JvOutlookBar uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      ActnList source not found
+      Windows source not found
+      Messages source not found
+      Buttons source not found
+      Controls source not found
+      Graphics source not found
+      ImgList source not found
+      Forms source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JvJCLUtils in interface (used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+  --> JvExButtons in implementation
+
+Module JvOutlookBar uses:
+
+  Units used in implementation:
+
+      Types source not found
+      Math source not found
+      JclSysInfo source not found
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+      JvConsts in implementation (used by unit with init)
+
+Module JvPageList uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+  --> JvThemes in implementation (has initialization, used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+
+Module JvPageList uses:
+
+  Units used in implementation:
+
+      Forms source not found
+
+Module JvProgressBar uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      CommCtrl source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      ComCtrls source not found
+      JvExComCtrls in interface (used by unit with init)
+
+Module JvProgressBar uses:
+
+  Units used in implementation:
+
+      ComObj source not found
+      JclSysInfo source not found
+      JvJCLUtils in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module JvPropertyStore uses:
+
+  Units used in interface:
+
+      Classes source not found
+      JvComponentBase in interface (used by unit with init)
+      JvAppStorage in interface (has initialization, used by unit with init)
+      JvPropertyStoreEditorIntf in interface
+
+Module JvPropertyStore uses:
+
+  Units used in implementation:
+
+      RTLConsts source not found
+      SysUtils source not found
+      TypInfo source not found
+      JclSynch source not found
+      JvResources in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+      JvStrings in implementation (used by unit with init)
+
+Module JvPropertyStoreEditorIntf uses:
+
+  Units used in interface:
+
+      Classes source not found
+
+Module JvSlider uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Windows source not found
+      Messages source not found
+      Graphics source not found
+      Controls source not found
+      ExtCtrls source not found
+      JvComponent in interface (has initialization, used by unit with init)
+
+Module JvStrings uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Graphics source not found
+      SysUtils source not found
+      Classes source not found
+
+Module JvStrings uses:
+
+  Units used in implementation:
+
+      JclSimpleXml source not found
+      JvResources in implementation (used by unit with init)
+      JvTypes in implementation (used by unit with init)
+      JvJCLUtils in implementation (used by unit with init)
+      JvConsts in implementation (used by unit with init)
+
+Module JvThemes uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      CommCtrl source not found
+      Types source not found
+      SysUtils source not found
+      Classes source not found
+      Contnrs source not found
+      Controls source not found
+      Forms source not found
+      Graphics source not found
+      Buttons source not found
+
+Module JvThemes uses:
+
+  Units used in implementation:
+
+      JclSysUtils source not found
+      JclSysInfo source not found
+
+Module JvTranslateString uses:
+
+  Units used in interface:
+
+      Classes source not found
+  --> JvResources in implementation (used by unit with init)
+      JvComponentBase in interface (used by unit with init)
+
+Module JvTranslateString uses:
+
+  Units used in implementation:
+
+      SysUtils source not found
+      Types source not found
+      Forms source not found
+      Dialogs source not found
+      JclFileUtils source not found
+      JvJCLUtils in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+
+Module JvTypes uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Windows source not found
+      Messages source not found
+      Controls source not found
+      Forms source not found
+      Graphics source not found
+      JvResources in interface (used by unit with init)
+
+Module JvWin32 uses:
+
+  Units used in interface:
+
+      CommCtrl source not found
+      Windows source not found
+
+Module JvxSlider uses:
+
+  Units used in interface:
+
+      SysUtils source not found
+      Classes source not found
+      Windows source not found
+      Forms source not found
+      Controls source not found
+      ExtCtrls source not found
+      Graphics source not found
+      Messages source not found
+      Menus source not found
+      JvExControls in interface (has initialization, used by unit with init)
+      JvComponent in interface (has initialization, used by unit with init)
+
+Module JvxSlider uses:
+
+  Units used in implementation:
+
+      Consts source not found
+      Math source not found
+      Types source not found
+      JvTypes in implementation (used by unit with init)
+      JvThemes in implementation (has initialization, used by unit with init)
+      JvJCLUtils in implementation (used by unit with init)
+      JvJVCLUtils in implementation (has initialization, used by unit with init)
+      JvConsts in implementation (used by unit with init)
+
+Module ListBoxEx uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ExtCtrls source not found
+      StdCtrls source not found
+
+Program M3D uses:
+
+  Used units:
+
+      Vcl.Forms source not found
+      Vcl.Themes source not found
+      Vcl.Styles source not found
+  ==> Math3D unnecessary (used by unit with init)
+  ==> TypeDefinitions unnecessary (used by unit with init)
+  ==> FileHandling unnecessary (has initialization, used by unit with init)
+  ==> DivUtils unnecessary (has initialization, used by unit with init)
+  ==> FormulaClass unnecessary (used by unit with init)
+  ==> JITFormulas unnecessary (used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+  ==> HeaderTrafos unnecessary (used by unit with init)
+  ==> CalcThread unnecessary (used by unit with init)
+  ==> AmbShadowCalcThreadN unnecessary (used by unit with init)
+  ==> PaintThread unnecessary (has initialization, used by unit with init)
+  ==> M3Iregister unnecessary (has initialization, used by unit with init)
+  ==> ListBoxEx unnecessary (used by unit with init)
+  ==> SpeedButtonEx unnecessary (used by unit with init)
+  ==> TrackBarEx unnecessary (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+  ==> CalcThread2D unnecessary (used by unit with init)
+      Animation in implementation (used by unit with init)
+  ==> GIF_Image unnecessary (has initialization, used by unit with init)
+  ==> FTGifAnimate unnecessary (has initialization)
+      AniPreviewWindow in implementation (used by unit with init)
+  ==> Calc unnecessary (has initialization, used by unit with init)
+  ==> Maps unnecessary (has initialization, used by unit with init)
+  ==> Interpolation unnecessary (used by unit with init)
+  ==> DOF unnecessary (used by unit with init)
+      IniDirsForm in implementation (used by unit with init)
+      Tiling in implementation (used by unit with init)
+  ==> Undo unnecessary (used by unit with init)
+      PostProcessForm in implementation (used by unit with init)
+  ==> CalcHardShadow unnecessary (used by unit with init)
+  ==> AmbHiQ unnecessary (has initialization, used by unit with init)
+      BatchForm in implementation (used by unit with init)
+      VoxelExport in implementation (used by unit with init)
+  ==> CalcVoxelSliceThread unnecessary
+  ==> calcBlocky unnecessary (used by unit with init)
+  ==> CalcSR unnecessary (used by unit with init)
+      MonteCarloForm in implementation (used by unit with init)
+      TextBox in implementation (used by unit with init)
+      ColorPick in implementation (used by unit with init)
+      uMapCalcWindow in implementation (used by unit with init)
+  ==> MapSequences unnecessary (has initialization, used by unit with init)
+  ==> FormulaCompiler unnecessary (has initialization, used by unit with init)
+  ==> MB3DFacade unnecessary (used by unit with init)
+  ==> FormulaNames unnecessary (used by unit with init)
+  ==> MutaGen unnecessary (has initialization)
+  ==> PreviewRenderer unnecessary
+  ==> Paint unnecessary (used by unit with init)
+      MutaGenGUI in implementation (used by unit with init)
+      VisualThemesGUI in implementation (used by unit with init)
+      MapSequencesGUI in implementation (used by unit with init)
+      JITFormulaEditGUI in implementation (used by unit with init)
+      ParamValueEditGUI in implementation
+  ==> NaviCalcThread unnecessary (used by unit with init)
+  ==> ThreadUtils unnecessary (has initialization, used by unit with init)
+  ==> CalcAmbShadowDE unnecessary
+      BRInfoWindow in implementation
+  ==> DoubleSize unnecessary
+  ==> CalcPart unnecessary
+  ==> CalcMonteCarlo unnecessary (has initialization)
+      ColorOptionForm in implementation
+      AniProcess in implementation
+  ==> ColorSSAO unnecessary
+  ==> IFS unnecessary
+  ==> RegisterM3Pgraphic unnecessary (has initialization)
+
+Note:
+Units that are marked as "unnecessary" in the project source
+are not needed in the main code block. However you would
+normally want to keep them listed anyway, because it tells
+the Delphi IDE that the unit belongs to the project.
+
+Module M3Iregister uses:
+
+  Units used in interface:
+
+      Windows source not found
+      SysUtils source not found
+      Graphics source not found
+      Classes source not found
+      ExtCtrls source not found
+      Messages source not found
+      Dialogs source not found
+      StdCtrls source not found
+      Controls source not found
+  --> TypeDefinitions in implementation (used by unit with init)
+
+Module M3Iregister uses:
+
+  Units used in implementation:
+
+      Math3D in implementation (used by unit with init)
+  ==> FileHandling unnecessary (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+
+Module MAIN uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+      ComCtrls source not found
+      Buttons source not found
+      SHFolder source not found
+      Menus source not found
+      Vcl.ExtDlgs source not found
+      System.ImageList source not found
+      Vcl.ImgList source not found
+      Vcl.Imaging.jpeg source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  --> FileHandling in implementation (has initialization, used by unit with init)
+  ==> CalcThread unnecessary (used by unit with init)
+  ==> AmbShadowCalcThreadN unnecessary (used by unit with init)
+  --> PaintThread in implementation (has initialization, used by unit with init)
+      M3Iregister in interface (has initialization, used by unit with init)
+  ==> JvExControls unnecessary (has initialization, used by unit with init)
+  ==> JvExStdCtrls unnecessary (used by unit with init)
+      JvMemo in interface (used by unit with init)
+  ==> JvExComCtrls unnecessary (used by unit with init)
+      JvComCtrls in interface (used by unit with init)
+      ListBoxEx in interface (used by unit with init)
+      SpeedButtonEx in interface (used by unit with init)
+      TrackBarEx in interface (used by unit with init)
+      JvgLabel in interface (used by unit with init)
+
+Module MAIN uses:
+
+  Units used in implementation:
+
+      Math source not found
+      ClipBrd source not found
+      ShellAPI source not found
+      FileCtrl source not found
+      CommDlg source not found
+      pngimage source not found
+      Vcl.Themes source not found
+      StrUtils source not found
+      Types source not found
+      System.Character source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      formulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+  ==> CalcThread2D unnecessary (used by unit with init)
+      Animation in implementation (used by unit with init)
+  ==> AniPreviewWindow unnecessary (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+      DOF in implementation (used by unit with init)
+      IniDirsForm in implementation (used by unit with init)
+      Tiling in implementation (used by unit with init)
+      Undo in implementation (used by unit with init)
+      PostProcessForm in implementation (used by unit with init)
+      CalcHardShadow in implementation (used by unit with init)
+      AmbHiQ in implementation (has initialization, used by unit with init)
+      BatchForm in implementation (used by unit with init)
+      VoxelExport in implementation (used by unit with init)
+      calcBlocky in implementation (used by unit with init)
+      CalcSR in implementation (used by unit with init)
+      MonteCarloForm in implementation (used by unit with init)
+      TextBox in implementation (used by unit with init)
+      ColorPick in implementation (used by unit with init)
+      uMapCalcWindow in implementation (used by unit with init)
+      MapSequences in implementation (has initialization, used by unit with init)
+  ==> FormulaCompiler unnecessary (has initialization, used by unit with init)
+      FormulaNames in implementation (used by unit with init)
+      MutaGenGUI in implementation (used by unit with init)
+      VisualThemesGUI in implementation (used by unit with init)
+      MapSequencesGUI in implementation (used by unit with init)
+      JITFormulaEditGUI in implementation (used by unit with init)
+      NaviCalcThread in implementation (used by unit with init)
+      ThreadUtils in implementation (has initialization, used by unit with init)
+
+Module Maps uses:
+
+  Units used in interface:
+
+      Windows source not found
+      SysUtils source not found
+      Graphics source not found
+      jpeg source not found
+      pngimage source not found
+      SyncObjs source not found
+      Classes source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module Maps uses:
+
+  Units used in implementation:
+
+      Math source not found
+      UITypes source not found
+      Forms source not found
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      MapSequences in implementation (has initialization, used by unit with init)
+
+Module MapSequences uses:
+
+  Units used in interface:
+
+      Classes source not found
+      SysUtils source not found
+
+Module MapSequences uses:
+
+  Units used in implementation:
+
+      Contnrs source not found
+      Windows source not found
+      MAIN in implementation (has initialization, used by unit with init)
+
+Module MapSequencesGUI uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      Vcl.ExtDlgs source not found
+      Vcl.Buttons source not found
+      Vcl.ExtCtrls source not found
+      Vcl.ComCtrls source not found
+      MapSequences in interface (has initialization, used by unit with init)
+
+Module MapSequencesGUI uses:
+
+  Units used in implementation:
+
+      Math source not found
+      FileHandling in implementation (has initialization, used by unit with init)
+
+Module Math3D uses:
+
+  Units used in interface:
+
+      math source not found
+
+Module Math3D uses:
+
+  Units used in implementation:
+
+      TypeDefinitions in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+
+Module MB3DFacade uses:
+
+  Units used in interface:
+
+      Classes source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module MB3DFacade uses:
+
+  Units used in implementation:
+
+      Contnrs source not found
+      SysUtils source not found
+      Windows source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+
+Module MonteCarloForm uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      Buttons source not found
+      ExtCtrls source not found
+      ComCtrls source not found
+      Vcl.ExtDlgs source not found
+      Vcl.ImgList source not found
+      System.ImageList source not found
+      TypeDefinitions in interface (used by unit with init)
+      M3Iregister in interface (has initialization, used by unit with init)
+  ==> JvExControls unnecessary (has initialization, used by unit with init)
+      JvgLabel in interface (used by unit with init)
+
+Module MonteCarloForm uses:
+
+  Units used in implementation:
+
+      CommDlg source not found
+      Math source not found
+      Math3D in implementation (used by unit with init)
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      PaintThread in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+  ==> Tiling unnecessary (used by unit with init)
+  ==> PostProcessForm unnecessary (used by unit with init)
+      CalcMonteCarlo in implementation (has initialization)
+      ColorOptionForm in implementation
+
+Module MutaGen uses:
+
+  Units used in interface:
+
+      Windows source not found
+      SysUtils source not found
+      Classes source not found
+      Vcl.ExtCtrls source not found
+      Vcl.Graphics source not found
+      MB3DFacade in interface (used by unit with init)
+      FormulaNames in interface (used by unit with init)
+
+Module MutaGen uses:
+
+  Units used in implementation:
+
+      System.Contnrs source not found
+      System.Math source not found
+      Vcl.Dialogs source not found
+  ==> TypeDefinitions unnecessary (used by unit with init)
+
+Module MutaGenGUI uses:
+
+  Units used in interface:
+
+      Winapi.Windows source not found
+      Winapi.Messages source not found
+      System.SysUtils source not found
+      System.Variants source not found
+      System.Classes source not found
+      Vcl.Graphics source not found
+      Vcl.Controls source not found
+      Vcl.Forms source not found
+      Vcl.Dialogs source not found
+      Vcl.StdCtrls source not found
+      Vcl.ExtCtrls source not found
+      Vcl.ComCtrls source not found
+      Vcl.Menus source not found
+      Vcl.Buttons source not found
+  ==> JvExControls unnecessary (has initialization, used by unit with init)
+  ==> JvExStdCtrls unnecessary (used by unit with init)
+  ==> JvExComCtrls unnecessary (used by unit with init)
+  ==> JvComponentBase unnecessary (used by unit with init)
+  ==> JvExForms unnecessary (used by unit with init)
+  ==> JvComCtrls unnecessary (used by unit with init)
+      TrackBarEx in interface (used by unit with init)
+  ==> JvCustomItemViewer unnecessary (has initialization)
+  ==> JvImagesViewer unnecessary
+  ==> JvFormAnimatedIcon unnecessary
+      MB3DFacade in interface (used by unit with init)
+      MutaGen in interface (has initialization)
+  ==> JvProgressBar unnecessary
+  ==> JvxSlider unnecessary
+  ==> JvSlider unnecessary
+      PreviewRenderer in interface
+      JvGroupBox in interface
+  ==> JvOutlookBar unnecessary
+  ==> JvExExtCtrls unnecessary (used by unit with init)
+  ==> JvExtComponent unnecessary (has initialization)
+  ==> JvCaptionPanel unnecessary
+  ==> JvPageList unnecessary
+  ==> JvNavigationPane unnecessary
+  ==> JvClipboardMonitor unnecessary
+
+Module MutaGenGUI uses:
+
+  Units used in implementation:
+
+      Contnrs source not found
+      Math source not found
+  ==> TypeDefinitions unnecessary (used by unit with init)
+      FileHandling in implementation (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+
+Module NaviCalcThread uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+  --> Math3D in implementation (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+  ==> FormulaClass unnecessary (used by unit with init)
+  ==> formulas unnecessary (used by unit with init)
+
+Module NaviCalcThread uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+
+Module Paint uses:
+
+  Units used in interface:
+
+      TypeDefinitions in interface (used by unit with init)
+  ==> MAIN unnecessary (has initialization, used by unit with init)
+
+Module Paint uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      PaintThread in implementation (has initialization, used by unit with init)
+
+Module PaintThread uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+      Math3D in interface (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module PaintThread uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Graphics source not found
+      SysUtils source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+  ==> Interpolation unnecessary (used by unit with init)
+  ==> Tiling unnecessary (used by unit with init)
+      MonteCarloForm in implementation (used by unit with init)
+
+Module ParamValueEditGUI uses:
+
+  Units used in interface:
+
+      Winapi.Windows source not found
+      Winapi.Messages source not found
+      System.SysUtils source not found
+      System.Variants source not found
+      System.Classes source not found
+      Vcl.Graphics source not found
+      Vcl.Controls source not found
+      Vcl.Forms source not found
+      Vcl.Dialogs source not found
+      Vcl.StdCtrls source not found
+      Vcl.ExtCtrls source not found
+
+Module ParamValueEditGUI uses:
+
+  Units used in implementation:
+
+      JITFormulas in implementation (used by unit with init)
+
+Module PostProcessForm uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+      ComCtrls source not found
+      Vcl.ImgList source not found
+      Vcl.Buttons source not found
+      System.ImageList source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module PostProcessForm uses:
+
+  Units used in implementation:
+
+      Math3D in implementation (used by unit with init)
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      DOF in implementation (used by unit with init)
+      Tiling in implementation (used by unit with init)
+      CalcSR in implementation (used by unit with init)
+      DoubleSize in implementation
+      CalcPart in implementation
+  ==> CalcMonteCarlo unnecessary (has initialization)
+
+Module PreviewRenderer uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Graphics source not found
+      Classes source not found
+      TypeDefinitions in interface (used by unit with init)
+      MB3DFacade in interface (used by unit with init)
+
+Module PreviewRenderer uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+      Math3D in implementation (used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> CustomFormulas unnecessary (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+      DOF in implementation (used by unit with init)
+      CalcHardShadow in implementation (used by unit with init)
+      CalcSR in implementation (used by unit with init)
+      Paint in implementation (used by unit with init)
+
+Module RegisterM3Pgraphic uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Graphics source not found
+      Classes source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module RegisterM3Pgraphic uses:
+
+  Units used in implementation:
+
+      Math source not found
+  ==> Math3D unnecessary (used by unit with init)
+  ==> DivUtils unnecessary (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+  ==> HeaderTrafos unnecessary (used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+  ==> Calc unnecessary (has initialization, used by unit with init)
+  ==> DOF unnecessary (used by unit with init)
+  ==> CalcHardShadow unnecessary (used by unit with init)
+  ==> CalcSR unnecessary (used by unit with init)
+  ==> Paint unnecessary (used by unit with init)
+
+Module SpeedButtonEx uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ExtCtrls source not found
+      Buttons source not found
+
+Module TextBox uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+
+Module TextBox uses:
+
+  Units used in implementation:
+
+      Math source not found
+      FileHandling in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+
+Module ThreadUtils uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module ThreadUtils uses:
+
+  Units used in implementation:
+
+      Math source not found
+  ==> MAIN unnecessary (has initialization, used by unit with init)
+
+Module Tiling uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ExtCtrls source not found
+      StdCtrls source not found
+      Buttons source not found
+      Menus source not found
+      Vcl.ComCtrls source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module Tiling uses:
+
+  Units used in implementation:
+
+      Math source not found
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> ImageProcess unnecessary (used by unit with init)
+      BRInfoWindow in implementation
+
+Module TrackBarEx uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      ExtCtrls source not found
+      StdCtrls source not found
+      ComCtrls source not found
+
+Module TypeDefinitions uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Classes source not found
+      Messages source not found
+      Math3D in interface (used by unit with init)
+
+Module uMapCalcWindow uses:
+
+  Units used in interface:
+
+      Winapi.Windows source not found
+      Winapi.Messages source not found
+      System.SysUtils source not found
+      System.Variants source not found
+      System.Classes source not found
+      Vcl.Graphics source not found
+      Vcl.Controls source not found
+      Vcl.Forms source not found
+      Vcl.Dialogs source not found
+      Vcl.ComCtrls source not found
+      Vcl.StdCtrls source not found
+      Vcl.ExtCtrls source not found
+  ==> Math3D unnecessary (used by unit with init)
+      TypeDefinitions in interface (used by unit with init)
+
+Module uMapCalcWindow uses:
+
+  Units used in implementation:
+
+      Math source not found
+      DivUtils in implementation (has initialization, used by unit with init)
+  ==> HeaderTrafos unnecessary (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+  ==> Calc unnecessary (has initialization, used by unit with init)
+      Maps in implementation (has initialization, used by unit with init)
+
+Module Undo uses:
+
+  Units used in interface:
+
+      TypeDefinitions in interface (used by unit with init)
+
+Module Undo uses:
+
+  Units used in implementation:
+
+      Math source not found
+      SysUtils source not found
+  ==> Math3D unnecessary (used by unit with init)
+      FileHandling in implementation (has initialization, used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      Interpolation in implementation (used by unit with init)
+
+Module VisualThemesGUI uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+
+Module VisualThemesGUI uses:
+
+  Units used in implementation:
+
+      Vcl.Themes source not found
+      FileHandling in implementation (has initialization, used by unit with init)
+
+Module VoxelExport uses:
+
+  Units used in interface:
+
+      Windows source not found
+      Messages source not found
+      SysUtils source not found
+      Classes source not found
+      Graphics source not found
+      Controls source not found
+      Forms source not found
+      Dialogs source not found
+      StdCtrls source not found
+      ExtCtrls source not found
+      Buttons source not found
+      ComCtrls source not found
+      TypeDefinitions in interface (used by unit with init)
+
+Module VoxelExport uses:
+
+  Units used in implementation:
+
+      Math source not found
+      Math3D in implementation (used by unit with init)
+      FileHandling in implementation (has initialization, used by unit with init)
+      DivUtils in implementation (has initialization, used by unit with init)
+      CustomFormulas in implementation (used by unit with init)
+      HeaderTrafos in implementation (used by unit with init)
+      MAIN in implementation (has initialization, used by unit with init)
+      ImageProcess in implementation (used by unit with init)
+      Calc in implementation (has initialization, used by unit with init)
+  ==> CalcVoxelSliceThread unnecessary
+
+
+
+
+Modules that are referenced in the Delphi project file, but not used:
+--------------------------------------------------------------------------------------------------
+
+AmbHiQ (has initialization, used by unit with init)
+AmbShadowCalcThreadN (used by unit with init)
+CalcAmbShadowDE
+calcBlocky (used by unit with init)
+CalcHardShadow (used by unit with init)
+CalcMonteCarlo (has initialization)
+CalcPart
+CalcSR (used by unit with init)
+CalcThread (used by unit with init)
+CalcThread2D (used by unit with init)
+ColorSSAO
+DOF (used by unit with init)
+DoubleSize
+FormulaClass (used by unit with init)
+FormulaCompiler (has initialization, used by unit with init)
+FormulaNames (used by unit with init)
+formulas (used by unit with init)
+FTGifAnimate (has initialization)
+GIF_Image (has initialization, used by unit with init)
+IFS
+Interpolation (used by unit with init)
+JITFormulas (used by unit with init)
+ListBoxEx (used by unit with init)
+M3Iregister (has initialization, used by unit with init)
+Maps (has initialization, used by unit with init)
+MapSequences (has initialization, used by unit with init)
+MB3DFacade (used by unit with init)
+MutaGen (has initialization)
+NaviCalcThread (used by unit with init)
+Paint (used by unit with init)
+PaintThread (has initialization, used by unit with init)
+PreviewRenderer
+RegisterM3Pgraphic (has initialization)
+SpeedButtonEx (used by unit with init)
+ThreadUtils (has initialization, used by unit with init)
+TrackBarEx (used by unit with init)
+TypeDefinitions (used by unit with init)
+Undo (used by unit with init)
+
+Note:
+Units that are marked as "unnecessary" in the project source
+are not needed in the main code block. However you would
+normally want to keep them listed anyway, because it tells
+the Delphi IDE that the unit belongs to the project.
+
+
+Modules that are used but not added to the Delphi project file:
+--------------------------------------------------------------------------------------------------
+
+Math
+
+
+References:
+--------------------------------------------------------------------------------------------------
+
+	AmbHiQ references (10):
+
+	Classes, DivUtils, Forms, ImageProcess, MAIN, Math, Math3D, SysUtils,
+	TypeDefinitions, Windows
+
+	AmbHiQ is referenced by (2):
+
+	M3D, MAIN
+
+	AmbShadowCalcThreadN references (9):
+
+	TypeDefinitions, Windows, Classes, DivUtils, Forms, ImageProcess, MAIN,
+	Math, SysUtils, TypeDefinitions, Windows
+
+	AmbShadowCalcThreadN is referenced by (3):
+
+	M3D, MAIN, ImageProcess, M3D, MAIN
+
+	Animation references (32):
+
+	Math, SysUtils, TypeDefinitions, Windows, AniPreviewWindow, AniProcess,
+	Buttons, Calc, CalcHardShadow, CalcSR, Classes, ComCtrls, Controls,
+	CustomFormulas, Dialogs, DivUtils, DOF, ExtCtrls, FileHandling, Forms,
+	Graphics, HeaderTrafos, ImageProcess, Interpolation, MAIN, Maps,
+	MapSequences, Math, Math3D, Messages, Paint, PaintThread, StdCtrls,
+	SysUtils, TypeDefinitions, Windows
+
+	Animation is referenced by (7):
+
+	M3D, MAIN, ImageProcess, M3D, MAIN, AniPreviewWindow, AniProcess,
+	FileHandling, HeaderTrafos, IniDirsForm, M3D, MAIN
+
+	AniPreviewWindow references (32):
+
+	SysUtils, TypeDefinitions, Windows, Animation, Buttons, Calc,
+	CalcHardShadow, CalcSR, Classes, ComCtrls, Controls, CustomFormulas,
+	Dialogs, DivUtils, DOF, ExtCtrls, FileHandling, Forms, FTGifAnimate,
+	Graphics, HeaderTrafos, ImageProcess, Interpolation, MAIN, Maps,
+	MapSequences, Math, Math3D, Messages, MMSystem, Paint, StdCtrls, SysUtils,
+	TypeDefinitions, Windows
+
+	AniPreviewWindow is referenced by (4):
+
+	FileHandling, HeaderTrafos, IniDirsForm, M3D, MAIN, Animation,
+	FileHandling, M3D, MAIN
+
+	AniProcess references (18):
+
+	TypeDefinitions, Windows, Animation, Classes, Controls, Dialogs, DivUtils,
+	ExtCtrls, Forms, Graphics, MAIN, Math, Math3D, Messages, PostProcessForm,
+	StdCtrls, SysUtils, TypeDefinitions, Vcl.ComCtrls, Windows
+
+	AniProcess is referenced by (2):
+
+	FileHandling, M3D, MAIN, Animation, M3D
+
+	BatchForm references (17):
+
+	StdCtrls, SysUtils, TypeDefinitions, Vcl.ComCtrls, Windows, Classes,
+	ComCtrls, Controls, CustomFormulas, Dialogs, ExtCtrls, FileHandling,
+	Forms, Graphics, MAIN, Menus, Messages, ShellApi, StdCtrls, SysUtils,
+	TypeDefinitions, Windows
+
+	BatchForm is referenced by (2):
+
+	FileHandling, M3D, MAIN, Animation, M3D, M3D, MAIN
+
+	BRInfoWindow references (10):
+
+	TypeDefinitions, Windows, Classes, ComCtrls, Controls, Dialogs, Forms,
+	Graphics, Messages, StdCtrls, SysUtils, Windows
+
+	BRInfoWindow is referenced by (2):
+
+	FileHandling, M3D, MAIN, Animation, M3D, M3D, MAIN, M3D, Tiling
+
+	Calc references (17):
+
+	Graphics, Messages, StdCtrls, SysUtils, Windows, CalcThread, CalcThread2D,
+	DivUtils, FileHandling, Forms, FormulaClass, HeaderTrafos, ImageProcess,
+	MAIN, Maps, MapSequences, Math, Math3D, SysUtils, TypeDefinitions, Types,
+	Windows
+
+	Calc is referenced by (21):
+
+	FileHandling, M3D, MAIN, Animation, M3D, M3D, MAIN, M3D, Tiling,
+	Animation, AniPreviewWindow, CalcAmbShadowDE, calcBlocky, CalcHardShadow,
+	CalcMonteCarlo, CalcPart, CalcSR, CalcThread, CalcThread2D,
+	CalcVoxelSliceThread, HeaderTrafos, ImageProcess, M3D, MAIN, Maps,
+	NaviCalcThread, PreviewRenderer, RegisterM3Pgraphic, uMapCalcWindow,
+	VoxelExport
+
+	CalcAmbShadowDE references (13):
+
+	Windows, Calc, Classes, CustomFormulas, DivUtils, Forms, formulas,
+	HeaderTrafos, ImageProcess, MAIN, Math, Math3D, TypeDefinitions, Windows
+
+	CalcAmbShadowDE is referenced by (4):
+
+	VoxelExport, CalcPart, CalcSR, ImageProcess, M3D
+
+	calcBlocky references (10):
+
+	HeaderTrafos, ImageProcess, MAIN, Math, Math3D, TypeDefinitions, Windows,
+	Calc, Classes, DivUtils, HeaderTrafos, MAIN, Math, Math3D, PaintThread,
+	TypeDefinitions, Windows
+
+	calcBlocky is referenced by (2):
+
+	VoxelExport, CalcPart, CalcSR, ImageProcess, M3D, M3D, MAIN
+
+	CalcHardShadow references (13):
+
+	TypeDefinitions, Windows, Calc, Classes, CustomFormulas, DivUtils, Forms,
+	formulas, HeaderTrafos, ImageProcess, MAIN, Math, Math3D, TypeDefinitions,
+	Windows
+
+	CalcHardShadow is referenced by (6):
+
+	VoxelExport, CalcPart, CalcSR, ImageProcess, M3D, M3D, MAIN, Animation,
+	AniPreviewWindow, M3D, MAIN, PreviewRenderer, RegisterM3Pgraphic
+
+	CalcMonteCarlo references (15):
+
+	Windows, Calc, Classes, CustomFormulas, DivUtils, formulas, HeaderTrafos,
+	ImageProcess, MAIN, Maps, Math, Math3D, MonteCarloForm, PaintThread,
+	TypeDefinitions, Windows
+
+	CalcMonteCarlo is referenced by (3):
+
+	AniPreviewWindow, M3D, MAIN, PreviewRenderer, RegisterM3Pgraphic, M3D,
+	MonteCarloForm, PostProcessForm
+
+	CalcPart references (15):
+
+	TypeDefinitions, Windows, Calc, CalcAmbShadowDE, Classes, CustomFormulas,
+	DivUtils, Forms, formulas, HeaderTrafos, MAIN, Math, Math3D, PaintThread,
+	PostProcessForm, TypeDefinitions, Windows
+
+	CalcPart is referenced by (2):
+
+	MonteCarloForm, PostProcessForm, M3D, PostProcessForm
+
+	CalcSR references (16):
+
+	PostProcessForm, TypeDefinitions, Windows, Calc, CalcAmbShadowDE, Classes,
+	CustomFormulas, DivUtils, Forms, formulas, HeaderTrafos, ImageProcess,
+	MAIN, Maps, Math, Math3D, PaintThread, TypeDefinitions, Windows
+
+	CalcSR is referenced by (7):
+
+	MonteCarloForm, PostProcessForm, M3D, PostProcessForm, Animation,
+	AniPreviewWindow, M3D, MAIN, PostProcessForm, PreviewRenderer,
+	RegisterM3Pgraphic
+
+	CalcThread references (12):
+
+	MAIN, Maps, Math, Math3D, PaintThread, TypeDefinitions, Windows, Calc,
+	Classes, CustomFormulas, DivUtils, FormulaClass, formulas, MAIN, Maps,
+	Math, Math3D, TypeDefinitions, Windows
+
+	CalcThread is referenced by (4):
+
+	RegisterM3Pgraphic, Calc, ImageProcess, M3D, MAIN
+
+	CalcThread2D references (9):
+
+	Math, Math3D, TypeDefinitions, Windows, Calc, Classes, DivUtils, formulas,
+	MAIN, Math, Math3D, TypeDefinitions, Windows
+
+	CalcThread2D is referenced by (3):
+
+	RegisterM3Pgraphic, Calc, ImageProcess, M3D, MAIN, Calc, M3D, MAIN
+
+	CalcVoxelSliceThread references (10):
+
+	MAIN, Math, Math3D, TypeDefinitions, Windows, Calc, Classes, DivUtils,
+	formulas, HeaderTrafos, MAIN, Math, Math3D, TypeDefinitions, Windows
+
+	CalcVoxelSliceThread is referenced by (2):
+
+	RegisterM3Pgraphic, Calc, ImageProcess, M3D, MAIN, Calc, M3D, MAIN, M3D,
+	VoxelExport
+
+	ColorOptionForm references (11):
+
+	formulas, HeaderTrafos, MAIN, Math, Math3D, TypeDefinitions, Windows,
+	System.Classes, System.SysUtils, System.Variants, Vcl.Controls,
+	Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Forms, Vcl.Graphics, Vcl.StdCtrls,
+	Winapi.Messages, Winapi.Windows
+
+	ColorOptionForm is referenced by (2):
+
+	VoxelExport, M3D, MonteCarloForm
+
+	ColorPick references (20):
+
+	Winapi.Messages, Winapi.Windows, Buttons, Classes, Controls, Dialogs,
+	DivUtils, ExtCtrls, Forms, Graphics, HeaderTrafos, Interpolation, MAIN,
+	Math, Math3D, Messages, StdCtrls, SysUtils, TrackBarEx, TypeDefinitions,
+	Vcl.ComCtrls, Windows
+
+	ColorPick is referenced by (2):
+
+	VoxelExport, M3D, MonteCarloForm, M3D, MAIN
+
+	ColorSSAO references (10):
+
+	Vcl.ComCtrls, Windows, Classes, DivUtils, Forms, ImageProcess, MAIN, Math,
+	Math3D, SysUtils, TypeDefinitions, Windows
+
+	ColorSSAO is referenced by (1):
+
+	VoxelExport, M3D, MonteCarloForm, M3D, MAIN, M3D
+
+	CustomFormulas references (14):
+
+	Math3D, SysUtils, TypeDefinitions, Windows, Classes, Dialogs, DivUtils,
+	FileHandling, FormulaCompiler, formulas, HeaderTrafos, JITFormulas, MAIN,
+	Math, Math3D, SysUtils, TypeDefinitions, Windows
+
+	CustomFormulas is referenced by (24):
+
+	VoxelExport, M3D, MonteCarloForm, M3D, MAIN, M3D, Animation,
+	AniPreviewWindow, BatchForm, CalcAmbShadowDE, CalcHardShadow,
+	CalcMonteCarlo, CalcPart, CalcSR, CalcThread, FileHandling, FormulaClass,
+	FormulaNames, formulas, HeaderTrafos, Interpolation, JITFormulaEditGUI,
+	M3D, MAIN, MB3DFacade, MonteCarloForm, MutaGenGUI, PreviewRenderer,
+	RegisterM3Pgraphic, VoxelExport
+
+	DivUtils references (15):
+
+	Math, Math3D, SysUtils, TypeDefinitions, Windows, Classes, FileHandling,
+	Forms, formulas, Graphics, HeaderTrafos, MAIN, Maps, Math, Math3D,
+	StdCtrls, SysUtils, TypeDefinitions, Types, Windows
+
+	DivUtils is referenced by (45):
+
+	RegisterM3Pgraphic, VoxelExport, AmbHiQ, AmbShadowCalcThreadN, Animation,
+	AniPreviewWindow, AniProcess, Calc, CalcAmbShadowDE, calcBlocky,
+	CalcHardShadow, CalcMonteCarlo, CalcPart, CalcSR, CalcThread,
+	CalcThread2D, CalcVoxelSliceThread, ColorPick, ColorSSAO, CustomFormulas,
+	DOF, DoubleSize, FileHandling, FormulaClass, FormulaNames, formulas,
+	HeaderTrafos, ImageProcess, IniDirsForm, Interpolation, JITFormulaEditGUI,
+	M3D, M3Iregister, MAIN, Maps, Math3D, MB3DFacade, MonteCarloForm,
+	NaviCalcThread, Paint, PaintThread, PostProcessForm, PreviewRenderer,
+	RegisterM3Pgraphic, Tiling, uMapCalcWindow, VoxelExport
+
+	DOF references (9):
+
+	StdCtrls, SysUtils, TypeDefinitions, Types, Windows, Controls, DivUtils,
+	Forms, ImageProcess, MAIN, Math, Math3D, TypeDefinitions, Windows
+
+	DOF is referenced by (8):
+
+	RegisterM3Pgraphic, Tiling, uMapCalcWindow, VoxelExport, Animation,
+	AniPreviewWindow, HeaderTrafos, M3D, MAIN, PostProcessForm,
+	PreviewRenderer, RegisterM3Pgraphic
+
+	DoubleSize references (4):
+
+	Forms, ImageProcess, MAIN, Math, Math3D, TypeDefinitions, Windows,
+	DivUtils, HeaderTrafos, MAIN, TypeDefinitions
+
+	DoubleSize is referenced by (2):
+
+	PreviewRenderer, RegisterM3Pgraphic, M3D, PostProcessForm
+
+	FileHandling references (29):
+
+	DivUtils, HeaderTrafos, MAIN, TypeDefinitions, Animation,
+	AniPreviewWindow, Classes, Clipbrd, Controls, CustomFormulas, Dialogs,
+	DivUtils, Forms, Graphics, HeaderTrafos, ImageProcess, Interpolation,
+	jpeg, MAIN, Maps, Math, Math3D, pngimage, StrUtils, SyncObjs, SysUtils,
+	Tiling, TypeDefinitions, Types, Undo, vcl.ExtDlgs, Vcl.Themes, Windows
+
+	FileHandling is referenced by (24):
+
+	PreviewRenderer, RegisterM3Pgraphic, M3D, PostProcessForm, Animation,
+	AniPreviewWindow, BatchForm, Calc, CustomFormulas, DivUtils, FormulaNames,
+	HeaderTrafos, ImageProcess, IniDirsForm, JITFormulaEditGUI, M3D,
+	M3Iregister, MAIN, Maps, MapSequencesGUI, MonteCarloForm, MutaGenGUI,
+	PostProcessForm, TextBox, Tiling, Undo, VisualThemesGUI, VoxelExport
+
+	FormulaClass references (6):
+
+	Tiling, TypeDefinitions, Types, Undo, vcl.ExtDlgs, Vcl.Themes, Windows,
+	Classes, CustomFormulas, DivUtils, formulas, TypeDefinitions, Windows
+
+	FormulaClass is referenced by (4):
+
+	PostProcessForm, TextBox, Tiling, Undo, VisualThemesGUI, VoxelExport,
+	Calc, CalcThread, M3D, NaviCalcThread
+
+	FormulaCompiler references (18):
+
+	Classes, CustomFormulas, DivUtils, formulas, TypeDefinitions, Windows,
+	Classes, Controls, Dialogs, Forms, Graphics, JITFormulas, Math, Math3D,
+	Messages, PaxCompiler, PaxProgram, PaxRegister, PaxRunner, StdCtrls,
+	SysUtils, TypeDefinitions, TypInfo, Windows
+
+	FormulaCompiler is referenced by (4):
+
+	Calc, CalcThread, M3D, NaviCalcThread, CustomFormulas, JITFormulaEditGUI,
+	M3D, MAIN
+
+	FormulaNames references (7):
+
+	SysUtils, TypeDefinitions, TypInfo, Windows, CustomFormulas, DivUtils,
+	FileHandling, HeaderTrafos, System.Classes, System.Contnrs,
+	System.SysUtils
+
+	FormulaNames is referenced by (3):
+
+	M3D, MAIN, M3D, MAIN, MutaGen
+
+	formulas references (6):
+
+	System.SysUtils, CustomFormulas, DivUtils, Math, Math3D, SysUtils,
+	TypeDefinitions
+
+	formulas is referenced by (15):
+
+	M3D, MAIN, M3D, MAIN, MutaGen, CalcAmbShadowDE, CalcHardShadow,
+	CalcMonteCarlo, CalcPart, CalcSR, CalcThread, CalcThread2D,
+	CalcVoxelSliceThread, CustomFormulas, DivUtils, FormulaClass,
+	HeaderTrafos, M3D, MAIN, NaviCalcThread
+
+	FTGifAnimate references (4):
+
+	TypeDefinitions, GIF_Image, System.SysUtils, Vcl.Graphics, Winapi.Windows
+
+	FTGifAnimate is referenced by (2):
+
+	HeaderTrafos, M3D, MAIN, NaviCalcThread, AniPreviewWindow, M3D
+
+	GIF_Image references (7):
+
+	TypeDefinitions, GIF_Image, System.SysUtils, Vcl.Graphics, Winapi.Windows,
+	Classes, Consts, Graphics, messages, mmsystem, sysutils, Windows
+
+	GIF_Image is referenced by (2):
+
+	HeaderTrafos, M3D, MAIN, NaviCalcThread, AniPreviewWindow, M3D,
+	FTGifAnimate, M3D
+
+	HeaderTrafos references (18):
+
+	Classes, Consts, Graphics, messages, mmsystem, sysutils, Windows,
+	Animation, Calc, CustomFormulas, DivUtils, DOF, FileHandling, formulas,
+	Interpolation, MAIN, Maps, Math, Math3D, PaintThread, SysUtils, Tiling,
+	TypeDefinitions, Types, Windows
+
+	HeaderTrafos is referenced by (31):
+
+	FTGifAnimate, M3D, Animation, AniPreviewWindow, Calc, CalcAmbShadowDE,
+	calcBlocky, CalcHardShadow, CalcMonteCarlo, CalcPart, CalcSR,
+	CalcVoxelSliceThread, ColorPick, CustomFormulas, DivUtils, DoubleSize,
+	FileHandling, FormulaNames, ImageProcess, Interpolation, M3D, MAIN, Maps,
+	MB3DFacade, MonteCarloForm, Paint, PaintThread, PostProcessForm,
+	PreviewRenderer, RegisterM3Pgraphic, Tiling, uMapCalcWindow, VoxelExport
+
+	IFS references (1):
+
+	TypeDefinitions, Types, Windows, Types
+
+	IFS is referenced by (1):
+
+	PreviewRenderer, RegisterM3Pgraphic, Tiling, uMapCalcWindow, VoxelExport,
+	M3D
+
+	ImageProcess references (20):
+
+	TypeDefinitions, Types, Windows, Types, AmbShadowCalcThreadN, Calc,
+	CalcAmbShadowDE, CalcThread, Controls, DivUtils, ExtCtrls, FileHandling,
+	Forms, Graphics, HeaderTrafos, Interpolation, MAIN, Math, Math3D,
+	SysUtils, Tiling, TypeDefinitions, Types, Windows
+
+	ImageProcess is referenced by (22):
+
+	M3D, AmbHiQ, AmbShadowCalcThreadN, Animation, AniPreviewWindow, Calc,
+	CalcAmbShadowDE, CalcHardShadow, CalcMonteCarlo, CalcSR, ColorSSAO, DOF,
+	FileHandling, M3D, MAIN, MonteCarloForm, NaviCalcThread, PaintThread,
+	PostProcessForm, PreviewRenderer, RegisterM3Pgraphic, Tiling, VoxelExport
+
+	IniDirsForm references (16):
+
+	SysUtils, Tiling, TypeDefinitions, Types, Windows, Animation, Classes,
+	Controls, Dialogs, DivUtils, FileHandling, Forms, Graphics, MAIN,
+	Messages, MonteCarloForm, StdCtrls, SysUtils, Tiling, VoxelExport,
+	Windows
+
+	IniDirsForm is referenced by (2):
+
+	PostProcessForm, PreviewRenderer, RegisterM3Pgraphic, Tiling, VoxelExport,
+	M3D, MAIN
+
+	Interpolation references (7):
+
+	Windows, CustomFormulas, DivUtils, HeaderTrafos, Math, Math3D, SysUtils,
+	TypeDefinitions
+
+	Interpolation is referenced by (10):
+
+	M3D, MAIN, Animation, AniPreviewWindow, ColorPick, FileHandling,
+	HeaderTrafos, ImageProcess, M3D, MAIN, PaintThread, Undo
+
+	JITFormulaEditGUI references (20):
+
+	TypeDefinitions, CustomFormulas, DivUtils, FileHandling, FormulaCompiler,
+	JITFormulas, ParamValueEditGUI, System.Classes, System.SysUtils,
+	System.Variants, TypeDefinitions, Vcl.Buttons, Vcl.ComCtrls, Vcl.Controls,
+	Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Forms, Vcl.Graphics, Vcl.StdCtrls,
+	Winapi.Messages, Winapi.Windows
+
+	JITFormulaEditGUI is referenced by (2):
+
+	HeaderTrafos, ImageProcess, M3D, MAIN, PaintThread, Undo, M3D, MAIN
+
+	JITFormulas references (4):
+
+	Winapi.Messages, Winapi.Windows, Classes, Contnrs, SysUtils, Variants
+
+	JITFormulas is referenced by (5):
+
+	HeaderTrafos, ImageProcess, M3D, MAIN, PaintThread, Undo, M3D, MAIN,
+	CustomFormulas, FormulaCompiler, JITFormulaEditGUI, M3D,
+	ParamValueEditGUI
+
+	JvAppStorage references (23):
+
+	Winapi.Messages, Winapi.Windows, Classes, Contnrs, SysUtils, Variants,
+	Classes, IniFiles, JclBase, JclFileUtils, JclMime, JclRTTI, JclStrings,
+	JclSynch, JclSysInfo, JvComponentBase, JvConsts, JvJCLUtils, JvJVCLUtils,
+	JvPropertyStore, JvResources, JvStrings, JvTranslateString, JvTypes,
+	StrUtils, SysUtils, TypInfo, Variants, Windows
+
+	JvAppStorage is referenced by (2):
+
+	ParamValueEditGUI, JvJVCLUtils, JvPropertyStore
+
+	JvButton references (16):
+
+	StrUtils, SysUtils, TypInfo, Variants, Windows, Buttons, Classes,
+	Controls, Forms, Graphics, JvComponent, JvConsts, JvExStdCtrls,
+	JvJVCLUtils, JvThemes, JvTypes, Menus, Messages, SysUtils, Types, Windows
+
+	JvButton is referenced by (1):
+
+	ParamValueEditGUI, JvJVCLUtils, JvPropertyStore, JvNavigationPane
+
+	JvCaptionPanel references (12):
+
+	JvJVCLUtils, JvThemes, JvTypes, Menus, Messages, SysUtils, Types, Windows,
+	Classes, Controls, ExtCtrls, Forms, Graphics, JvComponent, JvExControls,
+	JvExtComponent, JvJCLUtils, Messages, SysUtils, Windows
+
+	JvCaptionPanel is referenced by (1):
+
+	ParamValueEditGUI, JvJVCLUtils, JvPropertyStore, JvNavigationPane,
+	MutaGenGUI
+
+	JvCaret references (7):
+
+	JvExtComponent, JvJCLUtils, Messages, SysUtils, Windows, Classes,
+	Controls, Graphics, JvJCLUtils, JvResources, JvTypes, Windows
+
+	JvCaret is referenced by (1):
+
+	MutaGenGUI, JvMemo
+
+	JvCheckBox references (13):
+
+	Controls, Graphics, JvJCLUtils, JvResources, JvTypes, Windows, Classes,
+	Controls, Graphics, JvDataSourceIntf, JvExStdCtrls, JvJCLUtils,
+	JvJVCLUtils, JvLinkedControls, JvTypes, Messages, StdCtrls, SysUtils,
+	Windows
+
+	JvCheckBox is referenced by (1):
+
+	MutaGenGUI, JvMemo, JvGroupBox
+
+	JvClipboardMonitor references (7):
+
+	Windows, Classes, Clipbrd, Forms, JvComponentBase, JvJVCLUtils, Messages,
+	Windows
+
+	JvClipboardMonitor is referenced by (1):
+
+	MutaGenGUI, JvMemo, JvGroupBox, MutaGenGUI
+
+	JVCLVer is referenced by (7):
+
+	MutaGenGUI, JvMemo, JvGroupBox, MutaGenGUI, JvComponentBase, JvExButtons,
+	JvExComCtrls, JvExControls, JvExExtCtrls, JvExForms, JvExStdCtrls
+
+	JvComCtrls references (27):
+
+	Windows, Buttons, Classes, ComCtrls, CommCtrl, Controls, Forms, Graphics,
+	ImgList, JclStrings, JclSysInfo, JvComponent, JvComponentBase, JvConsts,
+	JvDataSourceIntf, JvExComCtrls, JvExControls, JvJCLUtils, JvJVCLUtils,
+	JvThemes, JvWin32, Math, Menus, Messages, StrUtils, SysUtils, Types,
+	Windows
+
+	JvComCtrls is referenced by (2):
+
+	JvExComCtrls, JvExControls, JvExExtCtrls, JvExForms, JvExStdCtrls, MAIN,
+	MutaGenGUI
+
+	JvComponent references (10):
+
+	Windows, Classes, Controls, Forms, JvConsts, JvExControls, JvExForms,
+	JvExStdCtrls, Messages, RTLConsts, Windows
+
+	JvComponent is referenced by (9):
+
+	MutaGenGUI, JvButton, JvCaptionPanel, JvComCtrls, JvgLabel,
+	JvNavigationPane, JvOutlookBar, JvPageList, JvSlider, JvxSlider
+
+	JvComponentBase references (2):
+
+	JvExStdCtrls, Messages, RTLConsts, Windows, Classes, JVCLVer
+
+	JvComponentBase is referenced by (8):
+
+	JvNavigationPane, JvOutlookBar, JvPageList, JvSlider, JvxSlider,
+	JvAppStorage, JvClipboardMonitor, JvComCtrls, JvFormAnimatedIcon,
+	JvNavigationPane, JvPropertyStore, JvTranslateString, MutaGenGUI
+
+	JvConsts references (7):
+
+	JvExStdCtrls, Messages, RTLConsts, Windows, Classes, JVCLVer, Classes,
+	Controls, Forms, Graphics, SysUtils, TypInfo, Windows
+
+	JvConsts is referenced by (12):
+
+	JvNavigationPane, JvPropertyStore, JvTranslateString, MutaGenGUI,
+	JvAppStorage, JvButton, JvComCtrls, JvComponent, JvCustomItemViewer,
+	Jvg3DColors, JvgUtils, JvJVCLUtils, JvNavigationPane, JvOutlookBar,
+	JvStrings, JvxSlider
+
+	JvCustomItemViewer references (18):
+
+	Controls, Forms, Graphics, SysUtils, TypInfo, Windows, Classes, ComCtrls,
+	Contnrs, Controls, ExtCtrls, Forms, Graphics, JvConsts, JvExControls,
+	JvExForms, JvJCLUtils, JvJVCLUtils, JvThemes, Math, Messages, StdCtrls,
+	SysUtils, Windows
+
+	JvCustomItemViewer is referenced by (2):
+
+	JvStrings, JvxSlider, JvImagesViewer, MutaGenGUI
+
+	JvDataSourceIntf references (4):
+
+	SysUtils, Windows, Classes, Contnrs, DB, SysUtils
+
+	JvDataSourceIntf is referenced by (2):
+
+	JvStrings, JvxSlider, JvImagesViewer, MutaGenGUI, JvCheckBox, JvComCtrls
+
+	JvExButtons references (14):
+
+	SysUtils, Windows, Classes, Contnrs, DB, SysUtils, Buttons, Classes,
+	Controls, Forms, Graphics, JVCLVer, JvExControls, JvThemes, JvTypes,
+	Messages, StdCtrls, SysUtils, Types, Windows
+
+	JvExButtons is referenced by (1):
+
+	JvStrings, JvxSlider, JvImagesViewer, MutaGenGUI, JvCheckBox, JvComCtrls,
+	JvOutlookBar
+
+	JvExComCtrls references (13):
+
+	Messages, StdCtrls, SysUtils, Types, Windows, Classes, ComCtrls, Controls,
+	Forms, Graphics, JVCLVer, JvExControls, JvThemes, JvTypes, Messages,
+	SysUtils, Types, Windows
+
+	JvExComCtrls is referenced by (5):
+
+	JvOutlookBar, JvComCtrls, JvExtComponent, JvProgressBar, MAIN, MutaGenGUI
+
+	JvExControls references (11):
+
+	SysUtils, Types, Windows, Classes, Controls, Forms, Graphics, JVCLVer,
+	JvThemes, JvTypes, Messages, SysUtils, Types, Windows
+
+	JvExControls is referenced by (14):
+
+	JvOutlookBar, JvComCtrls, JvExtComponent, JvProgressBar, MAIN, MutaGenGUI,
+	JvCaptionPanel, JvComCtrls, JvComponent, JvCustomItemViewer, JvExButtons,
+	JvExComCtrls, JvExExtCtrls, JvExForms, JvExStdCtrls, JvGroupBox,
+	JvxSlider, MAIN, MonteCarloForm, MutaGenGUI
+
+	JvExExtCtrls references (13):
+
+	JvThemes, JvTypes, Messages, SysUtils, Types, Windows, Classes, Controls,
+	ExtCtrls, Forms, Graphics, JVCLVer, JvExControls, JvThemes, JvTypes,
+	Messages, SysUtils, Types, Windows
+
+	JvExExtCtrls is referenced by (3):
+
+	JvxSlider, MAIN, MonteCarloForm, MutaGenGUI, JvExtComponent,
+	JvNavigationPane, MutaGenGUI
+
+	JvExForms references (13):
+
+	Messages, SysUtils, Types, Windows, Classes, Controls, Forms, Graphics,
+	JVCLVer, JvExControls, JvThemes, JvTypes, Messages, SysUtils, ToolWin,
+	Types, Windows
+
+	JvExForms is referenced by (3):
+
+	JvNavigationPane, MutaGenGUI, JvComponent, JvCustomItemViewer, MutaGenGUI
+
+	JvExStdCtrls references (14):
+
+	Types, Windows, Classes, Controls, Forms, Graphics, JclSysInfo, JVCLVer,
+	JvExControls, JvThemes, JvTypes, Messages, StdCtrls, SysUtils, Types,
+	Windows
+
+	JvExStdCtrls is referenced by (7):
+
+	JvNavigationPane, MutaGenGUI, JvComponent, JvCustomItemViewer, MutaGenGUI,
+	JvButton, JvCheckBox, JvComponent, JvGroupBox, JvMemo, MAIN, MutaGenGUI
+
+	JvExtComponent references (5):
+
+	Windows, Classes, Graphics, JvExComCtrls, JvExExtCtrls, Types
+
+	JvExtComponent is referenced by (2):
+
+	JvButton, JvCheckBox, JvComponent, JvGroupBox, JvMemo, MAIN, MutaGenGUI,
+	JvCaptionPanel, MutaGenGUI
+
+	JvFormAnimatedIcon references (9):
+
+	Windows, Classes, Graphics, JvExComCtrls, JvExExtCtrls, Types, Classes,
+	Controls, ExtCtrls, Forms, Graphics, ImgList, JvComponentBase,
+	JvJVCLUtils, SysUtils
+
+	JvFormAnimatedIcon is referenced by (1):
+
+	JvCaptionPanel, MutaGenGUI, MutaGenGUI
+
+	Jvg3DColors references (12):
+
+	JvJVCLUtils, SysUtils, Classes, Controls, Forms, Graphics, JvConsts,
+	JvgTypes, JvgUtils, JvResources, Math, Messages, SysUtils, Windows
+
+	Jvg3DColors is referenced by (1):
+
+	JvCaptionPanel, MutaGenGUI, MutaGenGUI, JvgUtils
+
+	JvgCommClasses references (8):
+
+	JvgTypes, JvgUtils, JvResources, Math, Messages, SysUtils, Windows,
+	Classes, Controls, ExtCtrls, Graphics, JvgTypes, JvgUtils, Math, Windows
+
+	JvgCommClasses is referenced by (2):
+
+	JvCaptionPanel, MutaGenGUI, MutaGenGUI, JvgUtils, JvgLabel, JvgUtils
+
+	JvgLabel references (18):
+
+	Classes, Controls, ExtCtrls, Graphics, JvgTypes, JvgUtils, Math, Windows,
+	Classes, Controls, Dialogs, ExtCtrls, Forms, Graphics, JvComponent,
+	JvgCommClasses, JvgTypes, JvgUtils, JvJCLUtils, JvJVCLUtils, Math,
+	Messages, StdCtrls, SysUtils, UITypes, Windows
+
+	JvgLabel is referenced by (2):
+
+	JvCaptionPanel, MutaGenGUI, MutaGenGUI, JvgUtils, JvgLabel, JvgUtils,
+	MAIN, MonteCarloForm
+
+	JvGroupBox references (14):
+
+	Messages, StdCtrls, SysUtils, UITypes, Windows, Classes, Controls, Forms,
+	Graphics, JvCheckBox, JvExControls, JvExStdCtrls, JvJCLUtils, JvThemes,
+	Math, Messages, StdCtrls, SysUtils, Windows
+
+	JvGroupBox is referenced by (1):
+
+	MAIN, MonteCarloForm, MutaGenGUI
+
+	JvgTypes references (1):
+
+	Math, Messages, StdCtrls, SysUtils, Windows, Graphics
+
+	JvgTypes is referenced by (4):
+
+	MAIN, MonteCarloForm, MutaGenGUI, Jvg3DColors, JvgCommClasses, JvgLabel,
+	JvgUtils
+
+	JvgUtils references (18):
+
+	Math, Messages, StdCtrls, SysUtils, Windows, Graphics, Classes, Controls,
+	ExtCtrls, Forms, Graphics, JvConsts, Jvg3DColors, JvgCommClasses,
+	JvgTypes, JvJCLUtils, JvResources, Math, Messages, MMSystem, ShlObj,
+	SysUtils, UITypes, Windows
+
+	JvgUtils is referenced by (3):
+
+	JvgUtils, Jvg3DColors, JvgCommClasses, JvgLabel
+
+	JvImagesViewer references (10):
+
+	SysUtils, UITypes, Windows, Classes, ComCtrls, Controls, Graphics,
+	JvCustomItemViewer, JvJCLUtils, Messages, StdCtrls, SysUtils, Windows
+
+	JvImagesViewer is referenced by (1):
+
+	JvgUtils, Jvg3DColors, JvgCommClasses, JvgLabel, MutaGenGUI
+
+	JvJCLUtils references (28):
+
+	JvCustomItemViewer, JvJCLUtils, Messages, StdCtrls, SysUtils, Windows,
+	ActiveX, Classes, Clipbrd, ComObj, Consts, Contnrs, Controls, Graphics,
+	JclBase, JclFileUtils, JclStrings, JclSysInfo, JclSysUtils, JvTypes, Math,
+	Messages, MMSystem, Registry, RTLConsts, ShellAPI, ShlObj, StrUtils,
+	SysConst, SysUtils, Types, TypInfo, Variants, Windows
+
+	JvJCLUtils is referenced by (17):
+
+	JvgUtils, Jvg3DColors, JvgCommClasses, JvgLabel, MutaGenGUI, JvAppStorage,
+	JvCaptionPanel, JvCaret, JvCheckBox, JvComCtrls, JvCustomItemViewer,
+	JvgLabel, JvGroupBox, JvgUtils, JvImagesViewer, JvJVCLUtils,
+	JvNavigationPane, JvOutlookBar, JvProgressBar, JvStrings,
+	JvTranslateString, JvxSlider
+
+	JvJVCLUtils references (33):
+
+	SysConst, SysUtils, Types, TypInfo, Variants, Windows, ActiveX, Classes,
+	ComCtrls, CommCtrl, Consts, Contnrs, Controls, Dialogs, ExtCtrls, Forms,
+	Graphics, Grids, ImgList, JclBase, JclFileUtils, jpeg, JvAppStorage,
+	JvConsts, JvJCLUtils, JvResources, JvTypes, Math, Menus, Messages,
+	MultiMon, Registry, ShellAPI, ShlObj, StdCtrls, SysUtils, Types, Variants,
+	Windows
+
+	JvJVCLUtils is referenced by (14):
+
+	JvTranslateString, JvxSlider, JvAppStorage, JvButton, JvCheckBox,
+	JvClipboardMonitor, JvComCtrls, JvCustomItemViewer, JvFormAnimatedIcon,
+	JvgLabel, JvNavigationPane, JvOutlookBar, JvProgressBar, JvPropertyStore,
+	JvTranslateString, JvxSlider
+
+	JvLinkedControls references (4):
+
+	Windows, Classes, Controls, JvResources, SysUtils
+
+	JvLinkedControls is referenced by (1):
+
+	JvTranslateString, JvxSlider, JvCheckBox
+
+	JvMemo references (12):
+
+	Windows, Classes, Controls, JvResources, SysUtils, Classes, Controls,
+	Forms, Graphics, JclStrings, JvCaret, JvExStdCtrls, JvTypes, Messages,
+	StdCtrls, SysUtils, Windows
+
+	JvMemo is referenced by (1):
+
+	JvTranslateString, JvxSlider, JvCheckBox, MAIN
+
+	JvNavigationPane references (23):
+
+	StdCtrls, SysUtils, Windows, ActnList, Classes, Controls, ExtCtrls, Forms,
+	Graphics, ImgList, JvButton, JvComponent, JvComponentBase, JvConsts,
+	JvExExtCtrls, JvJCLUtils, JvJVCLUtils, JvPageList, JvResources, JvTypes,
+	Math, Menus, Messages, SysUtils, Types, Windows
+
+	JvNavigationPane is referenced by (1):
+
+	JvTranslateString, JvxSlider, JvCheckBox, MAIN, MutaGenGUI
+
+	JvOutlookBar references (21):
+
+	Math, Menus, Messages, SysUtils, Types, Windows, ActnList, Buttons,
+	Classes, Controls, ExtCtrls, Forms, Graphics, ImgList, JclSysInfo,
+	JvComponent, JvConsts, JvExButtons, JvJCLUtils, JvJVCLUtils, JvThemes,
+	Math, Messages, StdCtrls, SysUtils, Types, Windows
+
+	JvOutlookBar is referenced by (1):
+
+	JvTranslateString, JvxSlider, JvCheckBox, MAIN, MutaGenGUI, MutaGenGUI
+
+	JvPageList references (9):
+
+	Math, Messages, StdCtrls, SysUtils, Types, Windows, Classes, Controls,
+	Forms, Graphics, JvComponent, JvThemes, Messages, SysUtils, Windows
+
+	JvPageList is referenced by (2):
+
+	JvTranslateString, JvxSlider, JvCheckBox, MAIN, MutaGenGUI, MutaGenGUI,
+	JvNavigationPane, MutaGenGUI
+
+	JvProgressBar references (14):
+
+	Forms, Graphics, JvComponent, JvThemes, Messages, SysUtils, Windows,
+	Classes, ComCtrls, CommCtrl, ComObj, Controls, Forms, Graphics,
+	JclSysInfo, JvExComCtrls, JvJCLUtils, JvJVCLUtils, Messages, SysUtils,
+	Windows
+
+	JvProgressBar is referenced by (1):
+
+	JvNavigationPane, MutaGenGUI, MutaGenGUI
+
+	JvPropertyStore references (11):
+
+	Windows, Classes, JclSynch, JvAppStorage, JvComponentBase, JvJVCLUtils,
+	JvPropertyStoreEditorIntf, JvResources, JvStrings, RTLConsts, SysUtils,
+	TypInfo
+
+	JvPropertyStore is referenced by (1):
+
+	JvNavigationPane, MutaGenGUI, MutaGenGUI, JvAppStorage
+
+	JvPropertyStoreEditorIntf references (1):
+
+	TypInfo, Classes
+
+	JvPropertyStoreEditorIntf is referenced by (1):
+
+	JvNavigationPane, MutaGenGUI, MutaGenGUI, JvAppStorage, JvPropertyStore
+
+	JvResources is referenced by (11):
+
+	JvNavigationPane, MutaGenGUI, MutaGenGUI, JvAppStorage, JvPropertyStore,
+	JvAppStorage, JvCaret, Jvg3DColors, JvgUtils, JvJVCLUtils,
+	JvLinkedControls, JvNavigationPane, JvPropertyStore, JvStrings,
+	JvTranslateString, JvTypes
+
+	JvSlider references (8):
+
+	TypInfo, Classes, Classes, Controls, ExtCtrls, Graphics, JvComponent,
+	Messages, SysUtils, Windows
+
+	JvSlider is referenced by (1):
+
+	JvTranslateString, JvTypes, MutaGenGUI
+
+	JvStrings references (9):
+
+	Messages, SysUtils, Windows, Classes, Graphics, JclSimpleXml, JvConsts,
+	JvJCLUtils, JvResources, JvTypes, SysUtils, Windows
+
+	JvStrings is referenced by (2):
+
+	JvTranslateString, JvTypes, MutaGenGUI, JvAppStorage, JvPropertyStore
+
+	JvThemes references (13):
+
+	JvJCLUtils, JvResources, JvTypes, SysUtils, Windows, Buttons, Classes,
+	CommCtrl, Contnrs, Controls, Forms, Graphics, JclSysInfo, JclSysUtils,
+	Messages, SysUtils, Types, Windows
+
+	JvThemes is referenced by (13):
+
+	JvTranslateString, JvTypes, MutaGenGUI, JvAppStorage, JvPropertyStore,
+	JvButton, JvComCtrls, JvCustomItemViewer, JvExButtons, JvExComCtrls,
+	JvExControls, JvExExtCtrls, JvExForms, JvExStdCtrls, JvGroupBox,
+	JvOutlookBar, JvPageList, JvxSlider
+
+	JvTranslateString references (10):
+
+	Messages, SysUtils, Types, Windows, Classes, Dialogs, Forms, JclFileUtils,
+	JvComponentBase, JvJCLUtils, JvJVCLUtils, JvResources, SysUtils, Types
+
+	JvTranslateString is referenced by (1):
+
+	JvOutlookBar, JvPageList, JvxSlider, JvAppStorage
+
+	JvTypes references (8):
+
+	JvComponentBase, JvJCLUtils, JvJVCLUtils, JvResources, SysUtils, Types,
+	Classes, Controls, Forms, Graphics, JvResources, Messages, SysUtils,
+	Windows
+
+	JvTypes is referenced by (16):
+
+	JvOutlookBar, JvPageList, JvxSlider, JvAppStorage, JvAppStorage, JvButton,
+	JvCaret, JvCheckBox, JvExButtons, JvExComCtrls, JvExControls,
+	JvExExtCtrls, JvExForms, JvExStdCtrls, JvJCLUtils, JvJVCLUtils, JvMemo,
+	JvNavigationPane, JvStrings, JvxSlider
+
+	JvWin32 references (2):
+
+	Windows, CommCtrl, Windows
+
+	JvWin32 is referenced by (1):
+
+	JvNavigationPane, JvStrings, JvxSlider, JvComCtrls
+
+	JvxSlider references (19):
+
+	Windows, CommCtrl, Windows, Classes, Consts, Controls, ExtCtrls, Forms,
+	Graphics, JvComponent, JvConsts, JvExControls, JvJCLUtils, JvJVCLUtils,
+	JvThemes, JvTypes, Math, Menus, Messages, SysUtils, Types, Windows
+
+	JvxSlider is referenced by (1):
+
+	JvNavigationPane, JvStrings, JvxSlider, JvComCtrls, MutaGenGUI
+
+	ListBoxEx references (10):
+
+	JvThemes, JvTypes, Math, Menus, Messages, SysUtils, Types, Windows,
+	Classes, Controls, Dialogs, ExtCtrls, Forms, Graphics, Messages, StdCtrls,
+	SysUtils, Windows
+
+	ListBoxEx is referenced by (2):
+
+	JvNavigationPane, JvStrings, JvxSlider, JvComCtrls, MutaGenGUI, M3D, MAIN
+
+	M3D references (69):
+
+	SysUtils, Windows, AmbHiQ, AmbShadowCalcThreadN, Animation,
+	AniPreviewWindow, AniProcess, BatchForm, BRInfoWindow, Calc,
+	CalcAmbShadowDE, calcBlocky, CalcHardShadow, CalcMonteCarlo, CalcPart,
+	CalcSR, CalcThread, CalcThread2D, CalcVoxelSliceThread, ColorOptionForm,
+	ColorPick, ColorSSAO, CustomFormulas, DivUtils, DOF, DoubleSize,
+	FileHandling, FormulaClass, FormulaCompiler, FormulaNames, formulas,
+	FTGifAnimate, GIF_Image, HeaderTrafos, IFS, ImageProcess, IniDirsForm,
+	Interpolation, JITFormulaEditGUI, JITFormulas, ListBoxEx, M3Iregister,
+	MAIN, Maps, MapSequences, MapSequencesGUI, Math3D, MB3DFacade,
+	MonteCarloForm, MutaGen, MutaGenGUI, NaviCalcThread, Paint, PaintThread,
+	ParamValueEditGUI, PostProcessForm, PreviewRenderer, RegisterM3Pgraphic,
+	SpeedButtonEx, TextBox, ThreadUtils, Tiling, TrackBarEx, TypeDefinitions,
+	uMapCalcWindow, Undo, Vcl.Forms, Vcl.Styles, Vcl.Themes, VisualThemesGUI,
+	VoxelExport
+
+	M3Iregister references (13):
+
+	VoxelExport, Classes, Controls, Dialogs, DivUtils, ExtCtrls, FileHandling,
+	Graphics, Math3D, Messages, StdCtrls, SysUtils, TypeDefinitions, Windows
+
+	M3Iregister is referenced by (3):
+
+	JvNavigationPane, JvStrings, JvxSlider, JvComCtrls, MutaGenGUI, M3D, MAIN,
+	M3D, MAIN, MonteCarloForm
+
+	MAIN references (79):
+
+	Graphics, Math3D, Messages, StdCtrls, SysUtils, TypeDefinitions, Windows,
+	AmbHiQ, AmbShadowCalcThreadN, Animation, AniPreviewWindow, BatchForm,
+	Buttons, Calc, calcBlocky, CalcHardShadow, CalcSR, CalcThread,
+	CalcThread2D, Classes, ClipBrd, ColorPick, ComCtrls, CommDlg, Controls,
+	CustomFormulas, Dialogs, DivUtils, DOF, ExtCtrls, FileCtrl, FileHandling,
+	Forms, FormulaCompiler, FormulaNames, formulas, Graphics, HeaderTrafos,
+	ImageProcess, IniDirsForm, Interpolation, JITFormulaEditGUI, JvComCtrls,
+	JvExComCtrls, JvExControls, JvExStdCtrls, JvgLabel, JvMemo, ListBoxEx,
+	M3Iregister, Maps, MapSequences, MapSequencesGUI, Math, Math3D, Menus,
+	Messages, MonteCarloForm, MutaGenGUI, NaviCalcThread, PaintThread,
+	pngimage, PostProcessForm, ShellAPI, SHFolder, SpeedButtonEx, StdCtrls,
+	StrUtils, System.Character, System.ImageList, SysUtils, TextBox,
+	ThreadUtils, Tiling, TrackBarEx, TypeDefinitions, Types, uMapCalcWindow,
+	Undo, Vcl.ExtDlgs, Vcl.Imaging.jpeg, Vcl.ImgList, Vcl.Themes,
+	VisualThemesGUI, VoxelExport, Windows
+
+	MAIN is referenced by (41):
+
+	M3D, MAIN, MonteCarloForm, AmbHiQ, AmbShadowCalcThreadN, Animation,
+	AniPreviewWindow, AniProcess, BatchForm, Calc, CalcAmbShadowDE,
+	calcBlocky, CalcHardShadow, CalcMonteCarlo, CalcPart, CalcSR, CalcThread,
+	CalcThread2D, CalcVoxelSliceThread, ColorPick, ColorSSAO, CustomFormulas,
+	DivUtils, DOF, DoubleSize, FileHandling, HeaderTrafos, ImageProcess,
+	IniDirsForm, M3D, Maps, MapSequences, MonteCarloForm, MutaGenGUI,
+	NaviCalcThread, Paint, PaintThread, PostProcessForm, TextBox, ThreadUtils,
+	Tiling, uMapCalcWindow, Undo, VoxelExport
+
+	Maps references (18):
+
+	VisualThemesGUI, VoxelExport, Windows, Calc, Classes, DivUtils,
+	FileHandling, Forms, Graphics, HeaderTrafos, jpeg, MAIN, MapSequences,
+	Math, Math3D, pngimage, SyncObjs, SysUtils, TypeDefinitions, UITypes,
+	Windows
+
+	Maps is referenced by (13):
+
+	Tiling, uMapCalcWindow, Undo, VoxelExport, Animation, AniPreviewWindow,
+	Calc, CalcMonteCarlo, CalcSR, CalcThread, DivUtils, FileHandling,
+	HeaderTrafos, M3D, MAIN, MonteCarloForm, uMapCalcWindow
+
+	MapSequences references (5):
+
+	Windows, Classes, Contnrs, MAIN, SysUtils, Windows
+
+	MapSequences is referenced by (7):
+
+	HeaderTrafos, M3D, MAIN, MonteCarloForm, uMapCalcWindow, Animation,
+	AniPreviewWindow, Calc, M3D, MAIN, Maps, MapSequencesGUI
+
+	MapSequencesGUI references (16):
+
+	Windows, Classes, Contnrs, MAIN, SysUtils, Windows, Classes, Controls,
+	Dialogs, FileHandling, Forms, Graphics, MapSequences, Math, Messages,
+	StdCtrls, SysUtils, Vcl.Buttons, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.ExtDlgs,
+	Windows
+
+	MapSequencesGUI is referenced by (2):
+
+	AniPreviewWindow, Calc, M3D, MAIN, Maps, MapSequencesGUI, M3D, MAIN
+
+	Math3D references (3):
+
+	Windows, DivUtils, math, TypeDefinitions
+
+	Math3D is referenced by (40):
+
+	AniPreviewWindow, Calc, M3D, MAIN, Maps, MapSequencesGUI, M3D, MAIN,
+	AmbHiQ, Animation, AniPreviewWindow, AniProcess, Calc, CalcAmbShadowDE,
+	calcBlocky, CalcHardShadow, CalcMonteCarlo, CalcPart, CalcSR, CalcThread,
+	CalcThread2D, CalcVoxelSliceThread, ColorPick, ColorSSAO, CustomFormulas,
+	DivUtils, DOF, FileHandling, FormulaCompiler, formulas, HeaderTrafos,
+	ImageProcess, Interpolation, M3D, M3Iregister, MAIN, Maps, MonteCarloForm,
+	NaviCalcThread, Paint, PaintThread, PostProcessForm, PreviewRenderer,
+	RegisterM3Pgraphic, TypeDefinitions, uMapCalcWindow, Undo, VoxelExport
+
+	MB3DFacade references (8):
+
+	Windows, DivUtils, math, TypeDefinitions, Classes, Contnrs,
+	CustomFormulas, DivUtils, HeaderTrafos, SysUtils, TypeDefinitions,
+	Windows
+
+	MB3DFacade is referenced by (4):
+
+	RegisterM3Pgraphic, TypeDefinitions, uMapCalcWindow, Undo, VoxelExport,
+	M3D, MutaGen, MutaGenGUI, PreviewRenderer
+
+	MonteCarloForm references (34):
+
+	Windows, Buttons, CalcMonteCarlo, Classes, ColorOptionForm, ComCtrls,
+	CommDlg, Controls, CustomFormulas, Dialogs, DivUtils, ExtCtrls,
+	FileHandling, Forms, Graphics, HeaderTrafos, ImageProcess, JvExControls,
+	JvgLabel, M3Iregister, MAIN, Maps, Math, Math3D, Messages, PaintThread,
+	PostProcessForm, StdCtrls, System.ImageList, SysUtils, Tiling,
+	TypeDefinitions, Vcl.ExtDlgs, Vcl.ImgList, Windows
+
+	MonteCarloForm is referenced by (5):
+
+	M3D, MutaGen, MutaGenGUI, PreviewRenderer, CalcMonteCarlo, IniDirsForm,
+	M3D, MAIN, PaintThread
+
+	MutaGen references (11):
+
+	TypeDefinitions, Vcl.ExtDlgs, Vcl.ImgList, Windows, Classes, FormulaNames,
+	MB3DFacade, System.Contnrs, System.Math, SysUtils, TypeDefinitions,
+	Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Graphics, Windows
+
+	MutaGen is referenced by (2):
+
+	M3D, MAIN, PaintThread, M3D, MutaGenGUI
+
+	MutaGenGUI references (44):
+
+	Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Graphics, Windows, Contnrs, CustomFormulas,
+	FileHandling, JvCaptionPanel, JvClipboardMonitor, JvComCtrls,
+	JvComponentBase, JvCustomItemViewer, JvExComCtrls, JvExControls,
+	JvExExtCtrls, JvExForms, JvExStdCtrls, JvExtComponent, JvFormAnimatedIcon,
+	JvGroupBox, JvImagesViewer, JvNavigationPane, JvOutlookBar, JvPageList,
+	JvProgressBar, JvSlider, JvxSlider, MAIN, Math, MB3DFacade, MutaGen,
+	PreviewRenderer, System.Classes, System.SysUtils, System.Variants,
+	TrackBarEx, TypeDefinitions, Vcl.Buttons, Vcl.ComCtrls, Vcl.Controls,
+	Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Forms, Vcl.Graphics, Vcl.Menus,
+	Vcl.StdCtrls, Winapi.Messages, Winapi.Windows
+
+	MutaGenGUI is referenced by (2):
+
+	M3D, MAIN, PaintThread, M3D, MutaGenGUI, M3D, MAIN
+
+	NaviCalcThread references (12):
+
+	Vcl.StdCtrls, Winapi.Messages, Winapi.Windows, Calc, Classes, DivUtils,
+	FormulaClass, formulas, ImageProcess, MAIN, Math, Math3D, SysUtils,
+	TypeDefinitions, Windows
+
+	NaviCalcThread is referenced by (2):
+
+	M3D, MAIN, PaintThread, M3D, MutaGenGUI, M3D, MAIN, M3D, MAIN
+
+	Paint references (7):
+
+	TypeDefinitions, Windows, DivUtils, HeaderTrafos, MAIN, Math, Math3D,
+	PaintThread, TypeDefinitions
+
+	Paint is referenced by (5):
+
+	M3D, MAIN, PaintThread, M3D, MutaGenGUI, M3D, MAIN, M3D, MAIN, Animation,
+	AniPreviewWindow, M3D, PreviewRenderer, RegisterM3Pgraphic
+
+	PaintThread references (14):
+
+	PaintThread, TypeDefinitions, Classes, DivUtils, Graphics, HeaderTrafos,
+	ImageProcess, Interpolation, MAIN, Math, Math3D, MonteCarloForm, SysUtils,
+	Tiling, TypeDefinitions, Windows
+
+	PaintThread is referenced by (10):
+
+	AniPreviewWindow, M3D, PreviewRenderer, RegisterM3Pgraphic, Animation,
+	calcBlocky, CalcMonteCarlo, CalcPart, CalcSR, HeaderTrafos, M3D, MAIN,
+	MonteCarloForm, Paint
+
+	ParamValueEditGUI references (12):
+
+	Tiling, TypeDefinitions, Windows, JITFormulas, System.Classes,
+	System.SysUtils, System.Variants, Vcl.Controls, Vcl.Dialogs, Vcl.ExtCtrls,
+	Vcl.Forms, Vcl.Graphics, Vcl.StdCtrls, Winapi.Messages, Winapi.Windows
+
+	ParamValueEditGUI is referenced by (2):
+
+	MonteCarloForm, Paint, JITFormulaEditGUI, M3D
+
+	PostProcessForm references (27):
+
+	Vcl.Forms, Vcl.Graphics, Vcl.StdCtrls, Winapi.Messages, Winapi.Windows,
+	CalcMonteCarlo, CalcPart, CalcSR, Classes, ComCtrls, Controls, Dialogs,
+	DivUtils, DOF, DoubleSize, ExtCtrls, FileHandling, Forms, Graphics,
+	HeaderTrafos, ImageProcess, MAIN, Math3D, Messages, StdCtrls,
+	System.ImageList, SysUtils, Tiling, TypeDefinitions, Vcl.Buttons,
+	Vcl.ImgList, Windows
+
+	PostProcessForm is referenced by (5):
+
+	MonteCarloForm, Paint, JITFormulaEditGUI, M3D, AniProcess, CalcPart, M3D,
+	MAIN, MonteCarloForm
+
+	PreviewRenderer references (17):
+
+	Vcl.ImgList, Windows, Calc, CalcHardShadow, CalcSR, Classes,
+	CustomFormulas, DivUtils, DOF, Graphics, HeaderTrafos, ImageProcess, Math,
+	Math3D, MB3DFacade, Paint, SysUtils, TypeDefinitions, Windows
+
+	PreviewRenderer is referenced by (2):
+
+	MAIN, MonteCarloForm, M3D, MutaGenGUI
+
+	RegisterM3Pgraphic references (15):
+
+	Math3D, MB3DFacade, Paint, SysUtils, TypeDefinitions, Windows, Calc,
+	CalcHardShadow, CalcSR, Classes, CustomFormulas, DivUtils, DOF, Graphics,
+	HeaderTrafos, ImageProcess, Math, Math3D, Paint, TypeDefinitions, Windows
+
+	RegisterM3Pgraphic is referenced by (1):
+
+	MAIN, MonteCarloForm, M3D, MutaGenGUI, M3D
+
+	SpeedButtonEx references (10):
+
+	HeaderTrafos, ImageProcess, Math, Math3D, Paint, TypeDefinitions, Windows,
+	Buttons, Classes, Controls, Dialogs, ExtCtrls, Forms, Graphics, Messages,
+	SysUtils, Windows
+
+	SpeedButtonEx is referenced by (2):
+
+	MAIN, MonteCarloForm, M3D, MutaGenGUI, M3D, M3D, MAIN
+
+	TextBox references (13):
+
+	SysUtils, Windows, Classes, Controls, Dialogs, ExtCtrls, FileHandling,
+	Forms, Graphics, MAIN, Math, Messages, StdCtrls, SysUtils, Windows
+
+	TextBox is referenced by (2):
+
+	MAIN, MonteCarloForm, M3D, MutaGenGUI, M3D, M3D, MAIN, M3D, MAIN
+
+	ThreadUtils references (5):
+
+	Forms, Graphics, MAIN, Math, Messages, StdCtrls, SysUtils, Windows,
+	Classes, MAIN, Math, TypeDefinitions, Windows
+
+	ThreadUtils is referenced by (2):
+
+	MAIN, MonteCarloForm, M3D, MutaGenGUI, M3D, M3D, MAIN, M3D, MAIN, M3D,
+	MAIN
+
+	Tiling references (21):
+
+	Classes, MAIN, Math, TypeDefinitions, Windows, BRInfoWindow, Buttons,
+	Classes, Controls, Dialogs, DivUtils, ExtCtrls, FileHandling, Forms,
+	Graphics, HeaderTrafos, ImageProcess, MAIN, Math, Menus, Messages,
+	StdCtrls, SysUtils, TypeDefinitions, Vcl.ComCtrls, Windows
+
+	Tiling is referenced by (9):
+
+	MAIN, FileHandling, HeaderTrafos, ImageProcess, IniDirsForm, M3D, MAIN,
+	MonteCarloForm, PaintThread, PostProcessForm
+
+	TrackBarEx references (11):
+
+	StdCtrls, SysUtils, TypeDefinitions, Vcl.ComCtrls, Windows, Classes,
+	ComCtrls, Controls, Dialogs, ExtCtrls, Forms, Graphics, Messages,
+	StdCtrls, SysUtils, Windows
+
+	TrackBarEx is referenced by (4):
+
+	MonteCarloForm, PaintThread, PostProcessForm, ColorPick, M3D, MAIN,
+	MutaGenGUI
+
+	TypeDefinitions references (4):
+
+	StdCtrls, SysUtils, Windows, Classes, Math3D, Messages, Windows
+
+	TypeDefinitions is referenced by (50):
+
+	MutaGenGUI, AmbHiQ, AmbShadowCalcThreadN, Animation, AniPreviewWindow,
+	AniProcess, BatchForm, Calc, CalcAmbShadowDE, calcBlocky, CalcHardShadow,
+	CalcMonteCarlo, CalcPart, CalcSR, CalcThread, CalcThread2D,
+	CalcVoxelSliceThread, ColorPick, ColorSSAO, CustomFormulas, DivUtils, DOF,
+	DoubleSize, FileHandling, FormulaClass, FormulaCompiler, formulas,
+	HeaderTrafos, ImageProcess, Interpolation, JITFormulaEditGUI, M3D,
+	M3Iregister, MAIN, Maps, Math3D, MB3DFacade, MonteCarloForm, MutaGen,
+	MutaGenGUI, NaviCalcThread, Paint, PaintThread, PostProcessForm,
+	PreviewRenderer, RegisterM3Pgraphic, ThreadUtils, Tiling, uMapCalcWindow,
+	Undo, VoxelExport
+
+	uMapCalcWindow references (20):
+
+	StdCtrls, SysUtils, Windows, Classes, Math3D, Messages, Windows, Calc,
+	DivUtils, HeaderTrafos, MAIN, Maps, Math, Math3D, System.Classes,
+	System.SysUtils, System.Variants, TypeDefinitions, Vcl.ComCtrls,
+	Vcl.Controls, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Forms, Vcl.Graphics,
+	Vcl.StdCtrls, Winapi.Messages, Winapi.Windows
+
+	uMapCalcWindow is referenced by (2):
+
+	Undo, VoxelExport, M3D, MAIN
+
+	Undo references (7):
+
+	Vcl.StdCtrls, Winapi.Messages, Winapi.Windows, FileHandling,
+	Interpolation, MAIN, Math, Math3D, SysUtils, TypeDefinitions
+
+	Undo is referenced by (3):
+
+	Undo, VoxelExport, M3D, MAIN, FileHandling, M3D, MAIN
+
+	VisualThemesGUI references (11):
+
+	Interpolation, MAIN, Math, Math3D, SysUtils, TypeDefinitions, Classes,
+	Controls, Dialogs, FileHandling, Forms, Graphics, Messages, StdCtrls,
+	SysUtils, Vcl.Themes, Windows
+
+	VisualThemesGUI is referenced by (2):
+
+	Undo, VoxelExport, M3D, MAIN, FileHandling, M3D, MAIN, M3D, MAIN
+
+	VoxelExport references (23):
+
+	SysUtils, Vcl.Themes, Windows, Buttons, Calc, CalcVoxelSliceThread,
+	Classes, ComCtrls, Controls, CustomFormulas, Dialogs, DivUtils, ExtCtrls,
+	FileHandling, Forms, Graphics, HeaderTrafos, ImageProcess, MAIN, Math,
+	Math3D, Messages, StdCtrls, SysUtils, TypeDefinitions, Windows
+
+	VoxelExport is referenced by (3):
+
+	Undo, VoxelExport, M3D, MAIN, FileHandling, M3D, MAIN, M3D, MAIN,
+	IniDirsForm, M3D, MAIN
+
+
+Optimal uses list:
+--------------------------------------------------------------------------------------------------
+
+Math3D
+TypeDefinitions
+FileHandling
+DivUtils
+FormulaClass
+JITFormulas
+CustomFormulas
+formulas
+HeaderTrafos
+CalcThread
+AmbShadowCalcThreadN
+PaintThread
+M3Iregister
+JvResources
+JvTypes
+JvThemes
+JVCLVer
+JvExControls
+JvExStdCtrls
+JvCaret
+JvJCLUtils
+JvMemo
+JvExComCtrls
+JvComponentBase
+JvTranslateString
+JvAppStorage
+JvJVCLUtils
+JvConsts
+JvPropertyStoreEditorIntf
+JvPropertyStore
+JvStrings
+JvExForms
+JvComponent
+JvWin32
+JvDataSourceIntf
+JvComCtrls
+ListBoxEx
+SpeedButtonEx
+TrackBarEx
+JvgTypes
+JvgCommClasses
+Jvg3DColors
+JvgUtils
+JvgLabel
+MAIN
+ImageProcess
+CalcThread2D
+Animation
+GIF_Image
+FTGifAnimate
+AniPreviewWindow
+Calc
+Maps
+Interpolation
+DOF
+IniDirsForm
+Tiling
+Undo
+PostProcessForm
+CalcHardShadow
+AmbHiQ
+BatchForm
+VoxelExport
+CalcVoxelSliceThread
+calcBlocky
+CalcSR
+MonteCarloForm
+TextBox
+ColorPick
+uMapCalcWindow
+MapSequences
+FormulaCompiler
+JvCustomItemViewer
+JvImagesViewer
+JvFormAnimatedIcon
+MB3DFacade
+FormulaNames
+MutaGen
+JvProgressBar
+JvxSlider
+JvSlider
+PreviewRenderer
+Paint
+JvLinkedControls
+JvCheckBox
+JvGroupBox
+JvExButtons
+JvOutlookBar
+JvExExtCtrls
+JvExtComponent
+JvCaptionPanel
+JvPageList
+JvButton
+JvNavigationPane
+JvClipboardMonitor
+MutaGenGUI
+VisualThemesGUI
+MapSequencesGUI
+JITFormulaEditGUI
+ParamValueEditGUI
+NaviCalcThread
+ThreadUtils
+CalcAmbShadowDE
+BRInfoWindow
+DoubleSize
+CalcPart
+CalcMonteCarlo
+ColorOptionForm
+AniProcess
+ColorSSAO
+IFS
+RegisterM3Pgraphic
+mb3d-revision
+
+
+Runtime initialization order:
+--------------------------------------------------------------------------------------------------
+
+FileHandling
+DivUtils
+PaintThread
+M3Iregister
+JvThemes
+JvExControls
+JvAppStorage
+JvJVCLUtils
+JvComponent
+MAIN
+GIF_Image
+FTGifAnimate
+Calc
+Maps
+AmbHiQ
+MapSequences
+FormulaCompiler
+JvCustomItemViewer
+MutaGen
+JvExtComponent
+JvButton
+ThreadUtils
+CalcMonteCarlo
+RegisterM3Pgraphic
+
+
+Mutual unit references:
+--------------------------------------------------------------------------------------------------
+
+Animation/FileHandling
+Animation/HeaderTrafos
+Animation/MAIN
+AniPreviewWindow/Animation
+AniPreviewWindow/FileHandling
+CustomFormulas/FileHandling
+DivUtils/FileHandling
+DivUtils/Math3D
+formulas/CustomFormulas
+ImageProcess/AmbShadowCalcThreadN
+JvgUtils/Jvg3DColors
+JvgUtils/JvgCommClasses
+JvJVCLUtils/JvAppStorage
+JvPropertyStore/JvAppStorage
+MAIN/AmbShadowCalcThreadN
+MAIN/CalcThread
+MAIN/FileHandling
+MAIN/PaintThread
+TypeDefinitions/Math3D
+

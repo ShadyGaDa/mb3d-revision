@@ -1,0 +1,548 @@
+
+{procedure RotateSVectorReverse(V: TPSVec; M: TPMatrix3);
+asm
+    fld   qword [edx]
+    fld   qword [edx + 24]
+    fld   qword [edx + 48]
+    fld   dword [eax]        //V0,M20,M10,M00
+    fmul  st(1), st(0)
+    fmul  st(2), st(0)
+    fmulp st(3), st(0)       //V0*M20,V0*M10,V0*M00
+    fld   qword [edx + 8]
+    fld   qword [edx + 32]
+    fld   qword [edx + 56]
+    fld   dword [eax + 4]    //V1,M21,M11,M01,V0*M20,V0*M10,V0*M00
+    fmul  st(1), st(0)
+    fmul  st(2), st(0)
+    fmulp st(3), st(0)       //V1*M21,V1*M11,V1*M01,V0*M20,V0*M10,V0*M00
+    faddp st(3), st(0)       //V1*M11,V1*M01,V0*M20+V1*M21,V0*M10,V0*M00
+    faddp st(3), st(0)       //V1*M11,V1*M01,V0*M20+V1*M21,V0*M10,V0*M00
+    faddp st(3), st(0)       //V0*M20+V1*M21,V0*M10+V1*M11,V0*M00+V1*M01
+    fld   qword [edx + 16]
+    fld   qword [edx + 40]
+    fld   qword [edx + 64]
+    fld   dword [eax + 8]    //V2,M22,M12,M02,V0*M20+V1*M21,V0*M10+V1*M11,V0*M00+V1*M01
+    fmul  st(1), st(0)
+    fmul  st(2), st(0)
+    fmulp st(3), st(0)       //V2*M22,V2*M12,V2*M02,V0*M20+V1*M21,V0*M10+V1*M11,V0*M00+V1*M01
+    faddp st(3), st(0)
+    faddp st(3), st(0)
+    faddp st(3), st(0)
+    fstp  dword [eax + 8]
+    fstp  dword [eax + 4]
+    fstp  dword [eax]
+end;  }
+
+
+{procedure RotateSVectorReverse(V: TPSVec; M: TPMatrix3);
+asm
+    fld   qword [edx]
+    fld   qword [edx + 24]
+    fld   qword [edx + 48]
+    fld   dword [eax]        //V0,M20,M10,M00
+    fmul  st(1), st(0)
+    fmul  st(2), st(0)
+    fmulp st(3), st(0)       //V0*M20,V0*M10,V0*M00
+    fld   qword [edx + 8]
+    fld   qword [edx + 32]
+    fld   qword [edx + 56]
+    fld   dword [eax + 4]    //V1,M21,M11,M01,V0*M20,V0*M10,V0*M00
+    fmul  st(1), st(0)
+    fmul  st(2), st(0)
+    fmulp st(3), st(0)       //V1*M21,V1*M11,V1*M01,V0*M20,V0*M10,V0*M00
+    faddp st(3), st(0)       //V1*M11,V1*M01,V0*M20+V1*M21,V0*M10,V0*M00
+    faddp st(3), st(0)       //V1*M11,V1*M01,V0*M20+V1*M21,V0*M10,V0*M00
+    faddp st(3), st(0)       //V0*M20+V1*M21,V0*M10+V1*M11,V0*M00+V1*M01
+    fld   qword [edx + 16]
+    fld   qword [edx + 40]
+    fld   qword [edx + 64]
+    fld   dword [eax + 8]    //V2,M22,M12,M02,V0*M20+V1*M21,V0*M10+V1*M11,V0*M00+V1*M01
+    fmul  st(1), st(0)
+    fmul  st(2), st(0)
+    fmulp st(3), st(0)       //V2*M22,V2*M12,V2*M02,V0*M20+V1*M21,V0*M10+V1*M11,V0*M00+V1*M01
+    faddp st(3), st(0)
+    faddp st(3), st(0)
+    faddp st(3), st(0)
+    fstp  dword [eax + 8]
+    fstp  dword [eax + 4]
+    fstp  dword [eax]
+end;  }
+
+
+{function InvertMatrix(m: TPMatrix3): TMatrix3;
+var d: Double;
+begin
+    Result[0,0] := m[1,1] * m[2,2] - m[1,2] * m[2,1];
+    Result[1,0] := m[1,2] * m[2,0] - m[1,0] * m[2,2];
+    Result[2,0] := m[1,0] * m[2,1] - m[1,1] * m[2,0];
+    Result[0,1] := m[0,2] * m[2,1] - m[0,1] * m[2,2];
+    Result[1,1] := m[0,0] * m[2,2] - m[0,2] * m[2,0];
+    Result[2,1] := m[0,1] * m[2,0] - m[0,0] * m[2,1];
+    Result[0,2] := m[0,1] * m[1,2] - m[0,2] * m[1,1];
+    Result[1,2] := m[0,2] * m[1,0] - m[0,0] * m[1,2];
+    Result[2,2] := m[0,0] * m[1,1] - m[0,1] * m[1,0];
+    d := m[0,0] * Result[0,0] + m[0,1] * Result[1,0] + m[0,2] * Result[2,0]; 
+    if Abs(d) < 1e-50 then
+      BuildRotMatrix(0, 0, 0, @Result)
+    else
+    begin
+      d := 1 / d;
+      Result[0,0] := Result[0,0] * d;
+      Result[0,1] := Result[0,1] * d;
+      Result[0,2] := Result[0,2] * d;
+      Result[1,0] := Result[1,0] * d;
+      Result[1,1] := Result[1,1] * d;
+      Result[1,2] := Result[1,2] * d;
+      Result[2,0] := Result[2,0] * d;
+      Result[2,1] := Result[2,1] * d;
+      Result[2,2] := Result[2,2] * d;
+    end;
+end; }
+
+{asm
+    fld  qword [ebp + 12]
+    fcom dword [ebp + 16]
+    fnstsw ax
+    shr  ah, 1
+    jc   @SminIsSmallerThanS
+    fcom dword [ebp + 8]
+    fnstsw ax
+    shr  ah, 1
+    jc   @end
+    fstp st(0)
+    fld  dword [ebp + 8]
+    jmp  @end
+@SminIsSmallerThanS:
+    fstp st(0)
+    fld  dword [ebp + 16]
+@end: 
+end;  }
+
+ {   cmp  SupportSSE3, 0
+    jz   @@1
+    movups xmm0, [eax]
+    movups xmm4, [edx]
+    movups xmm5, [edx + 16]
+    movups xmm6, [edx + 32]
+    andps  xmm0, dqword [@cand]
+    mulps  xmm4, xmm0          //mv00,mv11,mv22
+    mulps  xmm5, xmm0          //mv10,mv11,mv12
+    mulps  xmm6, xmm0          //mv20,mv21,mv22
+    haddps xmm4, xmm5          //mv00+mv11,mv22,mv10+mv11,mv12
+    haddps xmm6, xmm6          //mv20+mv21,mv22
+    haddps xmm4, xmm6          //mv00+mv11+mv22,mv10+mv11+mv12,mv20+mv21+mv22
+    movups [eax], xmm4
+    ret
+DD  0
+DD  0
+DB  0
+@cand:
+DD  $FFFFFFFF,$FFFFFFFF,$FFFFFFFF,0
+@@1:   }
+
+{function SVmultiply(SV1, SV2: TSVec): TSVec; //not good
+begin
+    Result[0] := SV1[1] * SV2[2] + SV1[2] * SV2[1];
+    Result[1] := SV1[0] * SV2[2] + SV1[2] * SV2[0];
+    Result[2] := SV1[0] * SV2[1] + SV1[1] * SV2[0];
+    Result[3] := 0;
+end; }
+
+{function SplineSVec(SV1, SV2, SV3: TPSVec): TSVec;
+var vi: TSVec;
+begin
+    vi[0] := -SV2[0];
+    vi[1] := -SV2[1];
+    vi[2] := -SV2[2];
+  {  va := NormaliseSVector(AddSVectors(SlerpSVec(@vi, SV1, 0.5), SlerpSVec(@vi, SV3, 0.5)));
+    Result := SlerpSVec(@SV2, @va, 0.5); }
+ {   Result := SVmultiply(SV2^, NormaliseSVector(ScaleSVector(AddSVectors(SVmultiply(vi, SV1^),
+                                                        SVmultiply(vi, SV3^)), -0.5)));
+    Result := NormaliseSVector(Result);
+end;  }
+
+{    va := SubtractSVectors(SV4, SV3^);
+    va := SubtractSVectors(@va, SubtractSVectors(SV2, SV1^));
+    vb := SubtractSVectors(SV2, SV1^);
+    vb := SubtractSVectors(@vb, va);
+    vc := SubtractSVectors(SV3, SV2^);
+    Result := AddSVectors(AddSVectors(AddSVectors(ScaleSVector(va, t * t * t), //has issues
+                ScaleSVector(vb, t * t)), ScaleSVector(vc, t)), SV1^);
+    Result := NormaliseSVector(Result);  }
+
+    {llPow Returns a float that is base raised to the power exponent (baseexponent)
+Cubic interpolation of v0, v1, v2 and v3 with fraction t.
+vector vCub(vector v0,vector v1,vector v2,vector v3,float t)
+    vector P = (v3-v2)-(v1-v0);
+    vector Q = (v1-v0)-P;
+    vector R = v2-v1;
+    vector S = v0;
+    return P*t^3 + Q*t^2 + R*t + S;
+Input  Description  
+vector v0  Start Point  
+vector v1  Start Tangent  
+vector v2  End Point  
+vector v3  End Tangent  
+float t  Fraction of interpolation  
+Output  Description  
+return vector vCub  Returns cubic interpolation of four vectors
+}
+
+{procedure Clamp08SvecPas(sv1: TPSVec);
+begin
+    if sv1[0] < 0 then sv1[0] := 0 else if sv1[0] > 8 then sv1[0] := 8;
+    if sv1[1] < 0 then sv1[1] := 0 else if sv1[1] > 8 then sv1[1] := 8;
+    if sv1[2] < 0 then sv1[2] := 0 else if sv1[2] > 8 then sv1[2] := 8;
+end;
+
+procedure Clamp08SvecSSE(sv1: TPSVec);
+const s8: array[0..3] of Single = (8,8,8,8);
+asm
+    movups  xmm0, [eax]
+    movups  xmm1, s8
+    xorps   xmm2, xmm2
+    minps   xmm0, xmm1
+    maxps   xmm0, xmm2
+    movups  [eax], xmm0
+end;
+
+{procedure RGB2YUV(sv1: TPSVec);
+var y: Single;
+begin
+    y := 0.299 * sv1[0] + 0.587 * sv1[1] + 0.114 * sv1[2];
+    sv1[1] := (sv1[2] - y) * 0.493;
+    sv1[2] := (sv1[0] - y) * 0.877;
+    sv1[0] := y;
+end;
+
+procedure YUV2RGB(sv1: TPSVec);
+var y, u: Single;
+begin
+    y := sv1[0];
+    u := sv1[1];
+    sv1[0] := y + sv1[2] * 1.1402508551881414;
+    sv1[1] := y - 0.58080920903 * sv1[2] - 0.39393070275 * u;
+    sv1[2] := y + u * 2.0283975659229209;
+end;  }
+
+
+{procedure Rotate4D(V4: TPVec4D; SM4: TPSMatrix4);
+var Vin: TVec4D;
+begin
+    Vin := V4^;
+    V4[0] := Vin[0] * SM4[0,0] + Vin[1] * SM4[0,1] + Vin[2] * SM4[0,2] + Vin[3] * SM4[0,3];
+    V4[1] := Vin[0] * SM4[1,0] + Vin[1] * SM4[1,1] + Vin[2] * SM4[1,2] + Vin[3] * SM4[1,3];
+    V4[2] := Vin[0] * SM4[2,0] + Vin[1] * SM4[2,1] + Vin[2] * SM4[2,2] + Vin[3] * SM4[2,3];
+    V4[3] := Vin[0] * SM4[3,0] + Vin[1] * SM4[3,1] + Vin[2] * SM4[3,2] + Vin[3] * SM4[3,3];
+end;
+
+                           //eax, edx,       ecx
+procedure BuildRotMatrixXY(var xa, ya: Double; M: TPMatrix3);
+asm                                        //  cosY   sinX*sinY  -cosX*sinY
+  fldz                                     //    0      cosX         sinX
+  fstp    qword [ecx + 8]                  //  sinY  -sinX*cosY   cosX*cosY
+  fld     qword [eax]
+  fsincos                   //cosX,sinX
+  fld     qword [edx]
+  fsincos                   //cosY,sinY,cosX,sinX
+  fst     qword [ecx]
+  fld     st(0)             //cosY,cosY,sinY,cosX,sinX
+  fmul    st(0), st(3)
+  fstp    qword [ecx + 64]  //cosY,sinY,cosX,sinX
+  fmul    st(0), st(3)
+  fchs
+  fstp    qword [ecx + 40]  //sinY,cosX,sinX
+  fst     qword [ecx + 16]  //sinY,cosX,sinX
+  fld     st(0)             //sinY,sinY,cosX,sinX
+  fmul    st(0), st(3)
+  fstp    qword [ecx + 24]  //sinY,cosX,sinX
+  fmul    st(0), st(1)
+  fchs
+  fstp    qword [ecx + 48]  //cosX,sinX
+  fstp    qword [ecx + 32]  //sinX
+  fstp    qword [ecx + 56]
+end;
+                             //eax,       edx
+procedure BuildRotMatrixX(var xa: Double; M: TPMatrix3);
+asm                                        //    1       0        0
+  fldz                                     //    0      cosX     sinX
+  fst     qword [edx + 8]                  //    0     -sinX     cosX
+  fst     qword [edx + 16]
+  fst     qword [edx + 24]
+  fstp    qword [edx + 48]
+  fld1
+  fstp    qword [edx]
+  fld     qword [eax]
+  fsincos                   //cosX,sinX
+  fst     qword [edx + 32]
+  fstp    qword [edx + 64]
+  fst     qword [edx + 56]  //sinX
+  fchs
+  fstp    qword [edx + 40]  
+end;
+                             //eax,       edx
+procedure BuildRotMatrixY(var ya: Double; M: TPMatrix3);
+asm                                        //  cosY       0     -sinY
+  fldz                                     //    0        1        0
+  fst     qword [edx + 8]                  //  sinY       0      cosY
+  fst     qword [edx + 24]
+  fst     qword [edx + 40]
+  fstp    qword [edx + 56]
+  fld1
+  fstp    qword [edx + 32]
+  fld     qword [eax]
+  fsincos                   //cosY,sinY
+  fst     qword [edx]
+  fstp    qword [edx + 64]
+  fst     qword [edx + 16]  //sinY
+  fchs
+  fstp    qword [edx + 48]
+end;  }
+                             //eax, edx,       ecx
+{procedure BuildRotMatrixFOV(var xa, ya: Double; M: TPMatrix3);   //todo: normalize, not really working: for calcangles@cut  ..not used anymore
+asm                                        //  cosY       0       -sinY
+  fldz                                     //    0      cosX       sinX
+  fst     qword [ecx + 8]                  //  sinY    -sinX     cosX*cosY
+  fstp    qword [ecx + 24]
+  fld     qword [eax]
+  fsincos                   //cosX,sinX
+  fld     qword [edx]
+  fsincos                   //cosY,sinY,cosX,sinX
+  fst     qword [ecx]
+  fmul    st(0), st(2)
+  fstp    qword [ecx + 64]  //sinY,cosX,sinX
+  fst     qword [ecx + 16]  //sinY,cosX,sinX
+  fchs
+  fstp    qword [ecx + 48]  //cosX,sinX
+  fstp    qword [ecx + 32]  //sinX
+  fst     qword [ecx + 56]
+  fchs
+  fstp    qword [ecx + 40]
+end;    }
+
+{procedure BuildRotMatrixFOV(var xa, ya: Double; M: TPMatrix3);   //todo: normalize, not really working
+var sx,sy,cx,cy: Double;
+begin
+    SinCosD(xa, sx, cx);
+    SinCosD(ya, sy, cy);
+    M[0,0] := cy;
+end;   }
+
+
+{procedure SVecToQuat(SVec: TPSVec; var Q: TQuaternion);
+begin
+    Q[0] := SVec[2] - SVec[1];
+    Q[1] := SVec[0] - SVec[2];
+    Q[2] := SVec[1] - SVec[0];
+    Q[3] := 1;
+end;
+
+procedure QuatToSVec(var SVec: TSVec; var Q: TQuaternion);
+begin
+    SVec[0] := 1 - 2 * (Q[1] * Q[1] + Q[2] * Q[2]);
+    SVec[1] := 2 * (Q[0] * Q[1] + Q[2] * Q[3]);
+    SVec[2] := 2 * (Q[0] * Q[2] - Q[1] * Q[3]);
+    SVec[3] := 0;
+end;
+}
+
+{function Qmultiply(Q1, Q2: TQuaternion): TQuaternion;
+begin
+    Result[3] := Q1[3] * Q2[3] - Q1[0] * Q2[0] - Q1[1] * Q2[1] - Q1[2] * Q2[2];
+    Result[0] := Q1[3] * Q2[0] + Q1[0] * Q2[3] + Q1[1] * Q2[2] - Q1[2] * Q2[1];
+    Result[1] := Q1[3] * Q2[1] - Q1[0] * Q2[2] + Q1[1] * Q2[3] + Q1[2] * Q2[0];
+    Result[2] := Q1[3] * Q2[2] + Q1[0] * Q2[1] - Q1[1] * Q2[0] + Q1[2] * Q2[3];
+end;
+
+function Divide2Quats(Q1, Q2: TQuaternion): TQuaternion;
+begin
+    Result := Qmultiply(Q1, InvertQuat(Q2));
+end;
+
+function Add2Quats(Q1, Q2: TQuaternion): TQuaternion;
+begin
+    Result[0] := Q1[0] + Q2[0];
+    Result[1] := Q1[1] + Q2[1];
+    Result[2] := Q1[2] + Q2[2];
+    Result[3] := Q1[3] + Q2[3];
+end;
+
+function LerpQuat(Q1, Q2: TQuaternion; w2: Double): TQuaternion;
+begin
+    Result := Add2Quats(ScaleQuat(Q1, 1 - w2), ScaleQuat(Q2, w2));
+    NormaliseQuat(Result);
+end;  }
+
+{function SlerpQuat(Q1, Q2: TQuaternion; w2: Double): TQuaternion;
+var dot, angle: Double;
+begin
+    dot := DotOfQuats(Q1, Q2);
+    if dot < 0 then
+    begin
+      dot := -dot;
+      Q2[0] := -Q2[0];
+      Q2[1] := -Q2[1];
+      Q2[2] := -Q2[2];
+      Q2[3] := -Q2[3];
+    end;
+    if dot < 0.95 then
+    begin
+      angle := ArcCos(dot); //0..pi
+      Result := Add2Quats(ScaleQuat(Q1, Sin(angle * (1 - w2))),
+                  ScaleQuat(Q2, Sin(angle * w2)));
+      NormaliseQuat(Result);
+    end else // if the angle is small, use linear interpolation
+      Result := LerpQuat(Q1, Q2, w2);
+end;  }
+
+{function SlerpNoInvert(Q1, Q2: TQuaternion; t: Double): TQuaternion;
+var dot, angle: Double;
+begin
+    dot := DotOfQuats(Q1, Q2);
+    if (dot > -0.99) and (dot < 0.99) then
+    begin
+      angle := ArcCos(dot); //0..pi
+      Result := Add2Quats(ScaleQuat(Q1, Sin(angle * (1 - t))),
+                  ScaleQuat(Q2, Sin(angle * t)));
+      NormaliseQuat(Result);
+    end else
+      Result := LerpQuat(Q1, Q2, t);
+end;   }
+
+{function q_pow(const qa, qb: TQuaternion): TQuaternion;
+var an, bnp: Double;
+begin
+  { /* if a == zero: exp(-inf*b) = 0, if b>0;
+      exp(-inf*b) = inf, if b<0
+      if b isn't real, exp(-inf*b) isn't defined, because
+      lim sin(x) for x->-inf (same with cos) doesn't exists */ }
+{   an := Sqrt(qa[0]*qa[0] + qa[1]*qa[1] + qa[2]*qa[2]);
+    bnp := qb[0]*qb[0] + qb[1]*qb[1] + qb[2]*qb[2];
+    if (Abs(an) < 1e-200) and ((qb[3] > 0) or (bnp <> 0)) then
+    begin
+      result[1] := 0;
+      result[2] := 0;
+      result[3] := 0;
+      result[0] := 0;
+      Exit;
+    end;
+    Result := q_exp(Qmultiply(q_log(qa), qb));
+end;   }
+
+	// Given 3 quaternions, qn-1,qn and qn+1, calculate a control point to be used in spline interpolation
+{function spline(qnm1, qn, qnp1: TQuaternion): TQuaternion;
+var qni: TQuaternion;
+begin
+    qni[0] := -qn[0];
+    qni[1] := -qn[1];
+    qni[2] := -qn[2];
+    qni[3] := qn[3];
+ //   qni := InvertQuat(qn);
+ //   Result := Qmultiply(qn, ExpQuat(ScaleQuat(Add2Quats(LnQuat(Qmultiply(qni, qnm1)),
+   //                                       LnQuat(Qmultiply(qni, qnp1))), -0.25)));
+    Result := Qmultiply(qn, Qexp(ScaleQuat(Add2Quats(Qlog(Qmultiply(qni, qnm1)),
+                                       Qlog(Qmultiply(qni, qnp1))), -0.25)));
+end;
+                                                 
+	// spherical cubic interpolation
+function QCubic(Q0, Q1, Q2, Q3: TQuaternion; t: Double): TQuaternion;
+var A, B, C, D: TQuaternion;
+begin
+    A := spline(Q0, Q1, Q2);
+    B := spline(Q1, Q2, Q3);
+ {   C := slerpNoInvert(Q1, Q2, t);
+    D := slerpNoInvert(A, B, t);
+    Result := slerpNoInvert(C, D, 2 * t * (1 - t));  }
+ {   C := SlerpQuat(Q1, Q2, t);
+    D := SlerpQuat(A, B, t);
+    Result := SlerpQuat(C, D, 2 * t * (1 - t));
+end;    }
+
+
+{function NormOfQuat(a: TQuaternion): Double;
+begin
+    Result := a[0] * a[0] + a[1] * a[1] + a[2] * a[2] + a[3] * a[3];
+end;
+
+function ExpQuat(q: TQuaternion): TQuaternion;
+var a, s, et: Double;
+begin
+    a := Sqrt(q[0] * q[0] + q[1] * q[1] + q[2] * q[2]);
+    et := Exp(q[3]);
+    if a > 1e-10 then s := et * Sin(a) / a else s := 0;
+    Result[0] := s * q[0];
+    Result[1] := s * q[1];
+    Result[2] := s * q[2];
+    Result[3] := et * Cos(a);
+end;
+
+function LnQuat(q: TQuaternion): TQuaternion;
+var a, s: Double;
+begin
+    a := Sqrt(q[0] * q[0] + q[1] * q[1] + q[2] * q[2]);
+    if a > 1e-10 then s := ArcTan2(a, q[3]) / a else s := 0;
+    Result[0] := s * q[0];
+    Result[1] := s * q[1];
+    Result[2] := s * q[2];
+    Result[3] := Ln(NormOfQuat(q));
+end; }
+
+
+{function Ipol3Quats(Q1, Q2, Q3: TQuaternion; w1, w2, w3: Double): TQuaternion;
+var dot, angle, a1, a2, a3: Double;
+begin
+    dot := DotOfQuats(Q1, Q2);    //nope, not really working
+    if dot < 0 then
+    begin
+      dot := -dot;
+      Q2[0] := -Q2[0];
+      Q2[1] := -Q2[1];
+      Q2[2] := -Q2[2];
+      Q2[3] := -Q2[3];
+    end;
+    if dot > 0.99 then dot := 0.99;
+    angle := ArcCos(dot);
+
+    dot := DotOfQuats(Q2, Q3);
+    if dot < 0 then
+    begin
+      dot := -dot;
+      Q3[0] := -Q3[0];
+      Q3[1] := -Q3[1];
+      Q3[2] := -Q3[2];
+      Q3[3] := -Q3[3];
+    end;
+    if dot > 0.99 then dot := 0.99;
+    angle := Max(angle, ArcCos(dot));
+
+    a1 := Sin(angle * w1);
+    a2 := Sin(angle * w2);
+    a3 := Sin(angle * w3);
+
+    Result[0] := a1 * Q1[0] + a2 * Q2[0] + a3 * Q3[0];
+    Result[1] := a1 * Q1[1] + a2 * Q2[1] + a3 * Q3[1];
+    Result[2] := a1 * Q1[2] + a2 * Q2[2] + a3 * Q3[2];
+    Result[3] := a1 * Q1[3] + a2 * Q2[3] + a3 * Q3[3];
+    NormaliseQuat(Result);
+end;
+
+function Ipol3QuatsE(Q1, Q2, Q3: TQuaternion; w1, w2, w3: Double): TQuaternion;
+begin
+    if DotOfQuats(Q1, Q2) < 0 then
+    begin
+      Q2[0] := -Q2[0];
+      Q2[1] := -Q2[1];
+      Q2[2] := -Q2[2];
+      Q2[3] := -Q2[3];
+    end;
+    if DotOfQuats(Q2, Q3) < 0 then
+    begin
+      Q3[0] := -Q3[0];
+      Q3[1] := -Q3[1];
+      Q3[2] := -Q3[2];
+      Q3[3] := -Q3[3];
+    end;
+    Result := ExpQuat(Add2Quats(Add2Quats(ScaleQuat(LnQuat(Q1), w1),
+                      ScaleQuat(LnQuat(Q1), w1)), ScaleQuat(LnQuat(Q1), w1)));
+    NormaliseQuat(Result);
+end; }

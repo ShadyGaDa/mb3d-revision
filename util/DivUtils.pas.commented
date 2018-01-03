@@ -1,0 +1,65 @@
+{function LnXP1(const X: Extended): Extended;
+asm
+        FLDLN2
+        MOV     AX,WORD PTR X+8               // exponent
+        FLD     X
+        CMP     AX,$3FFD                      // .4225
+        JB      @@1
+        FLD1
+        FADD
+        FYL2X
+        JMP     @@2
+@@1:
+        FYL2XP1
+@@2:
+        FWAIT
+end;  }
+
+         // bCalcAmbShadowAutomatic: Byte;    //#149
+         // bCalcDOFtype: Byte;               //#181   bit1: calc or not, bit 2+3: passes bit4: function sorted/forward
+         // bCalc3D: Byte;                    //#344
+         
+         
+         
+{asm
+    add  esp, -4
+    mov  ecx, eax
+    shr  ecx, 16
+    and  ecx, $FF
+    mov  [esp], ecx
+    fild dword [esp]
+    fstp dword [edx]
+    mov  ecx, eax
+    shr  ecx, 8
+    and  ecx, $FF
+    mov  [esp], ecx
+    fild dword [esp]
+    fstp dword [edx + 4]
+    and  eax, $FF
+    mov  [esp], eax
+    fild dword [esp]
+    fstp dword [edx + 8]
+    pop  edx
+end;    }
+
+{procedure Delay(Milliseconds: Integer);
+var
+  Tick: Double;
+  Event: THandle;
+begin
+  Tick  := getHiQmillis + Milliseconds;
+  Event := CreateEvent(nil, False, False, nil);
+  try
+    while (Milliseconds > 0) and
+          (MsgWaitForMultipleObjects(1, Event, False, Milliseconds, QS_ALLINPUT)
+           <> WAIT_TIMEOUT) do
+    begin
+      Application.ProcessMessages;
+      if Application.Terminated then Exit;
+      Milliseconds := Round(Tick - getHiQmillis); //timeGetTime
+      if Milliseconds > 5000 then Exit;
+    end;
+  finally
+    CloseHandle(Event);
+  end;
+end;  }

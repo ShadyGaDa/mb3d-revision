@@ -1,0 +1,3 @@
+0 ABoxVaryScale4d
+1 _setw
+1 CylinderHeightMap

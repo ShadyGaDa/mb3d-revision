@@ -1,0 +1,93 @@
+**************************************************************************************************
+*                                       Status Report for                                        *
+*C:\USERS\CRYSTALSKULL\DOCUMENTS\EMBARCADERO\STUDIO\PROJECTS\MB3D-REVISION\XE10\MB3D-REVISION.DPR*
+*                                      12/03/2017 11:37:13                                       *
+**************************************************************************************************
+
+Overview:
+--------------------------------------------------------------------------------------------------
+
+Analyzed by:                  ICARUS - Uses List Analyzer for Delphi version 3.7.0.0
+
+Project:                      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\mb3d-revision.pap
+Main file:                    C:\USERS\CRYSTALSKULL\DOCUMENTS\EMBARCADERO\STUDIO\PROJECTS\MB3D-REVISION\XE10\MB3D-REVISION.DPR
+Output folder:                C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\mb3d-revision
+Compiler:                     Delphi XE5 (Win32)
+
+Env. variables (0):           (none)
+
+Search folders (7):           C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10
+                              C:\Programs\Berlin\lib\win32\release
+                              C:\Programs\Berlin\include\jedi
+                              C:\Programs\Berlin\lib\jvcl
+                              C:\Programs\Berlin\lib\jcl
+                              C:\Programs\Berlin\lib\pax
+                              C:\Programs\Berlin\bin
+
+Excluded search folders (0):  (none)
+
+Excluded files (1):           System.pas
+
+
+Unit aliases (5):             DbiErrs=BDE
+                              DbiProcs=BDE
+                              DbiTypes=BDE
+                              WinProcs=Windows
+                              WinTypes=Windows
+
+Predefined (12):              _PEGANZA_
+                              ASSEMBLER
+                              CONDITIONALEXPRESSIONS
+                              CPU386
+                              CPUX86
+                              DCC
+                              MSWINDOWS
+                              NATIVECODE
+                              UNDERSCOREIMPORTNAME
+                              UNICODE
+                              VER260
+                              WIN32
+
+Conditional defines (4):      JIT_FORMULA_PREPROCESSING
+                              PARAMS_PER_THREAD
+                              RELEASE
+                              USE_PAX_COMPILER
+
+Unit scopes (0):              (none)
+Global switches (27):         A+
+                              B-
+                              C-
+                              D+
+                              E-
+                              F-
+                              G+
+                              H+
+                              I-
+                              J-
+                              K+
+                              L+
+                              M-
+                              N+
+                              O+
+                              P+
+                              Q-
+                              R-
+                              S+
+                              T-
+                              U-
+                              V+
+                              W-
+                              X+
+                              Y-
+                              YD
+                              Z-
+
+
+==================================================================================================
+Error:                        Cannot find jedi\jedi.inc referenced in C:\Programs\Berlin\include\jedi\jvcl.inc
+==================================================================================================
+
+Loaded files (0):             (none)
+
+
+

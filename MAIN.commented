@@ -1,0 +1,704 @@
+
+{procedure TGUI.Button_N_3Click(Sender: TObject);
+begin
+    Panel_N_5.Visible := not Panel_N_5.Visible;
+    AdjustPanel3positions;
+end;}
+
+{procedure TGUI.Button_N_4Click(Sender: TObject);
+begin
+    Panel_N_6.Visible := not Panel_N_6.Visible;
+    AdjustPanel3positions;
+end;}
+
+{procedure TGUI.Button_N_5Click(Sender: TObject);
+begin
+    Panel_N_7.Visible := not Panel_N_7.Visible;
+    if Panel_N_4.Visible and Panel_N_5.Visible and Panel_N_7.Visible then Panel_N_4.Visible := False;
+    AdjustPanel3positions;
+end;}
+
+
+{procedure TGUI.WmThreadReady(var Msg: TMessage);
+begin
+    Dec(iActiveThreads);
+    if iActiveThreads = 0 then Timer_N_1.Interval := 5;
+end;}
+
+{procedure TGUI.SpeedButton_N_23Click(Sender: TObject);
+var i: Integer;
+begin  //adjustment panel open/close
+    SpeedButton_N_23.Glyph.Canvas.FillRect(SpeedButton_N_23.Glyph.Canvas.ClipRect);
+    if PageCtrls.ActivePage <> TabNaviCtrls; then
+    begin
+      PageCtrls.ActivePage := TabNaviCtrls;
+//      Panel_N_3.Visible := False;
+//      ClientWidth := ClientWidth - Panel_N_3.Width;
+      ImageList_N_1.GetBitmap(2, SpeedButton_N_23.Glyph);
+//      IniVal[34] := '0';
+    end
+    else
+    begin
+      PageCtrls.ActivePage := TabImage;
+//      Panel_N_3.Visible := True;
+//      ClientWidth := ClientWidth + Panel_N_3.Width;
+      ImageList_N_1.GetBitmap(3, SpeedButton_N_23.Gl/yph);
+//      IniVal[34] := '1';
+      if AdjustPanelFirstShow then
+      begin
+        AdjustPanelFirstShow := False;
+        CurrentFindex := Point(0, 0);
+        ResetJuliaPos0Vals;
+        Reset4dRotVals;
+        for i := 0 to 13 do
+        begin
+          AdjustSliderRange[i] := 1;
+          AdjustSliderValType[i] := 0;
+        end;
+        AdjustSliderValType[9] := 2;  //int
+        AdjustSliderRange[9] := 5;    //dFogOnIts
+        AdjustSliderValType[13] := 2; //MaxIts
+    //    AdjustSliderRange[13] := 5;
+        for i := 10 to 13 do AdjustSliderValType[i] := -5;  //log
+//        Panel_N_4.Visible := NaviHeader.bIsJulia <> 0;
+//        AdjustPanel3positions;
+        SpeedButton_N_26Click(Sender);
+      end;
+    end;
+end;}
+
+{procedure TGUI.AdjustPanel3positions;
+var i: Integer;
+begin
+    i := RadioGroup_N_1.Height + 1 + SizeGroup.Height;
+    Button_N_2.Top := i;
+    Inc(i, Button_N_2.Height);
+    Panel_N_4.Top := i;
+    if Panel_N_4.Visible then Inc(i, Panel_N_4.Height);
+    Inc(i);
+    Button_N_3.Top := i;
+    Inc(i, Button_N_3.Height);
+    Panel_N_5.Top := i;
+    if Panel_N_5.Visible then Inc(i, Panel_N_5.Height);
+    Inc(i);
+    Button_N_4.Top := i;
+    Button_N_4.Enabled := GUI.Panel_F_2.Visible;//FORMULA
+    if not Button_N_4.Enabled then Panel_N_6.Visible := False;
+    Inc(i, Button_N_4.Height);
+    Panel_N_6.Top := i;
+    if Panel_N_6.Visible then Inc(i, Panel_N_6.Height);
+    Inc(i);
+    Button_N_5.Top := i;
+    Inc(i, Button_N_5.Height);
+    Panel_N_7.Top := i;
+end;}
+
+{procedure TGUI.Button_N_2Click(Sender: TObject);
+begin
+    Panel_N_4.Visible := not Panel_N_4.Visible;
+    AdjustPanel3positions;
+end;}
+
+
+{procedure TGUI.NaviSizeCmbChange(Sender: TObject);
+var
+  Height: Integer;
+begin
+  if NaviSizeCmb.ItemIndex >= 0 then
+    IniVal[36] := NaviSizeCmb.Items[NaviSizeCmb.ItemIndex];
+  EnableButtonsN;
+  Height := NaviHeader.Height;
+//  SetWindowSize;//(Panel_N_2.Visible)
+  if Height <> NaviHeader.Height then begin
+    if iActiveThreads > 0 then WaitForCalcToStop(2000);
+    NewCalc;
+  end;
+end;}
+{procedure TGUI.EnableButtonsN;
+begin
+  DecreaseNaviSizeBtn.Enabled := NaviSizeCmb.ItemIndex > 0;
+  IncreaseNaviSizeBtn.Enabled := NaviSizeCmb.ItemIndex < NaviSizeCmb.Items.Count - 1;
+end;}
+{procedure TGUI.DecreaseNaviSizeBtnClick(Sender: TObject);
+begin
+  if NaviSizeCmb.ItemIndex > 0 then begin
+    NaviSizeCmb.ItemIndex := NaviSizeCmb.ItemIndex - 1;
+    NaviSizeCmbChange(Sender);
+  end;
+end;}
+{procedure TGUI.IncreaseNaviSizeBtnClick(Sender: TObject);
+begin
+  if NaviSizeCmb.ItemIndex < NaviSizeCmb.Items.Count - 1 then begin
+    NaviSizeCmb.ItemIndex := NaviSizeCmb.ItemIndex + 1;
+    NaviSizeCmbChange(Sender);
+  end;
+end;}
+
+
+
+
+
+
+
+
+{procedure TGUI.FormShow(Sender: TObject);
+begin
+    with NaviHeader do
+    begin
+      if FirstStart then
+      begin
+        GUI.PropagateCurrFrameNumber;
+        if not Assigned(Image_N_1.Picture.Bitmap) then
+          Image_N_1.Picture.Bitmap := TBitmap.Create;
+        Image_N_1.Picture.Bitmap.PixelFormat := pf32Bit;
+        FirstStart := False;
+        bUserChangeN := False;
+        // bug fix ini val becomes txt after ini reset
+        if IsNumber(StrToInt(IniVal[2])) then Edit_N_1.Text := IniVal[2] else Edit_N_1.Text := '20';
+        if IsNumber(StrToInt(IniVal[3])) then Edit_N_2.Text := IniVal[3] else Edit_N_2.Text := '5';
+        //Edit_N_1.Text := IniVal[2];
+        //Edit_N_2.Text := IniVal[3];
+     //   Edit_N_4.Text := IniVal[4];
+        Edit_N_3.Text := IniVal[5];
+        CheckBox_N_2.Checked := IniVal[10] = '1';
+        CheckBox_N_5.Checked := IniVal[14] = '0';
+        CheckBox_N_4.Checked := IniVal[19] <> 'No';
+        bDoubleClick := IniVal[20] <> 'No';
+        Image_N_2.Picture.Bitmap.PixelFormat := pf32bit;
+        Image_N_2.Picture.Bitmap.SetSize(40, 38);
+        Image_N_6.Picture.Bitmap.PixelFormat := pf32bit;
+        Image_N_6.Picture.Bitmap.SetSize(120, 120);
+        LoadLightPresets;
+        FSubIndexTop := 0;
+        AdjustPanelFirstShow := True;
+        SpeedButton_N_11Click(Sender); //insert main paras
+        if IniVal[34] = '1' then SpeedButton_N_23Click(Sender);
+      end;
+      DisableLightStoring;
+    end;
+    bUserChangeN := True;
+    EnableButtons;
+end;}
+
+{procedure TGUI.FormCreate(Sender: TObject);
+var i: Integer;
+begin
+    Image_N_1.Parent.ControlStyle := [csOpaque];
+    FirstStart := True;
+    bUserChangeN := False;
+    NglobalCounter := 0;
+    FocusedSlider := 0;
+    NaviLightness := 1;
+    DoubleBuffered := True;
+    NaviHeader.PCFAddon := @NaviHAddon;
+    for i := 0 to 5 do NaviHeader.PHCustomF[i] := @HybridCustoms[i];
+    for i := 0 to 5 do IniCustomF(@HybridCustoms[i]);
+    for i := 0 to 2 do NLPavailable[i] := False;
+    tmpBMP := TBitmap.Create;
+    tmpBMP.PixelFormat := pf32Bit;
+    tmpBMP.SetSize(80, 76);
+    tmpBMPc := TBitmap.Create;
+    tmpBMPc.PixelFormat := pf32Bit;
+    tmpBMPc.SetSize(240, 240);
+    Panel_N_1.DoubleBuffered := True;
+    FNaviFormCreated := True;
+    NaviSizeCmb.ItemIndex := NaviSizeCmb.Items.IndexOf(IniVal[36]);
+end;}
+
+{procedure TGUI.FormCloseQuery(Sender: TObject;
+  var CanClose: Boolean);
+begin
+    StopCalc;
+    CanClose := (not isCalculatingN) or ((NglobalCounter - CalcThreadStatusID) > 3);
+    Timer_N_1.Enabled := not CanClose;
+end;}
+
+{procedure TGUI.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+var k: Word;
+    d: Double;
+begin
+    k := Key;
+    if (k = 27) and (Screen.Cursor = crNone) then ChangeNaviMode;  //esc
+    if (k in [112, 113]) and TryStrToFloat(Edit_N_4.Text, d) then //F1,F2 - farplane
+    begin
+      if k = 112 then d := d * 0.8 else d := d * 1.25;
+      Edit_N_4.Text := FloatToStrF(Max(1, Min(10000, d)), ffFixed, 5, 1);
+    end;
+    if (k in [114, 115]) and TryStrToFloat(Edit_N_3.Text, d) then //F3,F4 - fov
+    begin
+      if k = 114 then d := d * 0.8 else d := d * 1.25;
+      Edit_N_3.Text := FloatToStrF(Max(1, Min(360, d)), ffFixed, 5, 1);
+    end;
+    if k = 116 then RadioGroup_N_2.ItemIndex := (RadioGroup_N_2.ItemIndex + 1) mod 3;
+    if k = 117 then CheckBox_N_1.Checked := not CheckBox_N_1.Checked;
+
+    if CheckBox_N_2.Checked then
+    case Key of
+      90:  k := 87;
+      65:  k := 81;
+      81:  k := 65;
+      87:  k := 0;
+    end;
+    case k of
+      69:  SpeedButton_N_1.Click;  //e
+   67,81:  SpeedButton_N_2.Click;  //c,q
+      65:  SpeedButton_N_3.Click;  //a
+      68:  SpeedButton_N_4.Click;  //d
+      70:  if not CheckBox_N_5.Checked then SpeedButton_N_18.Click; //f - Ani Keyframe
+      73:  SpeedButton_N_5.Click;  //i
+      75:  SpeedButton_N_6.Click;  //k
+      74:  SpeedButton_N_7.Click;  //j
+      76:  SpeedButton_N_8.Click;  //l
+      87:  SpeedButton_N_9.Click;  //w/z
+      83:  SpeedButton_N_10.Click; //s
+      85:  SpeedButton_N_12.Click; //u
+      79:  SpeedButton_N_13.Click; //o
+    end;
+end;}
+
+{procedure TGUI.FormHide(Sender: TObject);
+begin
+    IniVal[2] := Edit_N_1.Text;
+    IniVal[3] := Edit_N_2.Text;
+ //   IniVal[4] := Edit_N_4.Text;
+    IniVal[5] := Edit_N_3.Text;
+    if CheckBox_N_2.Checked then IniVal[10] := '1' else IniVal[10] := '0';
+    if CheckBox_N_5.Checked then IniVal[14] := '0' else IniVal[14] := '1';
+    if CheckBox_N_4.Checked then IniVal[19] := 'Yes' else IniVal[19] := 'No';
+    DisableLightStoring;
+    if Screen.Cursor = crNone then Screen.Cursor := crDefault;
+end;}
+
+{procedure TGUI.FormDestroy(Sender: TObject);
+begin
+    tmpBMP.Free;
+    tmpBMPc.Free;
+end;}
+
+{procedure TGUI.FormMouseWheel(Sender: TObject; Shift: TShiftState;
+  WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
+var C   : TControl;
+    MPos: TPoint;
+    h, v: Double;
+    M:    TMatrix3;
+begin
+    if (Screen.Cursor = crNone) and UpDown_N_3.Visible then
+    begin
+      if WheelDelta < 0 then SpinButton_N_Down else SpinButton_N_Up;
+      Handled := True;
+      Exit;
+    end;
+    C := ControlAtPos(ScreenToClient(MousePos), False, True);
+    if C <> nil then
+    begin
+      if (C = Image_N_1) or (C = Image_N_6) then    //only if mouse is over navi.image1+6
+      begin
+        if WheelDelta < 0 then  //Wheel down
+          SpeedButton_N_10.Click   //s
+        else
+        begin
+          if Screen.Cursor = crDefault then
+          begin   // get mousecursorpos over image and steer in that direction...(zoom in)
+            MPos := Image_N_1.ScreenToClient(MousePos);
+            h := Sin(NaviHeader.dFOVy * Pid180);   //rotate in that drection
+            v := h * (MPos.Y - Image_N_1.Height shr 1) / Image_N_1.Height;
+            h := -h * (MPos.X - Image_N_1.Width shr 1) / Image_N_1.Height;
+            BuildRotMatrix(v, h, 0, @M);
+            Multiply2Matrix(@M, @NaviHeader.hVgrads);
+            NaviHeader.hVgrads := M;
+          end;
+          SpeedButton_N_9.Click;  //w/z   step forward
+        end;
+      end
+      else if (Image_N_4.Visible or Image_N_5.Visible) and (C = Panel_N_3) then
+      begin
+        C := Panel_N_3.ControlAtPos(Panel_N_3.ScreenToClient(MousePos), False, True);
+        if C = Panel_N_5 then
+        begin
+          if WheelDelta > 0 then ScrollBar_N_1.Position := Max(0, ScrollBar_N_1.Position - 1)
+          else ScrollBar_N_1.Position := Min(ScrollBar_N_1.Max, ScrollBar_N_1.Position + 1);
+          Panel_N_5.SetFocus;
+        end;
+      end;
+    end;
+    Handled := True;
+end;}
+
+
+
+{procedure TGUI.Button_M_18Click(Sender: TObject);
+begin
+    GUILight.Visible := True;
+    BringToFront2(GUILight.Handle);
+end;}
+
+
+{procedure TGUI.PositionBtnClick(Sender: TObject);
+begin
+//  PositionPnl.Top := PositionBtn.Top+PositionBtn.Height;
+//  PositionPnl.Visible := not PositionPnl.Visible;
+end;
+
+procedure TGUI.RotationBtnClick(Sender: TObject);
+begin
+//  RotationPnl.Top := RotationBtn.Top+RotationBtn.Height;
+//  RotationPnl.Visible := not RotationPnl.Visible;
+end;}
+
+
+{procedure TGUI.FormShow(Sender: TObject); //FormShow earlier than MainWindow.FormShow!!! -> IniDirs load onCreate
+var i: Integer;
+begin
+    if bLFfirstShow then
+    begin
+      bLFfirstShow := False;
+    //  if Testing then Showmessage('M3D lightform show...');
+      SetStartPreset;
+      if FormsSticky[1] = 0 then
+        SetBounds(StrToIntTry(StrFirstWord(IniVal[27]), 844),
+                  StrToIntTry(StrLastWord(IniVal[27]), 100), Width, Height);
+      SetSButtonColor(3, LAtmpLight.AmbCol);
+      SetSButtonColor(4, MakeDynFogCol);
+      SetSButtonColor(6, LAtmpLight.AmbCol2);
+      SetSButtonColor(10, LAtmpLight.DepthCol);
+      SetSButtonColor(11, LAtmpLight.DepthCol2);
+      SetSButtonColor(30, LAtmpLight.DynFogCol2);
+      SetDialogDirectory(OpenDialogPic, IniDirs[6]);
+      OpenDialog_L_1.InitialDir := IniDirs[7];
+      SaveDialog_L_1.InitialDir := IniDirs[7];
+      for i := 1 to 5 do
+        MakeGlyph((FindComponent('SpeedButton_L_' + IntToStr(i + 14)) as TSpeedButton), i);
+ //     if Testing then Showmessage('M3D lightform load presets...');
+      for i := 0 to 9 do
+      begin
+        if LoadColPreset(i) then
+          MakeGlyph((FindComponent('SpeedButton_L_' + IntToStr(i + 20)) as TSpeedButton), i + 6)
+        else CustomPresets[i + 6] := ConvertColPreset164To20(Presets[5]);
+      end;
+      TabControl_L_1Change(Sender);
+   //   if Testing then Showmessage('M3D lightform show done');
+      UpdateQuickLoadCB;
+      //make popupm2 depthcol images and create items...
+      MakeDepthColList;
+    end;
+end;}
+
+
+{procedure TGUI.FormCreate(Sender: TObject);
+var x: Integer;
+begin
+    SetLAplusPosToZero;
+    ColorFormCreated := False;
+    for x := 0 to 5 do FreeLightMap(@LightMaps[x]);
+    FreeLightMap(@DiffColMap);
+    LAFormCreated := True;
+end;}
+
+{procedure TGUI.FormDestroy(Sender: TObject);
+begin
+    LAtmpLight.Lights[0].Loption := 1;
+end;}
+
+
+{procedure TGUI.FormMouseWheel(Sender: TObject;
+  Shift: TShiftState; WheelDelta: Integer; MousePos: TPoint;
+  var Handled: Boolean);
+begin
+    if not OverForm(ScreenToClient(MousePos)) then
+    begin
+      Handled := True;
+      GUI.FormMouseWheel(Sender, Shift, WheelDelta, MousePos, Handled);
+      Exit;
+    end;
+    if UpDownLight.Focused then
+    begin
+      Handled := True;
+      if WheelDelta > 0 then
+        UpDownLight.Position := UpDownLight.Position + 1
+      else if WheelDelta < 0 then
+        UpDownLight.Position := UpDownLight.Position - 1;
+    end
+    else if UpDownDiffMap.Focused then
+    begin
+      Handled := True;
+      if WheelDelta > 0 then
+        UpDownDiffMap.Position := UpDownDiffMap.Position + 1
+      else if WheelDelta < 0 then
+        UpDownDiffMap.Position := UpDownDiffMap.Position - 1;
+    end
+    else if Edit_L_1.Focused then
+    begin
+      Handled := True;
+      if WheelDelta > 0 then SpinButton_N_Up else
+      if WheelDelta < 0 then SpinButton_N_Down;
+    end;
+end;}
+
+{procedure TGUI.FormHide(Sender: TObject);
+begin
+    IniVal[27] := IntToStr(Left) + ' ' + IntToStr(Top);
+end;}
+
+
+{procedure TGUI.FormActivate(Sender: TObject);
+begin
+    Invalidate;//Repaint;  //for wine, but does not really work
+end;}
+
+
+{procedure TGUI.FormShow(Sender: TObject);
+begin
+    if Testing then Showmessage('M3D formulaform show...');
+    if not FGUIFormCreated then OpenDialog_F_3.InitialDir := IniDirs[3];
+    OldTab2index := 0;
+    bUserChange := True;
+    TabControl_F_1Change(Sender);
+//    FGUIFormCreated := True;
+    if FGUIFormFirstShow then
+    begin
+      FGUIFormFirstShow := False;
+      if FormsSticky[0] = 0 then
+        SetBounds(StrToIntTry(StrFirstWord(IniVal[26]), 844),
+                  StrToIntTry(StrLastWord(IniVal[26]), 100), Width, Height);
+      if SupportSSE2 then
+      begin
+        Bevel_F_1.Width := Bevel_F_1.Width + SpeedButtonEx_F_9.Width * 3;
+        SpeedButtonEx_F_9.Visible := True;
+        SpeedButtonEx_F_10.Visible := True;
+        SpeedButtonEx_F_11.Visible := True;
+      //  FGUIFormDropDownButtonCount := 10;
+      end;
+      MaxLBheight := TabControl_F_1.Height - SpeedButtonEx_F_1.Top - SpeedButtonEx_F_1.Height - 4;
+      LoadFormulaNames;
+    end;
+    if Testing then Showmessage('M3D formulaform show done');
+end;   }
+
+
+{procedure TGUI.FormActivate(Sender: TObject);
+begin
+    Invalidate;
+end; }
+
+{procedure TGUI.FormCreate(Sender: TObject);
+begin
+    FGUIFormCreated := True;
+    DECombineCmb.Hint :=  'Combination Methods:' + #13#10 +
+  'Min: Both fractals are visible, minimum combine the DE''s' + #13#10 +
+  'Max: Only overlapping parts, maximum combine the DE''s' + #13#10 +
+  'Inv max: Invert DE of second Hybrid and combine ''Max''' + #13#10 +
+  'Min lin: Minimum combine with a linear overlap function' + #13#10 +
+  'Min nlin: Like S1, nonlinear function, more smooth overlap' + #13#10 +
+  'Mix: First F1..FendHybrid1 then use FstartHybrid2..F6 (dIFS) with modified vector.';
+end;}
+
+{procedure TGUI.FormHide(Sender: TObject);
+begin
+    IniVal[26] := IntToStr(Left) + ' ' + IntToStr(Top);
+end;  }
+
+
+{procedure TGUI.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+    if (Key = 't') and ListBoxEx_F_1.Visible then
+    begin
+      ListBoxEx_F_1.Items.Add('test');
+      Button_F_2.Visible := True;
+      SetListBoxWidth(ListBoxEx_F_1);
+      SpeedButtonEx_F_9.Visible := True;
+      AddFormulaName('testIFS', testIFSDEoption);
+      Copythevaluesto1.Visible := True;
+    end;
+end;}
+
+
+{procedure TGUI.FormMouseWheel(Sender: TObject;
+  Shift: TShiftState; WheelDelta: Integer; MousePos: TPoint;
+  var Handled: Boolean);
+begin
+    GUI.FormMouseWheel(Sender, Shift, WheelDelta, MousePos, Handled);
+end;}
+
+
+
+{procedure TGUI.Button_M_10MouseDown(Sender: TObject;
+  Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+var CP: TPoint;
+    i: Integer;
+begin
+    if Button = mbRight then
+    begin
+      StickIt := Max(0, Min(2, (Sender as TButton).Tag));
+      i := FormsSticky[StickIt];
+      Stickthiswindowtotherightside1.Checked := i = 1;
+      Stickthiswindowtotheleftside1.Checked := i = 2;
+      Donotmakethiswindowsticky1.Checked := i = 0;
+      GetCursorPos(CP);
+      PopupMenu_M_2.Popup(CP.X, CP.Y);
+    end;
+end;}
+
+{procedure TGUI.Button_M_10Click(Sender: TObject);
+begin
+    GUIFormula.Visible := True;
+    BringToFront2(GUIFormula.Handle);
+end;}
+
+{procedure TGUI.Panel_M_2MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+  //  if Button = mbRight then PopupMenu_M_4.Popup(X, Y);
+end;}
+
+{ procedure TGUI.N11Click(Sender: TObject);     //change style, buggy, recalc2D clicks/changes?
+begin
+   bUserChange := False;
+    try
+    case (Sender as TMenuItem).Tag of
+      1: TStyleManager.SetStyle('Windows');
+      2: TStyleManager.TrySetStyle('Ruby Graphite');      //  Amethyst Kamri
+      3: TStyleManager.TrySetStyle('Emerald Light Slate');
+    end;
+    finally
+      bUserChange := True;
+    end;
+end;}
+
+{function TGUI.MakeTitleFromCaption: String;
+begin
+ //   if Copy(Caption, 1, 13) = 'Mandelbulb 3D' then
+end; }
+
+{procedure TGUI.MeshExportBtnClick(Sender: TObject);
+begin
+  MeshExportFrm.Visible := True;
+  BringToFront2(MeshExportFrm.Handle);
+end;}
+
+
+ { StartPreset: TLpreset16 =
+   (Cols: (5873889, 8837614, $8B491D, 2988346, 12248958, $FFC49F, 11287584, 14579248, 7481121);
+   Lights: ((Loption: 0; LFunction: 50; Lcolor: $A0E8FF;
+   LXangle: 3368; LYangle: 5279), (Loption: 1; LFunction: 16; Lcolor: 2307911;  //60
+   LXangle: -2822; LYangle: -7737),(),()); DepthCol: $8B491D; TB578pos: (34, 102, 90); DepthCol2: $FFC49F; Version: 1);}
+{  StartPreset: TLpreset16 =
+   (Cols: ($58B0F8, $101010, $8B491D, $28A050, $206030, $FFC49F, $A07020, $B0B0B0, $DE7630);
+   Lights: ((Loption: 0; LFunction: 5; Lcolor: $A0E8FF; LXangle: 0; LYangle: 5000),
+            (Loption: 1; LFunction: 53; Lcolor: $233747; LXangle: -2822; LYangle: -7737),
+            (),()); DepthCol: $A05018; TB578pos: (50, 100, 90); DepthCol2: $E0D0B0; Version: 1); //}
+
+
+
+
+{procedure Copy2BMPhalfsize(var destBmp, sourceBmp: TBitmap);
+var x, y, i, sloff1, sloff2, n: Integer;
+    sl1, sl2, sl3, p1, p2, p3: PCardinal;
+begin
+    with destBMP do
+    begin
+      sl1 := ScanLine[0];
+      sl2 := sourceBmp.ScanLine[0];
+      sl3 := sourceBmp.ScanLine[1];
+      sloff2 := Integer(sl3) - Integer(sl2) * 2;
+      sloff1 := Integer(ScanLine[1]) - Integer(sl1);
+      for y := 0 to Height - 1 do
+      begin
+        p1 := sl1;
+        p2 := sl2;
+        p3 := sl3;
+        for x := 0 to Width - 1 do
+        begin
+          if p2^ <> 0 then
+          begin
+            p1^ := p2^;
+            n := 1;
+          end else begin
+            p1^ := 0;
+            n := 0;
+          end;
+          if p3^ <> 0 then
+          begin
+            if n = 0 then p1^ := p3^ else p1^ := ((p1^ and $FEFEFE) shr 1) + ((p3^ and $FEFEFE) shr 1);
+            Inc(n);
+          end
+          Inc(p2);
+          Inc(p3);
+          if p2^ <> 0 then
+          begin
+            if n = 0 then p1^ := p2^ else
+            if n = 1 then p1^ := ((p1^ and $FEFEFE) shr 1) + ((p2^ and $FEFEFE) shr 1)
+                     else p1^ := ((p1^ and $FEFEFE) shr 1) + ((p2^ and $FEFEFE) shr 2);
+            Inc(n);
+          end;
+          if p3^ <> 0 then
+          begin
+            if n = 0 then p1^ := p2^ else
+            if n = 1 then p1^ := ((p1^ and $FEFEFE) shr 1) + ((p2^ and $FEFEFE) shr 1)
+                     else p1^ := ((p1^ and $FEFEFE) shr 1) + ((p2^ and $FEFEFE) shr 2);
+            Inc(n);
+          end;
+
+
+        end;
+        sl1 := PCardinal(Integer(sl1) + sloff1);
+        sl2 := PCardinal(Integer(sl2) + sloff2);
+        sl3 := PCardinal(Integer(sl3) + sloff2);
+      end;
+      Modified := True;
+    end;
+end;  }
+
+{procedure TGUI.PaintCoord;
+var m: TMatrix3;
+    sx, sy, sx2, sy2, tipsize: Single;
+    i, i2: Integer;
+    sorta: array[0..2] of Integer;
+const ca: array[0..2] of Cardinal = ($50FF,$40F030,$FFB000);
+begin
+    if not CheckBox_N_6.Checked then Image_N_6.Visible := False else
+    with tmpBMPc.Canvas do
+    begin
+      SetBkMode(Handle, TRANSPARENT);
+  //    Font.Size := -20;
+      Font.Style := [fsBold];
+      Brush.Color := clBlack;
+      FillRect(ClipRect);
+      m := NormaliseMatrixTo(1, @NaviHeader.hVGrads);
+      for i := 0 to 2 do sorta[i] := i;
+      if m[2, 0] < m[2, 1] then FlipI(sorta[0], sorta[1]);
+      if m[2, sorta[1]] < m[2, 2] then FlipI(sorta[1], sorta[2]);
+      if m[2, sorta[0]] < m[2, sorta[1]] then FlipI(sorta[0], sorta[1]);
+      for i := 0 to 2 do
+      begin
+        i2 := sorta[i];
+        Pen.Width := 4;
+        Pen.Color := ca[i2];
+        MoveTo(120, 120);
+        sx := 120 + m[0, i2] * 75;
+        sy := 120 + m[1, i2] * 75;
+        LineTo(Round(sx), Round(sy));
+        //tip:
+        tipsize := (2 - m[2, i2]) * 4 / MaxCS(0.1, Sqrt(Sqr(m[0, i2]) + (Sqr(m[1, i2]))));
+        sx2 := sx - m[0, i2] * 16 - m[1, i2] * tipsize;
+        sy2 := sy - m[1, i2] * 16 + m[0, i2] * tipsize;
+        LineTo(Round(sx2), Round(sy2));
+        MoveTo(Round(sx), Round(sy));
+        sx2 := sx - m[0, i2] * 16 + m[1, i2] * tipsize;
+        sy2 := sy - m[1, i2] * 16 - m[0, i2] * tipsize;
+        LineTo(Round(sx2), Round(sy2));
+        tipsize := (3 - m[2, i2]) * 8;
+        Font.Color := Pen.Color;
+        Font.Size := Round(-tipsize);
+        sx := sx + m[0, i2] * tipsize * 0.8;
+        sy := sy + m[1, i2] * tipsize * 0.8;
+        TextOut(Round(sx) - Round(tipsize * 0.35), Round(sy) - Round(tipsize * 0.7), Chr(Ord('X') + i2));
+      end;
+      Image_N_6.Transparent := False;
+      SetStretchBltMode(Image_N_6.Canvas.Handle, HALFTONE);
+      StretchBlt(Image_N_6.Canvas.Handle, 0, 0, 120, 120,
+                 tmpBMPc.Canvas.Handle, 0, 0, 240, 240, SRCCOPY);
+      Image_N_6.Transparent := True;
+      if not Image_N_6.Visible then Image_N_6.Visible := True;
+    end;
+end;  }

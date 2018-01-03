@@ -1,0 +1,913 @@
+Build
+  Checking project dependencies...
+  Compiling M3D.dproj (Release, Win32)
+  dcc32 command line for "M3D.dpr"
+    c:\programs\berlin\bin\dcc32.exe --inline:off -$I- true -$C- -$Y- -$G- --no-config -M -Q -TX.exe -AGenerics.Collections=System.Generics.Collections;
+    Generics.Defaults=System.Generics.Defaults;WinTypes=Winapi.Windows;WinProcs=Winapi.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE -DUSE_PAX_COMPILER;
+    PARAMS_PER_THREAD;JIT_FORMULA_PREPROCESSING;RELEASE -E..\build -Ic:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;
+    c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;
+    C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 -LE. 
+    -LN.\dcp -NU.\dcu -NSSystem.Win;Vcl;Vcl.Imaging;Vcl.Shell;System;Data;Winapi; -Oc:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;
+    c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;
+    C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 -R.;
+    c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;
+    c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;
+    C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 
+    -Uc:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;
+    c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;
+    C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 
+    -K00400000 -NB.\dcp -NHC:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp -NO.\dcu -$M1048576,16777216   M3D.dpr   
+  [dcc32 Warning] W1030 Invalid compiler directive: 'true'
+  [dcc32 Warning] MAIN.pas(1500): W1005 Unit 'Vcl.FileCtrl' is specific to a platform
+  [dcc32 Warning] MAIN.pas(1849): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(1883): W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  [dcc32 Warning] MAIN.pas(1894): W1036 Variable 'Dateiname' might not have been initialized
+  [dcc32 Warning] MAIN.pas(1866): W1036 Variable 'stream' might not have been initialized
+  [dcc32 Warning] MAIN.pas(2308): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(2310): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(2311): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(2313): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(3147): W1037 FOR-Loop variable 'y' may be undefined after loop
+  [dcc32 Warning] MAIN.pas(3108): W1037 FOR-Loop variable 'y' may be undefined after loop
+  [dcc32 Warning] MAIN.pas(4205): W1000 Symbol 'IsNumber' is deprecated: 'Use TCharHelper'
+  [dcc32 Warning] MAIN.pas(4206): W1000 Symbol 'IsNumber' is deprecated: 'Use TCharHelper'
+  [dcc32 Warning] MAIN.pas(4407): W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  [dcc32 Hint] MAIN.pas(4422): H2164 Variable 'ts' is declared but never used in 'TGUI.SpeedButton_M_36Click'
+  [dcc32 Warning] MAIN.pas(4750): W1058 Implicit string cast with potential data loss from 'TCaption' to 'AnsiString'
+  [dcc32 Warning] MAIN.pas(4755): W1058 Implicit string cast with potential data loss from 'TCaption' to 'AnsiString'
+  [dcc32 Hint] MAIN.pas(5346): H2077 Value assigned to 'i' never used
+  [dcc32 Hint] MAIN.pas(5345): H2077 Value assigned to 'i' never used
+  [dcc32 Hint] MAIN.pas(5345): H2077 Value assigned to 'i' never used
+  [dcc32 Warning] MAIN.pas(5441): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(5572): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(5616): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(5789): W1024 Combining signed and unsigned types - widened both operands
+  [dcc32 Warning] MAIN.pas(5926): W1024 Combining signed and unsigned types - widened both operands
+  [dcc32 Warning] MAIN.pas(5975): W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  [dcc32 Warning] MAIN.pas(6903): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(6903): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Warning] MAIN.pas(6962): W1024 Combining signed and unsigned types - widened both operands
+  [dcc32 Warning] MAIN.pas(6979): W1024 Combining signed and unsigned types - widened both operands
+  [dcc32 Warning] MAIN.pas(7843): W1036 Variable 'db1' might not have been initialized
+  [dcc32 Warning] MAIN.pas(7844): W1036 Variable 'db2' might not have been initialized
+  [dcc32 Hint] MAIN.pas(7818): H2164 Variable 'iskip' is declared but never used in 'FindVecAngles'
+  [dcc32 Warning] MAIN.pas(7992): W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  [dcc32 Hint] MAIN.pas(8687): H2164 Variable 'p2h' is declared but never used in 'TGUI.SetHeaderSize'
+  [dcc32 Warning] MAIN.pas(8864): W1036 Variable 'de' might not have been initialized
+  [dcc32 Warning] MAIN.pas(8898): W1036 Variable 'de' might not have been initialized
+  [dcc32 Hint] MAIN.pas(9203): H2164 Variable 'i' is declared but never used in 'TGUI.SpeedButton_N_17Click'
+  [dcc32 Warning] MAIN.pas(9786): W1057 Implicit string cast from 'AnsiString' to 'string'
+  [dcc32 Hint] MAIN.pas(10348): H2164 Variable 'p2h' is declared but never used in 'TGUI.SetWindowSize'
+  [dcc32 Hint] MAIN.pas(10348): H2164 Variable 'i' is declared but never used in 'TGUI.SetWindowSize'
+  [dcc32 Hint] MAIN.pas(10348): H2164 Variable 'j' is declared but never used in 'TGUI.SetWindowSize'
+  [dcc32 Hint] MAIN.pas(1140): H2219 Private symbol 'FirstStart' declared but never used
+  [dcc32 Hint] MAIN.pas(1154): H2219 Private symbol 'DFogChanged' declared but never used
+  [dcc32 Hint] MAIN.pas(1221): H2219 Private symbol 'SetWindowSize' declared but never used
+  Success
+  Elapsed time: 00:00:01.3
+Output
+  Build started 23/02/2017 09:56:14.
+  __________________________________________________
+  Project "C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dproj" (Make target(s)):
+  Initial Properties:
+  ___ResourcePath                = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  __Manifest_File                = c:\programs\berlin\bin\default_app.manifest
+  __MetadataName                 = Identity
+  __ObjectPath                   = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  __ResourcePath                 = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  _EvaluateItemDependsOnTargets  = 
+        ResolveFiles;
+      
+  _EvaluateOutputsDependsOnTargets = 
+        
+        ResolveFiles;
+      
+      
+  _EvaluatePropertyDependsOnTargets = 
+        ResolveFiles;
+      
+  _KibitzItemNames               = BCC32_CmdLine;BRCC32_CmdLine;TASM32_CmdLine;BCC_CmdLine;IDEDepCheck;EvaluateProperty;EvaluateItem
+  _ObjectPath                    = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  _OutputDRCFiles                = false
+  _ProjectFiles                  = @(DelphiCompile)
+  _ResolveGENTLBBindingsTarget   = 
+        _ResolveGENTLBBindings;
+      
+  ALLUSERSPROFILE                = C:\ProgramData
+  ANDROID_HOME                   = C:\Programs\Android\android-sdk
+  APPDATA                        = C:\Users\CrystalSkull\AppData\Roaming
+  AppDataDir                     = C:\Users\CrystalSkull\AppData\Roaming\Embarcadero\BDS\18.0\
+  AppType                        = Application
+  Base                           = true
+  Base_Win32                     = true
+  BDS                            = c:\programs\berlin
+  BDSAppDataBaseDir              = BDS
+  BDSBIN                         = c:\programs\berlin\bin
+  BDSCatalogRepository           = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\CatalogRepository
+  BDSCatalogRepositoryAllUsers   = C:\Users\Public\Documents\Embarcadero\Studio\18.0\CatalogRepository
+  BDSCOMMONDIR                   = C:\Users\Public\Documents\Embarcadero\Studio\18.0
+  BDSINCLUDE                     = c:\programs\berlin\include
+  BDSLIB                         = c:\programs\berlin\lib
+  BDSPROJECTSDIR                 = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects
+  BDSUSERDIR                     = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0
+  BpiExt                         = bpi
+  BpiOutput                      = 
+  BplExt                         = bpl
+  BplOutput                      = 
+  BplPlatformPrefix              = 
+  BRCC_Defines                   = USE_PAX_COMPILER;PARAMS_PER_THREAD;JIT_FORMULA_PREPROCESSING;RELEASE;
+  BRCC_IncludePath               = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  BRCC_OutputDir                 = .\
+  BuildDependsOn                 = 
+        SetBuildOptions;
+        CoreBuild;
+        AutoIncBuildNumber;
+      
+  C2J_PATH                       = C:\Programs\Novosoft\C2J\Bin
+  cAndroidPlatform               = Android
+  Cfg_1                          = true
+  Cfg_1_Win32                    = true
+  CfgParent                      = Cfg_1
+  ciOSDevice32Platform           = iOSDevice32
+  ciOSDevice64Platform           = iOSDevice64
+  ciOSSimulatorPlatform          = iOSSimulator
+  CLASSPATH                      = C:\Programs\Novosoft\C2J\Bin\c2jruntime.zip
+  CleanDependsOn                 = 
+        ResolveFiles;
+        CleanOutputs;
+        CleanVersionResources;
+        CleanResources;
+        CleanAndroidApkRootDir;
+        CleanUWPAppxRootDir;
+        CleanPredexedJars;
+        CleanJavaClassesOutputDir;
+        CleaniOSDevice32Outputs
+      
+  cLinux64Platform               = Linux64
+  CmdsFileOutput                 = ..\build\M3D.cmds
+  CommonProgramFiles             = C:\Program Files (x86)\Common Files
+  CommonProgramFiles_x86_        = C:\Program Files (x86)\Common Files
+  CommonProgramW6432             = C:\Program Files\Common Files
+  COMPUTERNAME                   = TABLETOP
+  ComSpec                        = C:\Windows\System32\cmd.exe
+  Config                         = Release
+  CoreBuildDependsOn             = 
+        _CheckBuildEnvironment;
+        _CheckPlatformVariable;
+        _CheckGetItPackageDependencies;
+        _CheckPlatformSDK;
+        CreateDirectories;
+        ResolveFiles;
+        BuildClassesDex;
+        BuildVersionResource;
+        BuildAndroidServiceJarFile;
+        BuildAndroidManifestList;
+        ResourceBuild;
+        ;
+        PreBuildEvent;
+        _PreOutputTimeStamp;
+        _RunUserTools;
+        RidlCompile;
+        _PasCoreCompile;
+        _PostOutputTimeStamp;
+        PostBuildEvent;
+        ;
+  	  _DeleteLnkFile;
+        GeniOSDevice32Outputs
+      
+  cOSX32Platform                 = OSX32
+  CreateDirectoriesDependsOn     = 
+        CreateProjectDirectories;
+        CreateLocalDirectories
+      
+  cWin32Platform                 = Win32
+  cWin64Platform                 = Win64
+  cWinARMPlatform                = WinARM
+  cWinIoT32Platform              = WinIoT32
+  cWinNX32Platform               = WinNX32
+  DCC_AssertionsAtRuntime        = false
+  DCC_BpiOutput                  = .\dcp\
+  DCC_BplOutput                  = .\
+  DCC_DcpOutput                  = .\dcp\
+  DCC_DcuOutput                  = .\dcu\
+  DCC_DebugInformation           = true
+  DCC_Define                     = USE_PAX_COMPILER;PARAMS_PER_THREAD;JIT_FORMULA_PREPROCESSING;RELEASE;
+  DCC_E                          = false
+  DCC_ExeOutput                  = ..\build
+  DCC_F                          = false
+  DCC_ForceExecute               = 
+  DCC_HppOutput                  = C:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp\
+  DCC_ImageBase                  = 00400000
+  DCC_ImportedDataReferences     = false
+  DCC_Inlining                   = off
+  DCC_IOChecking                 = false
+  DCC_K                          = false
+  DCC_LocalDebugSymbols          = true
+  DCC_MaxStackSize               = 16777216
+  DCC_MinStackSize               = 1048576
+  DCC_N                          = true
+  DCC_Namespace                  = System.Win;Vcl;Vcl.Imaging;Vcl.Shell;System;Data;Winapi;
+  DCC_ObjOutput                  = .\dcu\
+  DCC_PlatformTarget             = Win32
+  DCC_ResourceOutput             = C:\Users\Public\Documents\Embarcadero\Studio\18.0\DCP
+  DCC_S                          = false
+  DCC_SymbolReferenceInfo        = 0
+  DCC_UsePackage                 = paxcomp_x10_1;vclx;VclSmp;vclshlctrls;xmlrtl;vclactnband;vcl;rtl;
+  DCCPasFileOutputExt            = .dcu
+  DcpOutput                      = 
+  DcuOutput                      = 
+  Debugger_IncludeSystemVars     = true
+  Defines                        = USE_PAX_COMPILER;PARAMS_PER_THREAD;JIT_FORMULA_PREPROCESSING;RELEASE;
+  DELPHI                         = c:\programs\berlin
+  DelphiBrowsingPath             = c:\programs\berlin\OCX\Servers;c:\programs\berlin\SOURCE\VCL;c:\programs\berlin\SOURCE\VCL\AppAnalytics;c:\programs\berlin\source\rtl\common;c:\programs\berlin\SOURCE\RTL\SYS;c:\programs\berlin\source\rtl\win;c:\programs\berlin\source\ToolsAPI;c:\programs\berlin\SOURCE\IBX;c:\programs\berlin\source\Internet;c:\programs\berlin\SOURCE\PROPERTY EDITORS;c:\programs\berlin\source\soap;c:\programs\berlin\SOURCE\XML;c:\programs\berlin\source\Indy10\Core;c:\programs\berlin\source\Indy10\System;c:\programs\berlin\source\Indy10\Protocols;c:\programs\berlin\source\fmx;c:\programs\berlin\source\databinding\components;c:\programs\berlin\source\databinding\engine;c:\programs\berlin\source\databinding\graph;c:\programs\berlin\source\data;c:\programs\berlin\source\data\ado;c:\programs\berlin\source\data\bde;c:\programs\berlin\source\data\cloud;c:\programs\berlin\source\data\datasnap;c:\programs\berlin\source\data\dbx;c:\programs\berlin\source\data\dsnap;c:\programs\berlin\source\data\Test;c:\programs\berlin\source\data\vclctrls;c:\programs\berlin\source\data\datasnap\connectors;c:\programs\berlin\source\data\datasnap\proxygen;c:\programs\berlin\source\DataExplorer;c:\programs\berlin\source\DUnit\Contrib\DUnitWizard\Source\Common;c:\programs\berlin\source\DUnit\Contrib\DUnitWizard\Source\Common\dunit;c:\programs\berlin\source\DUnit\Contrib\DUnitWizard\Source\DelphiExperts\Common;c:\programs\berlin\source\DUnit\Contrib\DUnitWizard\Source\DelphiExperts\DUnitProject;c:\programs\berlin\source\DUnit\Contrib\DUnitWizard\Source\DelphiExperts\DUnitProject\dunit;c:\programs\berlin\source\DUnit\src;c:\programs\berlin\source\DUnit\tests;c:\programs\berlin\source\Experts;c:\programs\berlin\source\indy\abstraction;c:\programs\berlin\source\indy\implementation;c:\programs\berlin\source\indyimpl;c:\programs\berlin\source\LiveTile;c:\programs\berlin\source\Property Editors\Indy10;c:\programs\berlin\source\soap\wsdlimporter;c:\programs\berlin\source\Visualizers;c:\programs\berlin\source\xtab;c:\programs\berlin\source\DUnit\Contrib\XMLReporting;c:\programs\berlin\source\DUnit\Contrib\XPGen;c:\programs\berlin\source\data\rest;c:\programs\berlin\source\data\firedac;c:\programs\berlin\source\tethering;c:\programs\berlin\source\DUnitX;c:\programs\berlin\source\data\ems;c:\programs\berlin\source\rtl\net;c:\programs\berlin\source\FlatBox2D;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\windows;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\vcl
+  DelphiDCPOutput                = C:\Users\Public\Documents\Embarcadero\Studio\18.0\DCP
+  DelphiDebugDCUPath             = 
+  DelphiDLLOutputPath            = 
+  DelphiHPPOutputPath            = C:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp
+  DelphiLibraryPath              = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  DelphiNamespaceSearchPath      = 
+  DelphiTranslatedDebugLibraryPath = 
+  DelphiTranslatedLibraryPath    = 
+  DelphiTranslatedResourcePath   = 
+  DEMOSDIR                       = C:\Users\Public\Documents\Embarcadero\Studio\18.0\Samples
+  DllExt                         = dll
+  DllOutput                      = 
+  DllPlatformPrefix              = 
+  DXSDK_DIR                      = C:\Programs\DirectX\
+  ENV_PF_KeyStore                = 
+  ENV_PF_KeyStorePass            = 
+  ENV_PF_KeyStoreSubject         = 
+  ENV_PF_UWPDistributionType     = 
+  EnvironmentSettings            = C:\Users\CrystalSkull\AppData\Roaming\Embarcadero\BDS\18.0\environment.proj
+  EnvOptions                     = C:\Users\CrystalSkull\AppData\Roaming\Embarcadero\BDS\18.0\EnvOptions.proj
+  ExeExt                         = exe
+  ExeOutput                      = 
+  FinalOutput                    = ..\build\M3D.exe
+  FP_NO_HOST_CHECK               = NO
+  FrameworkType                  = VCL
+  Gen64BitTypeLib                = false
+  GENTLB_GenPasBindings          = false
+  GENTLB_OutputName              = M3D.tlb
+  HOMEDRIVE                      = C:
+  HOMEPATH                       = \Users\CrystalSkull
+  HppOutput                      = 
+  IBREDISTDIR                    = C:\Users\Public\Documents\Embarcadero\InterBase\redist\InterBaseXE7
+  Icon_MainIcon                  = m3d64.ico
+  IncludePath                    = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  InputDir                       = @(InputFile->'%(RootDir)%(Directory)')
+  InputExt                       = @(InputFile->'%(Extension)')
+  InputFilename                  = @(InputFile->'%(Filename)%(Extension)')
+  InputName                      = @(InputFile->'%(Filename)')
+  InputPath                      = @(InputFile->'%(FullPath)')
+  INTEL_DEV_REDIST               = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+  LibExt                         = lib
+  LinkDependsOnTargets           = ;_VerifyProfileFile;_CheckPlatformSDK
+  LOCALAPPDATA                   = C:\Users\CrystalSkull\AppData\Local
+  LOGONSERVER                    = \\TABLETOP
+  MainSource                     = M3D.dpr
+  MakeDependsOn                  = 
+        SetMakeOptions;
+        CoreBuild;
+      
+  MakeDependsOnTargets           = ;_VerifyProfileFile;_CheckPlatformSDK
+  MakeOneDependsOnTargets        = ;_VerifyProfileFile;_CheckPlatformSDK
+  Manifest_File                  = c:\programs\berlin\bin\default_app.manifest
+  MIC_LD_LIBRARY_PATH            = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+  MSBuildBinPath                 = C:\Windows\Microsoft.NET\Framework\v2.0.50727
+  MSBuildExtensionsPath          = C:\Program Files (x86)\MSBuild
+  MSBuildExtensionsPath32        = C:\Program Files (x86)\MSBuild
+  MSBuildNodeCount               = 1
+  MSBuildProjectDefaultTargets   = Make
+  MSBuildProjectDirectory        = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10
+  MSBuildProjectDirectoryNoRoot  = Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10
+  MSBuildProjectExtension        = .dproj
+  MSBuildProjectFile             = M3D.dproj
+  MSBuildProjectFullPath         = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dproj
+  MSBuildProjectName             = M3D
+  MSBuildStartupDirectory        = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10
+  MSBuildToolsPath               = C:\Windows\Microsoft.NET\Framework\v2.0.50727
+  MSBuildToolsVersion            = 2.0
+  NameSpace                      = System.Win;Vcl;Vcl.Imaging;Vcl.Shell;System;Data;Winapi;;
+  NUMBER_OF_PROCESSORS           = 2
+  ObjExt                         = obj
+  ObjOutput                      = 
+  OS                             = Windows_NT
+  OutputDir                      = ..\build\
+  OutputExt                      = .exe
+  OutputFilename                 = M3D.exe
+  OutputName                     = M3D
+  OutputPath                     = @(OutputFile->'%(FullPath)')
+  Path                           = C:\Users\Public\Documents\Embarcadero\InterBase\redist\InterBaseXE7\IDE_spoof;C:\Perl\site\bin;C:\Perl\bin;C:\Programs\DelphiXE8\bin;C:\Users\Public\Documents\Embarcadero\Studio\16.0\Bpl;C:\Programs\DelphiXE8\bin64;C:\Users\Public\Documents\Embarcadero\Studio\16.0\Bpl\Win64;C:\VulkanSDK\Bin;C:\Programs\Berlin\bin;C:\Programs\Delphi7\Bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Skype\Phone;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Programs\Brackets\command;C:\Programs\Novosoft\C2J\Bin;C:\Programs\Nmap;C:\Programs\Java\jdk1.8.0_121\bin
+  PATHEXT                        = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+  Platform                       = Win32
+  PlatformSDK                    = 
+  PreprocessDependsOnTargets     = _VerifyProfileFile;_CheckPlatformSDK;
+  PROCESSOR_ARCHITECTURE         = x86
+  PROCESSOR_ARCHITEW6432         = AMD64
+  PROCESSOR_IDENTIFIER           = AMD64 Family 21 Model 48 Stepping 1, AuthenticAMD
+  PROCESSOR_LEVEL                = 21
+  PROCESSOR_REVISION             = 3001
+  ProducedFileList               = M3D.dproj.filelist.txt
+  ProductVersion                 = 18.0
+  Profile                        = 
+  Profiles                       = c:\programs\berlin\bin\CodeGear.Profiles.Targets
+  ProgramData                    = C:\ProgramData
+  ProgramFiles                   = C:\Program Files (x86)
+  ProgramFiles_x86_              = C:\Program Files (x86)
+  ProgramW6432                   = C:\Program Files
+  ProjectDir                     = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10
+  ProjectExt                     = .dproj
+  ProjectFilename                = M3D.dproj
+  ProjectGuid                    = {FC147FE6-7957-4A4D-84A5-CEFAEBEF2199}
+  ProjectName                    = M3D
+  ProjectOutputExtension         = .exe
+  ProjectPath                    = C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dproj
+  ProjectVersion                 = 18.2
+  PSModulePath                   = C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+  PUBLIC                         = C:\Users\Public
+  RASMOLPATH                     = C:\Programs\RasWin
+  ReBuildDependsOn               = 
+        ResolveFiles;
+        Clean;
+        Build
+      
+  ResolveFilesDependsOn          = 
+        ResolveSources;
+        ResolveInputs;
+        ResolveOutputs;
+        ResolveResources;
+        ResolveLocalResources;
+        ResolvePaths;
+        ResolveReferences
+      
+  ResourceBuildDependsOn         = 
+        BuildProjectResourceFile;
+        Win32ResourceDependencies;
+        BrccCompile;
+        BuildLicenseFile;
+      
+  ResourceOutput                 = 
+  ResourcePath                   = .\;c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  SAFEBOOT_OPTION                = DSREPAIR
+  SanitizedProjectName           = M3D
+  SESSIONNAME                    = Console
+  ShowStdOut                     = 
+  StaticLibPrefix                = 
+  SystemDrive                    = C:
+  SystemRoot                     = C:\Windows
+  TargetedPlatforms              = 1
+  TEMP                           = C:\Users\CRYSTA~1\AppData\Local\Temp
+  TMP                            = C:\Users\CRYSTA~1\AppData\Local\Temp
+  UnitAliases                    = Generics.Collections=System.Generics.Collections;Generics.Defaults=System.Generics.Defaults;WinTypes=Winapi.Windows;WinProcs=Winapi.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+  UnitSearchPath                 = c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10
+  USERDOMAIN                     = TableTop
+  USERDOMAIN_ROAMINGPROFILE      = TableTop
+  USERNAME                       = CrystalSkull
+  USERPROFILE                    = C:\Users\CrystalSkull
+  UWP_DelphiLogo150              = c:\programs\berlin\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png
+  UWP_DelphiLogo44               = c:\programs\berlin\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png
+  ValidateOptionsDependsOn       = 
+        ValidateGlobalOptions;
+        ValidateSources;
+        ValidateLocalResources;
+        ValidatePaths
+      
+  VerInfo_AutoIncVersion         = true
+  VerInfo_Build                  = 138
+  VerInfo_IncludeVerInfo         = true
+  VerInfo_Keys                   = CompanyName=;FileDescription=3d fractal rendering;FileVersion=1.9.2.138;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductVersion=1.9.1;Comments=;ProgramID=M3D;ProductName=M3D
+  VerInfo_Locale                 = 2057
+  VerInfo_MinorVer               = 9
+  VerInfo_Release                = 2
+  VK_SDK_PATH                    = C:\VulkanSDK
+  VULKAN_SDK                     = C:\VulkanSDK
+  windir                         = C:\Windows
+  Initial Items:
+  _DirectoryList
+      ..\build
+      .\
+      .\
+      .\dcp\
+      .\dcp\
+      .\dcu\
+      .\dcu\
+      C:\Users\Public\Documents\Embarcadero\Studio\18.0\DCP
+      C:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp\
+  BuildConfiguration
+      Base
+      Debug
+      Release
+  DCCReference
+      ..\ColorPick.pas
+      ..\FORMS\Animation.pas
+      ..\FORMS\AniPreviewWindow.pas
+      ..\FORMS\AniProcess.pas
+      ..\FORMS\BatchForm.pas
+      ..\FORMS\BRInfoWindow.pas
+      ..\FORMS\ColorOptionForm.pas
+      ..\FORMS\MapSequencesGUI.pas
+      ..\FORMS\MonteCarloForm.pas
+      ..\FORMS\PostProcessForm.pas
+      ..\FORMS\TextBox.pas
+      ..\FORMS\Tiling.pas
+      ..\FORMS\uMapCalcWindow.pas
+      ..\FORMS\VoxelExport.pas
+      ..\formula\CustomFormulas.pas
+      ..\formula\FormulaClass.pas
+      ..\formula\FormulaCompiler.pas
+      ..\formula\FormulaNames.pas
+      ..\formula\formulas.pas
+      ..\formula\IFS.pas
+      ..\formula\JITFormulaEditGUI.pas
+      ..\formula\JITFormulas.pas
+      ..\formula\ParamValueEditGUI.pas
+      ..\image\FTGifAnimate.pas
+      ..\image\GifImage.pas
+      ..\image\LinarBitmap.pas
+      ..\image\pngimage.pas
+      ..\image\pnglang.pas
+      ..\image\pngzlib.pas
+      ..\jvcl\JvAppStorage.pas
+      ..\jvcl\JvButton.pas
+      ..\jvcl\JvCaptionPanel.pas
+      ..\jvcl\JvCheckBox.pas
+      ..\jvcl\JvClipboardMonitor.pas
+      ..\jvcl\JVCLVer.pas
+      ..\jvcl\JvComCtrls.pas
+      ..\jvcl\JvComponent.pas
+      ..\jvcl\JvComponentBase.pas
+      ..\jvcl\JvConsts.pas
+      ..\jvcl\JvCustomItemViewer.pas
+      ..\jvcl\JvDataSource.pas
+      ..\jvcl\JvDataSourceIntf.pas
+      ..\jvcl\JvExButtons.pas
+      ..\jvcl\JvExComCtrls.pas
+      ..\jvcl\JvExControls.pas
+      ..\jvcl\JvExExtCtrls.pas
+      ..\jvcl\JvExForms.pas
+      ..\jvcl\JvExStdCtrls.pas
+      ..\jvcl\JvExtComponent.pas
+      ..\jvcl\JvFormAnimatedIcon.pas
+      ..\jvcl\Jvg3DColors.pas
+      ..\jvcl\JvgCommClasses.pas
+      ..\jvcl\JvgGroupBox.pas
+      ..\jvcl\JvGroupBox.pas
+      ..\jvcl\JvgTypes.pas
+      ..\jvcl\JvgUtils.pas
+      ..\jvcl\JvImagesViewer.pas
+      ..\jvcl\JvJCLUtils.pas
+      ..\jvcl\JvJVCLUtils.pas
+      ..\jvcl\JvLinkedControls.pas
+      ..\jvcl\JvNavigationPane.pas
+      ..\jvcl\JvOutlookBar.pas
+      ..\jvcl\JvPageList.pas
+      ..\jvcl\JvProgressBar.pas
+      ..\jvcl\JvPropertyStore.pas
+      ..\jvcl\JvPropertyStoreEditorIntf.pas
+      ..\jvcl\JvResources.pas
+      ..\jvcl\JvSlider.pas
+      ..\jvcl\JvStrings.pas
+      ..\jvcl\JvThemes.pas
+      ..\jvcl\JvTranslateString.pas
+      ..\jvcl\JvTypes.pas
+      ..\jvcl\JvWin32.pas
+      ..\jvcl\JvxSlider.pas
+      ..\ListBoxEx.pas
+      ..\MAIN.pas
+      ..\MutaGenGUI.pas
+      ..\prefs\IniDirsForm.pas
+      ..\prefs\VisualThemesGUI.pas
+      ..\SpeedButtonEx.pas
+      ..\TrackBarEx.pas
+      ..\util\Adler32.pas
+      ..\util\AmbHiQ.pas
+      ..\util\AmbShadowCalcThreadN.pas
+      ..\util\BitStream.pas
+      ..\util\BufStream.pas
+      ..\util\Calc.pas
+      ..\util\CalcAmbShadowDE.pas
+      ..\util\calcBlocky.pas
+      ..\util\CalcHardShadow.pas
+      ..\util\CalcMonteCarlo.pas
+      ..\util\CalcPart.pas
+      ..\util\CalcSR.pas
+      ..\util\CalcThread.pas
+      ..\util\CalcThread2D.pas
+      ..\util\CalcVoxelSliceThread.pas
+      ..\util\ColorMapper.pas
+      ..\util\ColorSSAO.pas
+      ..\util\CRC32Stream.pas
+      ..\util\Deflate.pas
+      ..\util\DelphiStream.pas
+      ..\util\DivUtils.pas
+      ..\util\DOF.pas
+      ..\util\DoubleSize.pas
+      ..\util\FFT.pas
+      ..\util\FileHandling.pas
+      ..\util\HeaderTrafos.pas
+      ..\util\Huffman.pas
+      ..\util\ImageProcess.pas
+      ..\util\Interpolation.pas
+      ..\util\M3DfractalClass.pas
+      ..\util\M3Iregister.pas
+      ..\util\Maps.pas
+      ..\util\MapSequences.pas
+      ..\util\Math3D.pas
+      ..\util\MathUtils.pas
+      ..\util\MB3DFacade.pas
+      ..\util\MemStream.pas
+      ..\util\MemUtils.pas
+      ..\util\Monitor.pas
+      ..\util\MutaGen.pas
+      ..\util\NaviCalcThread.pas
+      ..\util\Paint.pas
+      ..\util\PaintThread.pas
+      ..\util\PreviewRenderer.pas
+      ..\util\RegisterM3Pgraphic.pas
+      ..\util\Streams.pas
+      ..\util\ThreadUtils.pas
+      ..\util\TypeDefinitions.pas
+      ..\util\Undo.pas
+  DelphiCompile
+      M3D.dpr
+  None
+      ..\.gitignore
+      ..\CHANGES.txt
+  Building with tools version "2.0".
+  Target "SetMakeOptions" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Using "CreateProperty" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+    Task "CreateProperty"
+    Done executing task "CreateProperty".
+  Done building target "SetMakeOptions" in project "M3D.dproj".
+  Target "_CheckBuildEnvironment" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "Warning" skipped, due to false condition; (!Exists('$(EnvOptions)') and ('$(EnvOptionsWarn)'!='false')) was evaluated as (!Exists('C:\Users\CrystalSkull\AppData\Roaming\Embarcadero\BDS\18.0\EnvOptions.proj') and (''!='false')).
+  Done building target "_CheckBuildEnvironment" in project "M3D.dproj".
+  Target "_CheckPlatformVariable" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "Error" skipped, due to false condition; (!( ('$(Platform)'=='$(cWin32Platform)')
+            Or ('$(Platform)'=='$(cWinNX32Platform)')
+            Or ('$(Platform)'=='$(cWinIoT32Platform)')
+            Or ('$(Platform)'=='$(cWinARMPlatform)')
+            Or ('$(Platform)'=='$(cWin64Platform)')
+            Or ('$(Platform)'=='$(cOSX32Platform)')
+            Or ('$(Platform)'=='$(cAndroidPlatform)')
+            Or ('$(Platform)'=='$(ciOSSimulatorPlatform)')
+            Or ('$(Platform)'=='$(ciOSDevice32Platform)')
+            Or ('$(Platform)'=='$(ciOSDevice64Platform)')
+            Or ('$(Platform)'=='$(cLinux64Platform)') )) was evaluated as (!( ('Win32'=='Win32')
+            Or ('Win32'=='WinNX32')
+            Or ('Win32'=='WinIoT32')
+            Or ('Win32'=='WinARM')
+            Or ('Win32'=='Win64')
+            Or ('Win32'=='OSX32')
+            Or ('Win32'=='Android')
+            Or ('Win32'=='iOSSimulator')
+            Or ('Win32'=='iOSDevice32')
+            Or ('Win32'=='iOSDevice64')
+            Or ('Win32'=='Linux64') )).
+  Done building target "_CheckPlatformVariable" in project "M3D.dproj".
+  Target "_CheckGetItPackageDependencies" skipped, due to false condition; (('$(GetItPackages)'!='')) was evaluated as ((''!='')).
+  Target "_VerifyPlatformSDKFile" in file "c:\programs\berlin\bin\CodeGear.Profiles.Targets":
+    Task "Error" skipped, due to false condition; ('$(PlatformSDK)'!='' And !Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(ProductVersion)\$(PlatformSDK)')) was evaluated as (''!='' And !Exists('C:\Users\CrystalSkull\AppData\Roaming\Embarcadero\BDS\18.0\')).
+  Done building target "_VerifyPlatformSDKFile" in project "M3D.dproj".
+  Target "_PlatformExists" skipped, due to false condition; ('$(Profile_platform)'!='') was evaluated as (''!='').
+  Target "_CheckPlatformSDK" in file "c:\programs\berlin\bin\CodeGear.Profiles.Targets":
+    Task "Error" skipped, due to false condition; ('$(PlatformSDK)'!='' And '$(PlatformExists)'=='true' And !Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(ProductVersion)\$(PlatformSDK)')) was evaluated as (''!='' And ''=='true' And !Exists('C:\Users\CrystalSkull\AppData\Roaming\Embarcadero\BDS\18.0\')).
+    Task "CallTarget" skipped, due to false condition; ('$(PlatformSDK)'!='' And '$(PlatformExists)'=='true' And Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(ProductVersion)\$(PlatformSDK)')) was evaluated as (''!='' And ''=='true' And Exists('C:\Users\CrystalSkull\AppData\Roaming\Embarcadero\BDS\18.0\')).
+  Done building target "_CheckPlatformSDK" in project "M3D.dproj".
+  Target "CreateProjectDirectories" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Using "MakeDir" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+    Task "MakeDir"
+    Done executing task "MakeDir".
+  Done building target "CreateProjectDirectories" in project "M3D.dproj".
+  Target "CreateLocalDirectories" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+  Done building target "CreateLocalDirectories" in project "M3D.dproj".
+  Target "CreateDirectories" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+  Done building target "CreateDirectories" in project "M3D.dproj".
+  Target "ResolveSources" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Task "CreateItem" skipped, due to false condition; (( '%(EXTENSION)'=='.pas' ) ) was evaluated as (( ''=='.pas' ) ).
+    Using "CreateItem" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateProperty"
+    Done executing task "CreateProperty".
+  Done building target "ResolveSources" in project "M3D.dproj".
+  Target "_ResolveUserTool" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "FindItems" skipped, due to false condition; ('$(FileToCompile)'!='') was evaluated as (''!='').
+  Done building target "_ResolveUserTool" in project "M3D.dproj".
+  Target "_ResolveInput" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem" skipped, due to false condition; ('$(FileToCompile)'!='' And '@(InputFile)'=='') was evaluated as (''!='' And 'C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dproj'=='').
+  Done building target "_ResolveInput" in project "M3D.dproj".
+  Target "ResolveInputs" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem" skipped, due to false condition; (( '%(DCCReference.Form)'!='' ) ) was evaluated as (( ''!='' ) ).
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+  Done building target "ResolveInputs" in project "M3D.dproj".
+  Target "ResolveOutputs" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem" skipped, due to false condition; (('%(EXTENSION)'=='.pas' And '$(DCC_HppOutput)'!='' And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='' ) ) was evaluated as (('.pas'=='.pas' And 'C:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp\'!='' And ''!='None' And ''!='' ) ).
+    Task "CreateItem" skipped, due to false condition; (('%(EXTENSION)'=='.pas' And '$(DCC_HppOutput)'=='' And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='' ) ) was evaluated as (('.pas'=='.pas' And 'C:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp\'=='' And ''!='None' And ''!='' ) ).
+    Task "CreateItem" skipped, due to false condition; ('$(DCC_HppOutput)'!='' And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='') was evaluated as ('C:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp\'!='' And ''!='None' And ''!='').
+    Task "CreateItem" skipped, due to false condition; ('$(DCC_HppOutput)'=='' And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='') was evaluated as ('C:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp\'=='' And ''!='None' And ''!='').
+    Task "CreateItem" skipped, due to false condition; (('%(EXTENSION)'=='.pas' And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='' ) ) was evaluated as (('.pas'=='.pas' And ''!='None' And ''!='' ) ).
+    Task "CreateItem" skipped, due to false condition; ('$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='') was evaluated as (''!='None' And ''!='').
+    Task "CreateItem" skipped, due to false condition; ('%(EXTENSION)'=='.dpk' Or '%(EXTENSION)'=='.dpkw') was evaluated as ('.dpr'=='.dpk' Or '.dpr'=='.dpkw').
+    Task "CreateItem" skipped, due to false condition; (('%(EXTENSION)'=='.dpk' Or '%(EXTENSION)'=='.dpkw' ) And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='' ) was evaluated as (('.dpr'=='.dpk' Or '.dpr'=='.dpkw' ) And ''!='None' And ''!='' ).
+    Task "CreateItem" skipped, due to false condition; (('%(EXTENSION)'=='.dpk' Or '%(EXTENSION)'=='.dpkw' ) And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='' ) was evaluated as (('.dpr'=='.dpk' Or '.dpr'=='.dpkw' ) And ''!='None' And ''!='' ).
+    Task "CreateItem" skipped, due to false condition; (('%(EXTENSION)'=='.dpk' Or '%(EXTENSION)'=='.dpkw' ) And '$(DCC_CBuilderOutput)'!='None' And '$(DCC_CBuilderOutput)'!='' ) was evaluated as (('.dpr'=='.dpk' Or '.dpr'=='.dpkw' ) And ''!='None' And ''!='' ).
+    Task "CreateItem" skipped, due to false condition; (('%(EXTENSION)'=='.pas')  And '$(DCC_DcuOutput)'=='' ) was evaluated as (('.pas'=='.pas')  And '.\dcu\'=='' ).
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem" skipped, due to false condition; (( ('%(EXTENSION)'=='.dpk' Or '%(EXTENSION)'=='.dpkw') And '$(DCC_DcuOutput)' != '') ) was evaluated as (( ('.dpr'=='.dpk' Or '.dpr'=='.dpkw') And '.\dcu\' != '') ).
+    Task "CreateItem" skipped, due to false condition; (( ('%(EXTENSION)'=='.dpk' Or '%(EXTENSION)'=='.dpkw') And '$(DCC_DcuOutput)' == '') ) was evaluated as (( ('.dpr'=='.dpk' Or '.dpr'=='.dpkw') And '.\dcu\' == '') ).
+    Task "CreateItem" skipped, due to false condition; ( '@(_LicxFiles)'!='' ) was evaluated as ( ''!='' ).
+    Task "CreateItem" skipped, due to false condition; ('$(DebugSymbolFile)'!='') was evaluated as (''!='').
+    Task "CreateItem" skipped, due to false condition; ('$(ObjectLinkerFile)'!='') was evaluated as (''!='').
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem" skipped, due to false condition; (('$(Platform)'=='$(cOSX32Platform)' Or '$(Platform)'=='$(ciOSSimulatorPlatform)' Or '$(Platform)'=='$(ciOSDevice32Platform)' Or '$(Platform)'=='$(ciOSDevice64Platform)')) was evaluated as (('Win32'=='OSX32' Or 'Win32'=='iOSSimulator' Or 'Win32'=='iOSDevice32' Or 'Win32'=='iOSDevice64')).
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(ciOSSimulatorPlatform)' Or '$(Platform)'=='$(ciOSDevice32Platform)' Or '$(Platform)'=='$(ciOSDevice64Platform)') was evaluated as ('Win32'=='iOSSimulator' Or 'Win32'=='iOSDevice32' Or 'Win32'=='iOSDevice64').
+    Task "CreateItem" skipped, due to false condition; (('$(Platform)'=='$(cOSX32Platform)' Or '$(Platform)'=='$(ciOSSimulatorPlatform)' Or '$(Platform)'=='$(ciOSDevice32Platform)' Or '$(Platform)'=='$(ciOSDevice64Platform)')) was evaluated as (('Win32'=='OSX32' Or 'Win32'=='iOSSimulator' Or 'Win32'=='iOSDevice32' Or 'Win32'=='iOSDevice64')).
+    Task "CreateItem" skipped, due to false condition; (('$(Platform)'=='$(ciOSSimulatorPlatform)' Or '$(Platform)'=='$(ciOSDevice32Platform)' Or '$(Platform)'=='$(ciOSDevice64Platform)')) was evaluated as (('Win32'=='iOSSimulator' Or 'Win32'=='iOSDevice32' Or 'Win32'=='iOSDevice64')).
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+  Done building target "ResolveOutputs" in project "M3D.dproj".
+  Target "_ResolveIcons" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+  Done building target "_ResolveIcons" in project "M3D.dproj".
+  Target "_ResolveResources" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateItem" skipped, due to false condition; (( '%(EXTENSION)'=='.rc' ) ) was evaluated as (( ''=='.rc' ) ).
+    Task "CreateItem" skipped, due to false condition; ( '%(EXTENSION)'=='.dfm' or '%(EXTENSION)'=='.nfm' ) was evaluated as ( ''=='.dfm' or ''=='.nfm' ).
+    Task "CreateItem" skipped, due to false condition; (( '%(EXTENSION)'=='.rc' ) ) was evaluated as (( ''=='.rc' ) ).
+    Task "CreateItem" skipped, due to false condition; (( '%(EXTENSION)'=='.res' ) ) was evaluated as (( ''=='.res' ) ).
+  Done building target "_ResolveResources" in project "M3D.dproj".
+  Target "ResolveResources" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Task "CreateItem" skipped, due to false condition; (( '%(EXTENSION)'=='.licx' )) was evaluated as (( ''=='.licx' )).
+  Done building target "ResolveResources" in project "M3D.dproj".
+  Target "ResolveLocalResources" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+  Done building target "ResolveLocalResources" in project "M3D.dproj".
+  Target "ResolvePaths" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Task "RemoveDuplicates" skipped, due to false condition; (( ( '%(EXTENSION)'=='.dfm' or '%(EXTENSION)'=='.nfm' ) And '%(RelativeDir)'!='' ) ) was evaluated as (( ( ''=='.dfm' or ''=='.nfm' ) And ''!='' ) ).
+    Task "RemoveDuplicates" skipped, due to false condition; (( '%(EXTENSION)'=='.pas' And '%(RelativeDir)'!='' ) ) was evaluated as (( ''=='.pas' And ''!='' ) ).
+  Done building target "ResolvePaths" in project "M3D.dproj".
+  Target "_ResolveReferences" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Task "CreateItem" skipped, due to false condition; (('%(Reference.LinkUnits)'==false)) was evaluated as ((''==false)).
+  Done building target "_ResolveReferences" in project "M3D.dproj".
+  Target "ResolveReferences" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Task "CreateProperty" skipped, due to false condition; ('$(UsePackages)'==true Or '$(DCC_EnabledPackages)'=='true') was evaluated as (''==true Or ''=='true').
+  Done building target "ResolveReferences" in project "M3D.dproj".
+  Target "ResolveFiles" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+  Done building target "ResolveFiles" in project "M3D.dproj".
+  Target "BuildClassesDex" skipped, due to false condition; ($(Platform)=='$(cAndroidPlatform)' And (('$(AppType)'=='Application') Or ('$(AppType)'=='Console'))) was evaluated as (Win32=='Android' And (('Application'=='Application') Or ('Application'=='Console'))).
+  Target "__CreateVerOutputName" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+  Done building target "__CreateVerOutputName" in project "M3D.dproj".
+  Target "__SetVersionResourceFileName" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+    Task "CreateItem"
+    Done executing task "CreateItem".
+  Done building target "__SetVersionResourceFileName" in project "M3D.dproj".
+  Target "__ResourceVersionResDepCheck" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Using "DependencyCheck" task from assembly "c:\programs\berlin\bin\Borland.Build.Tasks.Shared.dll".
+    Task "DependencyCheck"
+    Done executing task "DependencyCheck".
+  Done building target "__ResourceVersionResDepCheck" in project "M3D.dproj".
+  Target "__AndroidManifestDepCheck" skipped, due to false condition; ('$(Platform)'=='$(cAndroidPlatform)') was evaluated as ('Win32'=='Android').
+  Target "__BuildShouldBuildVersion" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+  Done building target "__BuildShouldBuildVersion" in project "M3D.dproj".
+  Target "__BuildRCFile" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CallTarget" skipped, due to false condition; ('$(__ShouldBuildVersion)'=='true') was evaluated as ('false'=='true').
+  Done building target "__BuildRCFile" in project "M3D.dproj".
+  Target "BuildVersionResource" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "BRCC32" skipped, due to false condition; ('$(__ShouldBuildVersion)'=='true') was evaluated as ('false'=='true').
+    Task "Delete" skipped, due to false condition; (Exists('@(__ProjectVersionFile)') And ('$(SaveVRC)'!='true')) was evaluated as (Exists('M3D.vrc') And (''!='true')).
+    Task "Delete" skipped, due to false condition; (Exists('@(__ProjectRCTemporaryFiles)') And ('$(SaveVRC)'!='true')) was evaluated as (Exists('M3D.$manifest') And (''!='true')).
+  Done building target "BuildVersionResource" in project "M3D.dproj".
+  Target "BuildAndroidServiceJarFile" skipped, due to false condition; (('$(Platform)'=='$(cAndroidPlatform)' And '$(AndroidServiceType)'!='')) was evaluated as (('Win32'=='Android' And ''!='')).
+  Target "__SetAndroidManifestSettings" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+  Done building target "__SetAndroidManifestSettings" in project "M3D.dproj".
+  Target "BuildAndroidManifestList" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateAndroidManifestFile" skipped, due to false condition; ('$(ShouldCreateManifestFile)'=='true') was evaluated as (''=='true').
+  Done building target "BuildAndroidManifestList" in project "M3D.dproj".
+  Target "BuildProjectResourceFile" skipped, due to false condition; ('@(RcItem)'!='') was evaluated as (''!='').
+  Target "Win32ResourceDependencies" skipped, due to false condition; ('@(RcCompile)'!='') was evaluated as (''!='').
+  Target "BrccCompile" skipped, due to false condition; ('@(RcCompile)'!='') was evaluated as (''!='').
+  Target "BuildLicenseFile" skipped, due to false condition; ( '@(_LicxFiles)'!='' ) was evaluated as ( ''!='' ).
+  Target "ResourceBuild" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+  Done building target "ResourceBuild" in project "M3D.dproj".
+  Target "PreBuildEvent" skipped, due to false condition; ( '$(PreBuildEvent)'!='' And '$(KibitzCompile)'=='') was evaluated as ( ''!='' And ''=='').
+  Target "_PreOutputTimeStamp" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+  Done building target "_PreOutputTimeStamp" in project "M3D.dproj".
+  Target "_RunUserTools" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "InvokeMSBuild" skipped, due to false condition; ('%(UserTool.ToolName)'!='' And '$(FileToCompile)'=='') was evaluated as (''!='' And ''=='').
+    Task "InvokeMSBuild" skipped, due to false condition; ('@(InputFile)'!='' And '%(InputFile.ToolName)'!='') was evaluated as ('C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dproj'!='' And ''!='').
+  Done building target "_RunUserTools" in project "M3D.dproj".
+  Target "_RidlDepCheck" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "DependencyCheck"
+    Done executing task "DependencyCheck".
+    Task "MessageMap" skipped, due to false condition; ('@(SkippedRidlFiles)'!='') was evaluated as (''!='').
+    Task "MessageMap" skipped, due to false condition; ('@(RidlFiles)'!='' And '$(ForceRebuild)'!='true') was evaluated as (''!='' And ''!='true').
+  Done building target "_RidlDepCheck" in project "M3D.dproj".
+  Target "RidlCompile" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Using "CallTarget" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+    Task "CallTarget"
+      Target "_ResolveGENTLBBindings" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+        Task "CreateItem"
+        Done executing task "CreateItem".
+      Done building target "_ResolveGENTLBBindings" in project "M3D.dproj".
+      Target "_RidlCoreCompile" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+        Task "GenTLB" skipped, due to false condition; ('@(RidlFiles)'!='') was evaluated as (''!='').
+      Done building target "_RidlCoreCompile" in project "M3D.dproj".
+    Done executing task "CallTarget".
+  Done building target "RidlCompile" in project "M3D.dproj".
+  Target "_PasCoreCompile" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Using "DCC" task from assembly "c:\programs\berlin\bin\Borland.Build.Tasks.Delphi.dll".
+    Task "DCC"
+      Command:
+      c:\programs\berlin\bin\dcc32.exe --inline:off -$I- true -$C- -$Y- -$G- --no-config -M -Q -TX.exe -AGenerics.Collections=System.Generics.Collections;Generics.Defaults=System.Generics.Defaults;WinTypes=Winapi.Windows;WinProcs=Winapi.Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE -DUSE_PAX_COMPILER;PARAMS_PER_THREAD;JIT_FORMULA_PREPROCESSING;RELEASE -E..\build -Ic:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 -LE. -LN.\dcp -NU.\dcu -NSSystem.Win;Vcl;Vcl.Imaging;Vcl.Shell;System;Data;Winapi; -Oc:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 -R.;c:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 -Uc:\programs\berlin\include;C:\Programs\Berlin\source\jcl\include;c:\programs\berlin\lib\Win32\release;c:\users\crystalskull\documents\embarcadero\studio\projects;c:\programs\berlin\Imports;C:\Users\CrystalSkull\Documents\Embarcadero\Studio\18.0\Importss;c:\users\crystalskull\documents\embarcadero\studio\projects\mb3d-revision\xe10 -K00400000 -NB.\dcp -NHC:\Users\Public\Documents\Embarcadero\Studio\18.0\hpp -NO.\dcu -$M1048576,16777216   M3D.dpr   
+      c:\programs\berlin\Bin\CodeGear.Delphi.Targets : warning W1030: W1030 Invalid compiler directive: 'true'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1500,11): warning W1005: W1005 Unit 'Vcl.FileCtrl' is specific to a platform
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1849,39): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1883,33): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1894,1): warning W1036: W1036 Variable 'Dateiname' might not have been initialized
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1866,1): warning W1036: W1036 Variable 'stream' might not have been initialized
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2308,39): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2310,54): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2311,37): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2313,35): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(3147,1): warning W1037: W1037 FOR-Loop variable 'y' may be undefined after loop
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(3108,1): warning W1037: W1037 FOR-Loop variable 'y' may be undefined after loop
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4205,40): warning W1000: W1000 Symbol 'IsNumber' is deprecated: 'Use TCharHelper'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4206,40): warning W1000: W1000 Symbol 'IsNumber' is deprecated: 'Use TCharHelper'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4407,52): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4422,1): warning H2164: H2164 Variable 'ts' is declared but never used in 'TGUI.SpeedButton_M_36Click'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4750,53): warning W1058: W1058 Implicit string cast with potential data loss from 'TCaption' to 'AnsiString'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4755,53): warning W1058: W1058 Implicit string cast with potential data loss from 'TCaption' to 'AnsiString'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5346,1): warning H2077: H2077 Value assigned to 'i' never used
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5345,1): warning H2077: H2077 Value assigned to 'i' never used
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5345,1): warning H2077: H2077 Value assigned to 'i' never used
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5441,60): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5572,52): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5616,93): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5789,86): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5926,69): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5975,87): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6903,78): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6903,78): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6962,36): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6979,62): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7843,1): warning W1036: W1036 Variable 'db1' might not have been initialized
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7844,1): warning W1036: W1036 Variable 'db2' might not have been initialized
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7818,1): warning H2164: H2164 Variable 'iskip' is declared but never used in 'FindVecAngles'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7992,91): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(8687,1): warning H2164: H2164 Variable 'p2h' is declared but never used in 'TGUI.SetHeaderSize'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(8864,1): warning W1036: W1036 Variable 'de' might not have been initialized
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(8898,1): warning W1036: W1036 Variable 'de' might not have been initialized
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(9203,1): warning H2164: H2164 Variable 'i' is declared but never used in 'TGUI.SpeedButton_N_17Click'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(9786,67): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(10348,1): warning H2164: H2164 Variable 'p2h' is declared but never used in 'TGUI.SetWindowSize'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(10348,1): warning H2164: H2164 Variable 'i' is declared but never used in 'TGUI.SetWindowSize'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(10348,1): warning H2164: H2164 Variable 'j' is declared but never used in 'TGUI.SetWindowSize'
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1140,1): warning H2219: H2219 Private symbol 'FirstStart' declared but never used
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1154,1): warning H2219: H2219 Private symbol 'DFogChanged' declared but never used
+      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1221,1): warning H2219: H2219 Private symbol 'SetWindowSize' declared but never used
+    Done executing task "DCC".
+  Done building target "_PasCoreCompile" in project "M3D.dproj".
+  Target "_PostOutputTimeStamp" in file "c:\programs\berlin\bin\CodeGear.Common.Targets":
+    Task "CreateItem"
+    Done executing task "CreateItem".
+  Done building target "_PostOutputTimeStamp" in project "M3D.dproj".
+  Target "PostBuildEvent" skipped, due to false condition; ( '$(PostBuildEvent)'!=''  And '$(KibitzCompile)'==''
+        and ( '$(PostBuildEventExecuteWhen)'=='Always' or '$(PostBuildEventExecuteWhen)'=='' or '$(PreOutputTimeStamp)'!='$(PostOutputTimeStamp)' )) was evaluated as ( ''!=''  And ''==''
+        and ( ''=='Always' or ''=='' or '2017-02-23 09:52:13.0573570'!='2017-02-23 09:56:15.0555764' )).
+  Target "_DeleteLnkFile" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+    Using "Delete" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+    Task "Delete"
+    Done executing task "Delete".
+  Done building target "_DeleteLnkFile" in project "M3D.dproj".
+  Target "GeniOSDevice32Outputs" skipped, due to false condition; ('$(Platform)'=='$(ciOSDevice64Platform)' And ('$(DCC_GenerateUniversalBinaryFile)'=='true' Or '$(BCC_GenerateUniversalBinaryFile)'=='true')) was evaluated as ('Win32'=='iOSDevice64' And (''=='true' Or ''=='true')).
+  Target "CoreBuild" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+  Done building target "CoreBuild" in project "M3D.dproj".
+  Target "Make" in file "c:\programs\berlin\Bin\CodeGear.Delphi.Targets":
+  Done building target "Make" in project "M3D.dproj".
+  Done building project "M3D.dproj".
+  Build succeeded.
+  c:\programs\berlin\Bin\CodeGear.Delphi.Targets : warning W1030: W1030 Invalid compiler directive: 'true'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1500,11): warning W1005: W1005 Unit 'Vcl.FileCtrl' is specific to a platform
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1849,39): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1883,33): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1894,1): warning W1036: W1036 Variable 'Dateiname' might not have been initialized
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1866,1): warning W1036: W1036 Variable 'stream' might not have been initialized
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2308,39): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2310,54): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2311,37): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(2313,35): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(3147,1): warning W1037: W1037 FOR-Loop variable 'y' may be undefined after loop
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(3108,1): warning W1037: W1037 FOR-Loop variable 'y' may be undefined after loop
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4205,40): warning W1000: W1000 Symbol 'IsNumber' is deprecated: 'Use TCharHelper'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4206,40): warning W1000: W1000 Symbol 'IsNumber' is deprecated: 'Use TCharHelper'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4407,52): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4422,1): warning H2164: H2164 Variable 'ts' is declared but never used in 'TGUI.SpeedButton_M_36Click'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4750,53): warning W1058: W1058 Implicit string cast with potential data loss from 'TCaption' to 'AnsiString'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(4755,53): warning W1058: W1058 Implicit string cast with potential data loss from 'TCaption' to 'AnsiString'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5346,1): warning H2077: H2077 Value assigned to 'i' never used
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5345,1): warning H2077: H2077 Value assigned to 'i' never used
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5345,1): warning H2077: H2077 Value assigned to 'i' never used
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5441,60): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5572,52): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5616,93): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5789,86): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5926,69): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(5975,87): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6903,78): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6903,78): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6962,36): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(6979,62): warning W1024: W1024 Combining signed and unsigned types - widened both operands
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7843,1): warning W1036: W1036 Variable 'db1' might not have been initialized
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7844,1): warning W1036: W1036 Variable 'db2' might not have been initialized
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7818,1): warning H2164: H2164 Variable 'iskip' is declared but never used in 'FindVecAngles'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(7992,91): warning W1058: W1058 Implicit string cast with potential data loss from 'string' to 'AnsiString'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(8687,1): warning H2164: H2164 Variable 'p2h' is declared but never used in 'TGUI.SetHeaderSize'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(8864,1): warning W1036: W1036 Variable 'de' might not have been initialized
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(8898,1): warning W1036: W1036 Variable 'de' might not have been initialized
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(9203,1): warning H2164: H2164 Variable 'i' is declared but never used in 'TGUI.SpeedButton_N_17Click'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(9786,67): warning W1057: W1057 Implicit string cast from 'AnsiString' to 'string'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(10348,1): warning H2164: H2164 Variable 'p2h' is declared but never used in 'TGUI.SetWindowSize'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(10348,1): warning H2164: H2164 Variable 'i' is declared but never used in 'TGUI.SetWindowSize'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(10348,1): warning H2164: H2164 Variable 'j' is declared but never used in 'TGUI.SetWindowSize'
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1140,1): warning H2219: H2219 Private symbol 'FirstStart' declared but never used
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1154,1): warning H2219: H2219 Private symbol 'DFogChanged' declared but never used
+  C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas(1221,1): warning H2219: H2219 Private symbol 'SetWindowSize' declared but never used
+      46 Warning(s)
+      0 Error(s)
+  Time Elapsed 00:00:01.01

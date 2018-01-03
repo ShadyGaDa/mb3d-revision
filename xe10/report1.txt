@@ -1,0 +1,271 @@
+Buttons.res	c:\programs\berlin\lib\Win32\release\Buttons.res	Custom Resource
+CategoryButtons.res	c:\programs\berlin\lib\Win32\release\CategoryButtons.res	Custom Resource
+Controls.res	c:\programs\berlin\lib\Win32\release\Controls.res	Custom Resource
+ExtDlgs.res	c:\programs\berlin\lib\Win32\release\ExtDlgs.res	Custom Resource
+ExtDlgsM3D.res	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\ExtDlgsM3D.res	Custom Resource
+FileCtrl.res	c:\programs\berlin\lib\Win32\release\FileCtrl.res	Custom Resource
+JclUnicode.res	c:\programs\berlin\lib\Win32\release\JclUnicode.res	Custom Resource
+JvConsts.res	c:\programs\berlin\lib\Win32\release\JvConsts.res	Custom Resource
+JvOutlookBar.res	c:\programs\berlin\lib\Win32\release\JvOutlookBar.res	Custom Resource
+JvSlider.res	c:\programs\berlin\lib\Win32\release\JvSlider.res	Custom Resource
+JvxSlider.res	c:\programs\berlin\lib\Win32\release\JvxSlider.res	Custom Resource
+M3D.res	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.res	Custom Resource
+Data.DB		
+Data.DBConsts		
+Data.FmtBcd		
+Data.SqlTimSt		
+JvCaret		
+JvgLabel		
+JvMemo		
+PaxCompiler		
+PAXCOMP_2010		
+PAXCOMP_2010REG		
+PAXCOMP_BASERUNNER		
+PAXCOMP_BASESYMBOL_TABLE		
+PAXCOMP_Basic		
+PAXCOMP_BRIDGE		
+PAXCOMP_BYTECODE		
+PAXCOMP_CLASSFACT		
+PAXCOMP_CLASSLST		
+PAXCOMP_CONSTANTS		
+PAXCOMP_DISASM		
+PAXCOMP_EMIT		
+PAXCOMP_ERROR		
+PAXCOMP_EVENT		
+PAXCOMP_FORBID		
+PAXCOMP_FRAMEWORK		
+PAXCOMP_GC		
+PAXCOMP_GENERIC		
+PAXCOMP_HEADER_PARSER		
+PAXCOMP_INVOKE		
+PAXCOMP_JavaScript		
+PAXCOMP_KERNEL		
+PAXCOMP_LABEL_STACK		
+PAXCOMP_LOCALSYMBOL_TABLE		
+PAXCOMP_MAP		
+PAXCOMP_MODULE		
+PAXCOMP_OFFSET		
+PAXCOMP_OLE		
+PAXCOMP_PARSER		
+PAXCOMP_PASCAL_PARSER		
+PAXCOMP_PASCAL_SCANNER		
+PAXCOMP_PAUSE		
+PAXCOMP_PCU		
+PAXCOMP_PROG		
+PAXCOMP_PROGLIB		
+PAXCOMP_PROGLIST		
+PAXCOMP_RTI		
+PAXCOMP_SCANNER		
+PAXCOMP_SEH		
+PAXCOMP_STDLIB		
+PAXCOMP_SYMBOL_PROGRAM		
+PAXCOMP_SYMBOL_REC		
+PAXCOMP_SYMBOL_TABLE		
+PAXCOMP_SYS		
+PAXCOMP_TRYLST		
+PAXCOMP_TYPEINFO		
+PAXCOMP_TYPES		
+PAXCOMP_VAROBJECT		
+PaxInfos		
+PaxInvoke		
+PaxProgram		
+PaxRegister		
+PaxRunner		
+RegExpr2		
+Soap.EncdDecd		
+SysInit		
+System		
+System.Actions		
+System.AnsiStrings		
+System.Character		
+System.Classes		
+System.Contnrs		
+System.DateUtils		
+System.Diagnostics		
+System.Generics.Collections		
+System.Generics.Defaults		
+System.Hash		
+System.HelpIntfs		
+System.ImageList		
+System.Internal.ExcUtils		
+System.IOUtils		
+System.Masks		
+System.Math		
+System.NetEncoding		
+System.RTLConsts		
+System.Rtti		
+System.StrUtils		
+System.SyncObjs		
+System.SysConst		
+System.SysUtils		
+System.TimeSpan		
+System.Types		
+System.TypInfo		
+System.UIConsts		
+System.UITypes		
+System.Variants		
+System.VarUtils		
+System.WideStrUtils		
+System.Win.ComConst		
+System.Win.ComObj		
+System.Win.Crtl		
+System.Win.Registry		
+System.Win.TaskbarCore		
+System.ZLib		
+Vcl.ActnList		
+Vcl.Buttons		
+Vcl.CategoryButtons		
+Vcl.Clipbrd		
+Vcl.ComCtrls		
+Vcl.ComStrs		
+Vcl.Consts		
+Vcl.Controls		
+Vcl.Dialogs		
+Vcl.ExtCtrls		
+Vcl.ExtDlgs		
+Vcl.Forms		
+Vcl.Graphics		
+Vcl.GraphUtil		
+Vcl.Imaging.JConsts		
+Vcl.Imaging.jpeg		
+Vcl.ImgList		
+Vcl.ListActns		
+Vcl.Menus		
+Vcl.Printers		
+Vcl.StdActns		
+Vcl.StdCtrls		
+Vcl.Styles		
+Vcl.SysStyles		
+Vcl.Themes		
+Winapi.ActiveX		
+Winapi.CommCtrl		
+Winapi.CommDlg		
+Winapi.Dwmapi		
+Winapi.FlatSB		
+Winapi.Imm		
+Winapi.Messages		
+Winapi.MMSystem		
+Winapi.MsCTF		
+Winapi.MultiMon		
+Winapi.PenInputPanel		
+Winapi.PsAPI		
+Winapi.RichEdit		
+Winapi.ShellAPI		
+Winapi.ShellScaling		
+Winapi.SHFolder		
+Winapi.ShlObj		
+Winapi.UxTheme		
+Winapi.Wincodec		
+Winapi.Windows		
+Winapi.WinSpool		
+Animation	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Animation.pas	TAnimationForm
+AniPreviewWindow	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniPreviewWindow.pas	
+AniProcess	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\AniProcess.pas	TAniProcessForm
+BatchForm	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BatchForm.pas	TBatchForm1
+BRInfoWindow	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\BRInfoWindow.pas	
+ColorOptionForm	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\ColorOptionForm.pas	
+ColorPick	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ColorPick.pas	TColorForm
+IniDirsForm	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\IniDirsForm.pas	TIniDirForm
+JITFormulaEditGUI	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulaEditGUI.pas	TJITFormulaEditorForm
+MAIN	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas	TGUI
+MapSequencesGUI	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MapSequencesGUI.pas	
+MonteCarloForm	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\MonteCarloForm.pas	TMCForm
+MutaGenGUI	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MutaGenGUI.pas	TMutaGenFrm
+ParamValueEditGUI	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\ParamValueEditGUI.pas	
+PostProcessForm	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\PostProcessForm.pas	TPostProForm
+TextBox	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\TextBox.pas	
+Tiling	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\Tiling.pas	TTilingForm
+uMapCalcWindow	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\uMapCalcWindow.pas	
+VisualThemesGUI	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\VisualThemesGUI.pas	
+VoxelExport	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\VoxelExport.pas	
+AmbHiQ	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbHiQ.pas	
+AmbShadowCalcThreadN	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbShadowCalcThreadN.pas	
+Calc	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas	
+CalcAmbShadowDE	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcAmbShadowDE.pas	
+calcBlocky	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\calcBlocky.pas	
+CalcHardShadow	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas	
+CalcMonteCarlo	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcMonteCarlo.pas	
+CalcPart	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcPart.pas	
+CalcSR	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas	
+CalcThread	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread.pas	
+CalcThread2D	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread2D.pas	
+ColorSSAO	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ColorSSAO.pas	
+CustomFormulas	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas	
+DivUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas	
+DOF	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas	
+DoubleSize	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DoubleSize.pas	
+FFT	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FFT.pas	
+FileHandling	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas	
+FormulaCompiler	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaCompiler.pas	
+FormulaNames	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaNames.pas	
+formulas	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas	
+FTGifAnimate	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\FTGifAnimate.pas	
+GIFImage	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\GifImage.pas	
+HeaderTrafos	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas	
+ImageProcess	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas	
+Interpolation	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas	
+JclAnsiStrings	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclAnsiStrings.pas	
+JclBase	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclBase.pas	
+JclFileUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclFileUtils.pas	
+JclMath	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclMath.pas	
+JclRegistry	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\windows\JclRegistry.pas	
+JclResources	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclResources.pas	
+JclRTTI	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclRTTI.pas	
+JclShell	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\windows\JclShell.pas	
+JclSimpleXml	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclSimpleXml.pas	
+JclStrings	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclStrings.pas	
+JclSynch	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclSynch.pas	
+JclSysInfo	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclSysInfo.pas	
+JclSysUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclSysUtils.pas	
+JclUnicode	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclUnicode.pas	
+JclWideStrings	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\common\JclWideStrings.pas	
+JclWin32	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\windows\JclWin32.pas	
+JITFormulas	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\JITFormulas.pas	
+JvAppStorage	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvAppStorage.pas	
+JvButton	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvButton.pas	
+JvCheckBox	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCheckBox.pas	
+JVCLVer	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JVCLVer.pas	
+JvComCtrls	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComCtrls.pas	
+JvComponentBase	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvComponentBase.pas	
+JvConsts	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvConsts.pas	
+JvCustomItemViewer	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvCustomItemViewer.pas	
+JvDataSourceIntf	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvDataSourceIntf.pas	
+JvExComCtrls	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExComCtrls.pas	
+JvExControls	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExControls.pas	
+JvExStdCtrls	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvExStdCtrls.pas	
+JvgCommClasses	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgCommClasses.pas	
+JvGroupBox	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvGroupBox.pas	
+JvgTypes	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgTypes.pas	
+JvgUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvgUtils.pas	
+JvJCLUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJCLUtils.pas	
+JvJVCLUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvJVCLUtils.pas	
+JvLinkedControls	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvLinkedControls.pas	
+JvResources	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvResources.pas	
+JvThemes	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvThemes.pas	
+JvTypes	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\jvcl\JvTypes.pas	
+LinarBitmap	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\LinarBitmap.pas	
+ListBoxEx	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ListBoxEx.pas	
+M3D	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dpr	
+M3Iregister	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3Iregister.pas	
+Maps	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Maps.pas	
+MapSequences	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MapSequences.pas	
+Math3D	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas	
+MB3DFacade	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MB3DFacade.pas	
+MemStream	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemStream.pas	
+MemUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MemUtils.pas	
+MutaGen	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\MutaGen.pas	
+NaviCalcThread	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\NaviCalcThread.pas	
+Paint	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas	
+PaintThread	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas	
+pngimage	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngimage.pas	
+pnglang	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pnglang.pas	
+pngzlib	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\pngzlib.pas	
+PreviewRenderer	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PreviewRenderer.pas	
+RegisterM3Pgraphic	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\RegisterM3Pgraphic.pas	
+Snmp	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\jcl\source\windows\Snmp.pas	
+SpeedButtonEx	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\SpeedButtonEx.pas	
+Streams	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Streams.pas	
+ThreadUtils	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ThreadUtils.pas	
+TrackBarEx	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\TrackBarEx.pas	
+TypeDefinitions	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas	
+Undo	C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Undo.pas	

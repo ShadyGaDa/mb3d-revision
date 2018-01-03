@@ -1,0 +1,15 @@
+﻿
+[Project]
+DefaultNamespace=M3D
+LDPFile=C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.ldp
+NamespacePrefixes=
+RootFile=C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\M3D.dpr
+SearchPath=C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\
+UnitAliases=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE
+
+[Compiler]
+CompilerSwitches={$A8,B-,C-,D+,E-,F-,G+,H+,I+,J-,K-,L+,M-,N+,O+,P+,Q-,R-,S-,T-,U-,V+,W-,X+,YD,Z1}
+CompilerVersion=dcmpDelphi10_1Win32
+Defines=
+IfExpressions=
+

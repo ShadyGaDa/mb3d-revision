@@ -1,0 +1,170 @@
+program M3D;
+
+{$RTTI EXPLICIT METHODS([]) FIELDS([]) PROPERTIES([])}
+{$WeakLinkRTTI ON}
+
+uses
+  Vcl.Forms,
+  Vcl.Themes,
+  Vcl.Styles,
+  MAIN in '..\MAIN.pas' {GUI},
+  MutaGenGUI in '..\MutaGenGUI.pas' {MutaGenFrm},
+  ColorPick in '..\ColorPick.pas' {ColorForm},
+  FormulaClass in '..\formula\FormulaClass.pas',
+  FormulaCompiler in '..\formula\FormulaCompiler.pas',
+  FormulaNames in '..\formula\FormulaNames.pas',
+  formulas in '..\formula\formulas.pas',
+  JITFormulaEditGUI in '..\formula\JITFormulaEditGUI.pas' {JITFormulaEditorForm},
+  JITFormulas in '..\formula\JITFormulas.pas',
+  MutaGen in '..\util\MutaGen.pas',
+  ParamValueEditGUI in '..\formula\ParamValueEditGUI.pas' {ParamValueEditFrm},
+  NaviCalcThread in '..\util\NaviCalcThread.pas',
+  MapSequencesGUI in '..\FORMS\MapSequencesGUI.pas' {MapSequencesFrm},
+  Maps in '..\util\Maps.pas',
+  MapSequences in '..\util\MapSequences.pas',
+  IniDirsForm in '..\prefs\IniDirsForm.pas' {IniDirForm},
+  VisualThemesGUI in '..\prefs\VisualThemesGUI.pas' {VisualThemesFrm},
+  JvExForms in '..\jvcl\JvExForms.pas',
+  JvTypes in '..\jvcl\JvTypes.pas',
+  JvResources in '..\jvcl\JvResources.pas',
+  JvThemes in '..\jvcl\JvThemes.pas',
+  JVCLVer in '..\jvcl\JVCLVer.pas',
+  JvExControls in '..\jvcl\JvExControls.pas',
+  JvCustomItemViewer in '..\jvcl\JvCustomItemViewer.pas',
+  JvConsts in '..\jvcl\JvConsts.pas',
+  JvJCLUtils in '..\jvcl\JvJCLUtils.pas',
+  JvJVCLUtils in '..\jvcl\JvJVCLUtils.pas',
+  JvAppStorage in '..\jvcl\JvAppStorage.pas',
+  JvComponentBase in '..\jvcl\JvComponentBase.pas',
+  JvTranslateString in '..\jvcl\JvTranslateString.pas',
+  JvPropertyStore in '..\jvcl\JvPropertyStore.pas',
+  JvPropertyStoreEditorIntf in '..\jvcl\JvPropertyStoreEditorIntf.pas',
+  JvStrings in '..\jvcl\JvStrings.pas',
+  JvImagesViewer in '..\jvcl\JvImagesViewer.pas',
+  JvFormAnimatedIcon in '..\jvcl\JvFormAnimatedIcon.pas',
+  JvExComCtrls in '..\jvcl\JvExComCtrls.pas',
+  JvClipboardMonitor in '..\jvcl\JvClipboardMonitor.pas',
+  JvNavigationPane in '..\jvcl\JvNavigationPane.pas',
+  JvPageList in '..\jvcl\JvPageList.pas',
+  JvCaptionPanel in '..\jvcl\JvCaptionPanel.pas',
+  JvExExtCtrls in '..\jvcl\JvExExtCtrls.pas',
+  JvExStdCtrls in '..\jvcl\JvExStdCtrls.pas',
+  JvExtComponent in '..\jvcl\JvExtComponent.pas',
+  JvOutlookBar in '..\jvcl\JvOutlookBar.pas',
+  JvxSlider in '..\jvcl\JvxSlider.pas',
+  JvSlider in '..\jvcl\JvSlider.pas',
+  JvgGroupBox in '..\jvcl\JvgGroupBox.pas',
+  JvProgressBar in '..\jvcl\JvProgressBar.pas',
+  JvComCtrls in '..\jvcl\JvComCtrls.pas',
+  JvComponent in '..\jvcl\JvComponent.pas',
+  JvDataSource in '..\jvcl\JvDataSource.pas',
+  JvWin32 in '..\jvcl\JvWin32.pas',
+  JvDataSourceIntf in '..\jvcl\JvDataSourceIntf.pas',
+  JvGroupBox in '..\jvcl\JvGroupBox.pas',
+  JvCheckBox in '..\jvcl\JvCheckBox.pas',
+  JvLinkedControls in '..\jvcl\JvLinkedControls.pas',
+  JvExButtons in '..\jvcl\JvExButtons.pas',
+  JvButton in '..\jvcl\JvButton.pas',
+  JvgTypes in '..\jvcl\JvgTypes.pas',
+  JvgCommClasses in '..\jvcl\JvgCommClasses.pas',
+  JvgUtils in '..\jvcl\JvgUtils.pas',
+  Jvg3DColors in '..\jvcl\Jvg3DColors.pas',
+  Adler32 in '..\util\Adler32.pas',
+  AmbHiQ in '..\util\AmbHiQ.pas',
+  AmbShadowCalcThreadN in '..\util\AmbShadowCalcThreadN.pas',
+  BitStream in '..\util\BitStream.pas',
+  BufStream in '..\util\BufStream.pas',
+  Calc in '..\util\Calc.pas',
+  CalcAmbShadowDE in '..\util\CalcAmbShadowDE.pas',
+  calcBlocky in '..\util\calcBlocky.pas',
+  CalcHardShadow in '..\util\CalcHardShadow.pas',
+  CalcMonteCarlo in '..\util\CalcMonteCarlo.pas',
+  CalcPart in '..\util\CalcPart.pas',
+  CalcSR in '..\util\CalcSR.pas',
+  CalcThread in '..\util\CalcThread.pas',
+  CalcThread2D in '..\util\CalcThread2D.pas',
+  CalcVoxelSliceThread in '..\util\CalcVoxelSliceThread.pas',
+  ColorMapper in '..\util\ColorMapper.pas',
+  ColorSSAO in '..\util\ColorSSAO.pas',
+  CRC32Stream in '..\util\CRC32Stream.pas',
+  Deflate in '..\util\Deflate.pas',
+  DelphiStream in '..\util\DelphiStream.pas',
+  DivUtils in '..\util\DivUtils.pas',
+  DOF in '..\util\DOF.pas',
+  DoubleSize in '..\util\DoubleSize.pas',
+  FFT in '..\util\FFT.pas',
+  FileHandling in '..\util\FileHandling.pas',
+  MathUtils in '..\util\MathUtils.pas',
+  MemStream in '..\util\MemStream.pas',
+  MemUtils in '..\util\MemUtils.pas',
+  Streams in '..\util\Streams.pas',
+  ThreadUtils in '..\util\ThreadUtils.pas',
+  TypeDefinitions in '..\util\TypeDefinitions.pas',
+  Undo in '..\util\Undo.pas',
+  Math3D in '..\util\Math3D.pas',
+  Animation in '..\FORMS\Animation.pas' {AnimationForm},
+  AniPreviewWindow in '..\FORMS\AniPreviewWindow.pas' {AniPreviewForm},
+  AniProcess in '..\FORMS\AniProcess.pas' {AniProcessForm},
+  BatchForm in '..\FORMS\BatchForm.pas' {BatchForm1},
+  BRInfoWindow in '..\FORMS\BRInfoWindow.pas' {BRInfoForm},
+  ColorOptionForm in '..\FORMS\ColorOptionForm.pas' {FColorOptions},
+  MonteCarloForm in '..\FORMS\MonteCarloForm.pas' {MCForm},
+  PostProcessForm in '..\FORMS\PostProcessForm.pas' {PostProForm},
+  TextBox in '..\FORMS\TextBox.pas' {FTextBox},
+  Tiling in '..\FORMS\Tiling.pas' {TilingForm},
+  uMapCalcWindow in '..\FORMS\uMapCalcWindow.pas' {MapCalcWindow},
+  VoxelExport in '..\FORMS\VoxelExport.pas' {FVoxelExport},
+  IFS in '..\formula\IFS.pas',
+  CustomFormulas in '..\formula\CustomFormulas.pas',
+  FTGifAnimate in '..\image\FTGifAnimate.pas',
+  GifImage in '..\image\GifImage.pas',
+  LinarBitmap in '..\image\LinarBitmap.pas',
+  pngimage in '..\image\pngimage.pas',
+  pnglang in '..\image\pnglang.pas',
+  pngzlib in '..\image\pngzlib.pas',
+  M3Iregister in '..\util\M3Iregister.pas',
+  TrackBarEx in '..\TrackBarEx.pas',
+  SpeedButtonEx in '..\SpeedButtonEx.pas',
+  ListBoxEx in '..\ListBoxEx.pas',
+  Interpolation in '..\util\Interpolation.pas',
+  ImageProcess in '..\util\ImageProcess.pas',
+  HeaderTrafos in '..\util\HeaderTrafos.pas',
+  MB3DFacade in '..\util\MB3DFacade.pas',
+  Monitor in '..\util\Monitor.pas',
+  Paint in '..\util\Paint.pas',
+  PaintThread in '..\util\PaintThread.pas',
+  RegisterM3Pgraphic in '..\util\RegisterM3Pgraphic.pas',
+  Huffman in '..\util\Huffman.pas',
+  M3DfractalClass in '..\util\M3DfractalClass.pas',
+  PreviewRenderer in '..\util\PreviewRenderer.pas';
+
+{$R *.res}
+
+{$SetPEFlags $20}
+
+begin
+  SetMinimumBlockAlignment(mba16Byte);
+  Application.Initialize;
+  Application.Title := 'M3D';
+  Application.CreateForm(TGUI, GUI);
+  Application.CreateForm(TMutaGenFrm, MutaGenFrm);
+  Application.CreateForm(TMapSequencesFrm, MapSequencesFrm);
+  Application.CreateForm(TIniDirForm, IniDirForm);
+  Application.CreateForm(TVisualThemesFrm, VisualThemesFrm);
+  Application.CreateForm(TJITFormulaEditorForm, JITFormulaEditorForm);
+  Application.CreateForm(TParamValueEditFrm, ParamValueEditFrm);
+  Application.CreateForm(TAnimationForm, AnimationForm);
+  Application.CreateForm(TAniPreviewForm, AniPreviewForm);
+  Application.CreateForm(TAniProcessForm, AniProcessForm);
+  Application.CreateForm(TBatchForm1, BatchForm1);
+  Application.CreateForm(TBRInfoForm, BRInfoForm);
+  Application.CreateForm(TFColorOptions, FColorOptions);
+  Application.CreateForm(TColorForm, ColorForm);
+  Application.CreateForm(TMCForm, MCForm);
+  Application.CreateForm(TPostProForm, PostProForm);
+  Application.CreateForm(TFTextBox, FTextBox);
+  Application.CreateForm(TTilingForm, TilingForm);
+  Application.CreateForm(TMapCalcWindow, MapCalcWindow);
+  Application.CreateForm(TFVoxelExport, FVoxelExport);
+  Application.Run;
+end.

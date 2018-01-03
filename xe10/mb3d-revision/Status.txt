@@ -1,0 +1,210 @@
+**************************************************************************************************
+*                                       Status Report for                                        *
+*C:\USERS\CRYSTALSKULL\DOCUMENTS\EMBARCADERO\STUDIO\PROJECTS\MB3D-REVISION\XE10\MB3D-REVISION.DPR*
+*                                      12/03/2017 11:39:11                                       *
+**************************************************************************************************
+
+Overview:
+--------------------------------------------------------------------------------------------------
+
+Analyzed by:                  ICARUS - Uses List Analyzer for Delphi version 3.7.0.0
+Parse speed:                  227558 lines in 5.96 seconds (38200 lines/sec)
+Time for reports:             0.34 seconds
+Total time:                   6.30 seconds
+
+Project:                      C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\mb3d-revision.pap
+Main file:                    C:\USERS\CRYSTALSKULL\DOCUMENTS\EMBARCADERO\STUDIO\PROJECTS\MB3D-REVISION\XE10\MB3D-REVISION.DPR
+Output folder:                C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\mb3d-revision
+Compiler:                     Delphi XE5 (Win32)
+
+Env. variables (0):           (none)
+
+Search folders (8):           C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10
+                              C:\Programs\Berlin\lib\win32\release
+                              C:\Programs\Berlin\include\jedi
+                              C:\Programs\Berlin\lib\jvcl
+                              C:\Programs\Berlin\lib\jcl
+                              C:\Programs\Berlin\lib\pax
+                              C:\Programs\Berlin\bin
+                              C:\Programs\Berlin\source
+
+Excluded search folders (0):  (none)
+
+Excluded files (1):           System.pas
+
+
+Unit aliases (5):             DbiErrs=BDE
+                              DbiProcs=BDE
+                              DbiTypes=BDE
+                              WinProcs=Windows
+                              WinTypes=Windows
+
+Predefined (12):              _PEGANZA_
+                              ASSEMBLER
+                              CONDITIONALEXPRESSIONS
+                              CPU386
+                              CPUX86
+                              DCC
+                              MSWINDOWS
+                              NATIVECODE
+                              UNDERSCOREIMPORTNAME
+                              UNICODE
+                              VER260
+                              WIN32
+
+Conditional defines (4):      JIT_FORMULA_PREPROCESSING
+                              PARAMS_PER_THREAD
+                              RELEASE
+                              USE_PAX_COMPILER
+
+Unit scopes (0):              (none)
+Global switches (27):         A+
+                              B-
+                              C-
+                              D+
+                              E-
+                              F-
+                              G+
+                              H+
+                              I-
+                              J-
+                              K+
+                              L+
+                              M-
+                              N+
+                              O+
+                              P+
+                              Q-
+                              R-
+                              S+
+                              T-
+                              U-
+                              V+
+                              W-
+                              X+
+                              Y-
+                              YD
+                              Z-
+
+Loaded files (119):           C:\Programs\Berlin\include\jedi\crossplatform.inc
+                              C:\Programs\Berlin\include\jedi\jvcl.inc
+                              C:\Programs\Berlin\include\jedi\jvclbase.inc
+                              C:\Programs\Berlin\include\jedi\jvcld22.inc
+                              C:\Programs\Berlin\include\jedi\jvcld24.inc
+                              C:\Programs\Berlin\include\jedi\windowsonly.inc
+                              C:\Programs\Berlin\lib\jvcl\JvAppStorage.pas
+                              C:\Programs\Berlin\lib\jvcl\JvButton.pas
+                              C:\Programs\Berlin\lib\jvcl\JvCaptionPanel.pas
+                              C:\Programs\Berlin\lib\jvcl\JvCaret.pas
+                              C:\Programs\Berlin\lib\jvcl\JvCheckBox.pas
+                              C:\Programs\Berlin\lib\jvcl\JvClipboardMonitor.pas
+                              C:\Programs\Berlin\lib\jvcl\JVCLVer.pas
+                              C:\Programs\Berlin\lib\jvcl\JvComCtrls.pas
+                              C:\Programs\Berlin\lib\jvcl\JvComponent.pas
+                              C:\Programs\Berlin\lib\jvcl\JvComponentBase.pas
+                              C:\Programs\Berlin\lib\jvcl\JvConsts.pas
+                              C:\Programs\Berlin\lib\jvcl\JvCustomItemViewer.pas
+                              C:\Programs\Berlin\lib\jvcl\JvDataSourceIntf.pas
+                              C:\Programs\Berlin\lib\jvcl\JvExButtons.pas
+                              C:\Programs\Berlin\lib\jvcl\JvExComCtrls.pas
+                              C:\Programs\Berlin\lib\jvcl\JvExControls.pas
+                              C:\Programs\Berlin\lib\jvcl\JvExExtCtrls.pas
+                              C:\Programs\Berlin\lib\jvcl\JvExForms.pas
+                              C:\Programs\Berlin\lib\jvcl\JvExStdCtrls.pas
+                              C:\Programs\Berlin\lib\jvcl\JvExtComponent.pas
+                              C:\Programs\Berlin\lib\jvcl\JvFormAnimatedIcon.pas
+                              C:\Programs\Berlin\lib\jvcl\Jvg3DColors.pas
+                              C:\Programs\Berlin\lib\jvcl\JvgCommClasses.pas
+                              C:\Programs\Berlin\lib\jvcl\JvgLabel.pas
+                              C:\Programs\Berlin\lib\jvcl\JvGroupBox.pas
+                              C:\Programs\Berlin\lib\jvcl\JvgTypes.pas
+                              C:\Programs\Berlin\lib\jvcl\JvgUtils.pas
+                              C:\Programs\Berlin\lib\jvcl\JvImagesViewer.pas
+                              C:\Programs\Berlin\lib\jvcl\JvJCLUtils.pas
+                              C:\Programs\Berlin\lib\jvcl\JvJVCLUtils.pas
+                              C:\Programs\Berlin\lib\jvcl\JvLinkedControls.pas
+                              C:\Programs\Berlin\lib\jvcl\JvMemo.pas
+                              C:\Programs\Berlin\lib\jvcl\JvNavigationPane.pas
+                              C:\Programs\Berlin\lib\jvcl\JvOutlookBar.pas
+                              C:\Programs\Berlin\lib\jvcl\JvPageList.pas
+                              C:\Programs\Berlin\lib\jvcl\JvProgressBar.pas
+                              C:\Programs\Berlin\lib\jvcl\JvPropertyStore.pas
+                              C:\Programs\Berlin\lib\jvcl\JvPropertyStoreEditorIntf.pas
+                              C:\Programs\Berlin\lib\jvcl\JvResources.pas
+                              C:\Programs\Berlin\lib\jvcl\JvSlider.pas
+                              C:\Programs\Berlin\lib\jvcl\JvStrings.pas
+                              C:\Programs\Berlin\lib\jvcl\JvThemes.pas
+                              C:\Programs\Berlin\lib\jvcl\JvTranslateString.pas
+                              C:\Programs\Berlin\lib\jvcl\JvTypes.pas
+                              C:\Programs\Berlin\lib\jvcl\JvWin32.pas
+                              C:\Programs\Berlin\lib\jvcl\JvxSlider.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ANIMATE\Animation.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ANIMATE\AniPreviewWindow.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ANIMATE\AniProcess.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ColorPick.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\COMPILER\FormulaCompiler.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\COMPILER\JITFormulaEditGUI.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\COMPILER\JITFormulas.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\COMPILER\ParamValueEditGUI.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\FORMS\TextBox.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\CustomFormulas.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\FormulaClass.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\formulas.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\formula\IFS.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\FTGifAnimate.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\image\GIF_Image.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\ListBoxEx.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAIN.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAP\Maps.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAP\MapSequences.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAP\MapSequencesGUI.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MAP\uMapCalcWindow.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MonteCarlo\CalcMonteCarlo.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MonteCarlo\ColorOptionForm.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MonteCarlo\MonteCarloForm.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MUTATION\FormulaNames.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MUTATION\MB3DFacade.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MUTATION\MutaGen.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MUTATION\MutaGenGUI.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\MUTATION\PreviewRenderer.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\IniDirsForm.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\prefs\VisualThemesGUI.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\BatchForm.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\BRInfoWindow.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\CalcPart.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\CalcVoxelSliceThread.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\DoubleSize.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\PostProcessForm.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\Tiling.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\PROCESS\VoxelExport.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\SpeedButtonEx.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\TrackBarEx.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbHiQ.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\AmbShadowCalcThreadN.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Calc.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcAmbShadowDE.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\calcBlocky.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcHardShadow.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcSR.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\CalcThread2D.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ColorSSAO.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DivUtils.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\DOF.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\FileHandling.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\HeaderTrafos.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ImageProcess.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Interpolation.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\M3Iregister.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Math3D.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\NaviCalcThread.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Paint.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\PaintThread.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\RegisterM3Pgraphic.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\ThreadUtils.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\TypeDefinitions.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\util\Undo.pas
+                              C:\Users\CrystalSkull\Documents\Embarcadero\Studio\Projects\mb3d-revision\xe10\mb3d-revision.dpr
+
+
+
